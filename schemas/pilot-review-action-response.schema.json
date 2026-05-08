@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PilotReviewActionResponse",
+  "type": "object",
+  "required": ["ok", "action"],
+  "properties": {
+    "ok": {"type": "boolean"},
+    "action": {"type": "object"}
+  }
+}

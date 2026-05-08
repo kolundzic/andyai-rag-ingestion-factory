@@ -1518,3 +1518,14 @@ Canonical rule:
 ```text
 Runtime wiring connects the bridge. API routes define the traffic lanes.
 ```
+
+
+---
+
+## 📝 v17.3.0 — Admin Review Actions Persistence
+
+Adds review status action model and `PATCH /api/pilot-request/review` scaffold.
+
+```text
+A review panel is not operational until decisions can be recorded.
+```

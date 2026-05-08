@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PilotReviewAction",
+  "type": "object",
+  "required": ["request_id", "next_status", "review_owner", "review_notes", "next_action"],
+  "properties": {
+    "request_id": {"type": "string"},
+    "next_status": {"type": "string"},
+    "review_owner": {"type": "string"},
+    "review_notes": {"type": "string"},
+    "next_action": {"type": "string"}
+  }
+}
