@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkspaceAccessPolicy",
+  "type": "object",
+  "required": ["workspace_id", "tenant_id"],
+  "properties": {
+    "workspace_id": {"type": "string"},
+    "tenant_id": {"type": "string"}
+  }
+}

@@ -1540,3 +1540,14 @@ Adds traceability for review status changes.
 ```text
 If a business decision changes state, the trace must survive the moment.
 ```
+
+
+---
+
+## 🔐 v18.0.0 — Supabase Production Hardening Layer
+
+Adds production-aware RLS/security standards.
+
+```text
+Demo RLS lets the lab breathe. Production RLS lets the business survive.
+```

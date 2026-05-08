@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TenantAccessPolicy",
+  "type": "object",
+  "required": ["tenant_id", "allowed_roles"],
+  "properties": {
+    "tenant_id": {"type": "string"},
+    "allowed_roles": {"type": "array", "items": {"type": "string"}}
+  }
+}
