@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v16.1.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v16.2.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -960,6 +960,36 @@ Next:
 
 ```text
 v16.2.0 — Extended Canon Visual Series
+```
+
+
+
+
+---
+
+## 🖼️ v16.2.0 — Extended Canon Visual Series
+
+v16.2.0 adds the second wave of canon.andyai.ai visuals focused on the most important product layers.
+
+```text
+Operator Review & Approval Loop
+Supabase Runtime & Multi-Tenant Model
+Vercel Deploy & Release Pipeline
+Evidence Pack Lifecycle
+Permission-Aware Access Map
+100-200 PDFs x 1,000 Pages -> Knowledge Factory
+```
+
+Canonical rule:
+
+```text
+Every important product layer should be visually explainable.
+```
+
+Next:
+
+```text
+v16.3.0 — Visual Atlas Product Demo Layer
 ```
 
 
