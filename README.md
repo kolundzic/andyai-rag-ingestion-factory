@@ -4,7 +4,7 @@
 > Turn raw PDFs into **structured chunks, searchable indexes, retrieval evidence, and citable answers**.
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v2.0.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v3.0.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="focus" src="https://img.shields.io/badge/focus-evidence--first-purple">
@@ -492,6 +492,40 @@ Production rule:
 
 ```text
 No audit trail, no production answer.
+```
+
+
+
+---
+
+## 🚀 v3.0.0 — Production Bridge Release
+
+v3.0.0 turns the repo into a production-bridge artifact.
+
+It adds:
+
+- Docker Compose stack for Qdrant and PostgreSQL
+- real Qdrant adapter implementation path
+- config/settings layer
+- local deterministic embedding provider
+- batch ingestion job
+- FastAPI-compatible API foundation
+- operator quickstart
+- production bridge docs
+
+Production bridge formula:
+
+```text
+Local proof becomes service shape.
+Service shape becomes deployment path.
+Deployment path becomes production system.
+```
+
+Operator command:
+
+```bash
+docker compose up -d
+./scripts/verify.sh
 ```
 
 

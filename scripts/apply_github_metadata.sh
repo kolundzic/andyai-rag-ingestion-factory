@@ -3,7 +3,7 @@ set -euo pipefail
 
 OWNER="${GITHUB_OWNER:-kolundzic}"
 REPO_NAME="${REPO_NAME:-andyai-rag-ingestion-factory}"
-DESCRIPTION="Production-grade RAG ingestion factory for large PDF libraries: PDF parsing, page-aware chunking, PostgreSQL metadata, citations, and hybrid retrieval architecture."
+DESCRIPTION="Production-grade RAG ingestion factory for large PDF libraries: PDF parsing, page-aware chunking, PostgreSQL metadata, Qdrant, evidence packs, and hybrid retrieval architecture."
 
 echo "━━━━━━━━━━━━━━━━━━━━"
 echo "🌍 Applying GitHub metadata"
@@ -32,7 +32,9 @@ gh repo edit "$OWNER/$REPO_NAME" \
   --add-topic postgresql \
   --add-topic metadata \
   --add-topic citations \
+  --add-topic evidence-pack \
   --add-topic hybrid-search \
+  --add-topic fastapi \
   --add-topic llm \
   --add-topic ai-engineering \
   --add-topic knowledge-base \
