@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AccessPolicy",
+  "type": "object",
+  "required": ["tenant_id", "classification"],
+  "properties": {
+    "tenant_id": { "type": "string" },
+    "classification": {
+      "type": "string",
+      "enum": ["public", "internal", "confidential", "restricted"]
+    },
+    "allowed_roles": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "allowed_users": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source_system": { "type": "string" },
+    "permission_source": { "type": "string" }
+  }
+}

@@ -1,22 +1,22 @@
 # 🧠 AndyAI RAG Ingestion Factory
 
-> **A canonical AndyAI document-ingestion factory for large PDF libraries.**  
-> Turn raw PDFs into **structured chunks, searchable indexes, retrieval evidence, and citable answers**.
+> **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v4.0.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v4.1.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
-  <img alt="focus" src="https://img.shields.io/badge/focus-evidence--first-purple">
-  <img alt="citations" src="https://img.shields.io/badge/citations-page--level-orange">
-  <img alt="governance" src="https://img.shields.io/badge/governance-human--verified-red">
+  <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
+  <img alt="evidence" src="https://img.shields.io/badge/evidence-first-orange">
+  <img alt="permissions" src="https://img.shields.io/badge/permissions-aware-red">
+  <img alt="governance" src="https://img.shields.io/badge/governance-human--verified-green">
 </p>
 
 ---
 
 ## 🧭 What This Repo Is
 
-**AndyAI RAG Ingestion Factory** is a production-oriented repository for building a serious RAG ingestion pipeline for **very large PDF collections**.
+**AndyAI RAG Ingestion Factory** is a production-oriented foundation for building reliable RAG systems over very large document libraries.
 
 It is designed for scenarios such as:
 
@@ -26,7 +26,13 @@ It is designed for scenarios such as:
 - **hundreds of thousands of searchable chunks**
 - **page-level citations**
 - **hybrid retrieval**
-- **human-verifiable evidence**
+- **permission-aware access**
+- **operator evidence reports**
+- **sovereign enterprise deployment paths**
+
+This is not a PDF chatbot.
+
+This is a **document intelligence factory**.
 
 ---
 
@@ -34,44 +40,30 @@ It is designed for scenarios such as:
 
 Raw documents are **not knowledge**.
 
-They become useful only after they pass through a governed ingestion factory:
+They become usable knowledge only after they pass through a governed factory:
 
 ```text
-PDF → Register → Parse → Normalize → Structure → Chunk → Embed → Index → Validate → Retrieve → Cite
+PDF → Register → Parse → Normalize → Structure → Chunk → Embed → Index → Retrieve → Cite → Audit
 ```
 
-### Canonical Formula
+### Core Formula
 
 ```text
-Raw file enters.
-Factory controls it.
-Chunks become evidence.
-Indexes become memory.
-Retrieval returns proof.
-Human keeps authority.
+Parse carefully.
+Chunk intelligently.
+Index traceably.
+Retrieve with permissions.
+Rerank evidence.
+Cite always.
+Audit everything.
 ```
 
-### Canonical Slogan
+### Public Line
 
 ```text
-No ingestion discipline, no RAG truth.
+We do not just answer.
+We show why the answer deserves attention.
 ```
-
----
-
-## 🎨 AndyAI Visual Canon
-
-This repo follows the **AndyAI Visual Canon**:
-
-- 🔵 **Blue** = registry / source / metadata
-- 🟣 **Purple** = parser / OCR / structure
-- 🟠 **Orange** = chunking / embedding / index
-- 🟢 **Green** = retrieval / evidence / validation
-- 🔴 **Red** = governance / risk / failure
-
-See full standard here:
-
-- [`docs/09-visual/ANDYAI_VISUAL_CANON.md`](docs/09-visual/ANDYAI_VISUAL_CANON.md)
 
 ---
 
@@ -79,21 +71,19 @@ See full standard here:
 
 ```mermaid
 flowchart LR
-  A[📄 PDF Library]:::blue --> B[🧾 Document Registry]:::blue
-  B --> C[⚙️ Ingestion Orchestrator]:::purple
-  C --> D[📥 Parser Layer]:::purple
-  C --> E[🔍 OCR Layer]:::purple
-  D --> F[🧩 Structured Elements]:::purple
-  E --> F
-  F --> G[✂️ Chunking Layer]:::orange
-  G --> H[🧠 Embedding Layer]:::orange
-  G --> I[🔎 Keyword Index]:::orange
-  H --> J[📦 Vector Index]:::orange
-  J --> K[🔀 Hybrid Retrieval]:::green
-  I --> K
-  K --> L[📌 Citation Pack]:::green
-  L --> M[✅ Answer Context]:::green
-  M --> N[🛡️ Governance / Human Review]:::red
+  A[📄 PDF / TXT Library]:::blue --> B[🧾 Document Registry]:::blue
+  B --> C[📥 Parser Adapter]:::purple
+  C --> D[✂️ Page-Aware Chunker]:::orange
+  D --> E[🗄️ PostgreSQL Metadata]:::blue
+  D --> F[📦 Qdrant / Vector Index]:::orange
+  D --> G[🔎 Keyword Index]:::orange
+  F --> H[🔀 Hybrid Retrieval]:::green
+  G --> H
+  H --> I[🔐 Permission Filter]:::red
+  I --> J[📌 Evidence Pack]:::green
+  J --> K[🧠 Context Board]:::purple
+  K --> L[📝 Evidence-to-Draft]:::orange
+  L --> M[🛡️ Governance Audit]:::red
 
   classDef blue fill:#DCEEFF,stroke:#2F6FDB,stroke-width:2px,color:#111;
   classDef purple fill:#EADFFF,stroke:#7B3FE4,stroke-width:2px,color:#111;
@@ -104,194 +94,167 @@ flowchart LR
 
 ---
 
-## 🧱 Factory Layers
+## 🚀 Current Version — v4.1.0
 
-```mermaid
-flowchart TB
-  L0[L0 Source Vault]:::blue --> L1[L1 Document Registry]:::blue
-  L1 --> L2[L2 Parser Layer]:::purple
-  L2 --> L3[L3 OCR Layer]:::purple
-  L3 --> L4[L4 Structure Layer]:::purple
-  L4 --> L5[L5 Chunking Layer]:::orange
-  L5 --> L6[L6 Embedding Layer]:::orange
-  L6 --> L7[L7 Hybrid Index Layer]:::orange
-  L7 --> L8[L8 Retrieval Layer]:::green
-  L8 --> L9[L9 Evidence Layer]:::green
-  L9 --> L10[L10 Governance Layer]:::red
+**Sovereign Permission & Context Board Release**
 
-  classDef blue fill:#DCEEFF,stroke:#2F6FDB,stroke-width:2px,color:#111;
-  classDef purple fill:#EADFFF,stroke:#7B3FE4,stroke-width:2px,color:#111;
-  classDef orange fill:#FFE5C2,stroke:#E68A00,stroke-width:2px,color:#111;
-  classDef green fill:#DDF6E5,stroke:#1F9D55,stroke-width:2px,color:#111;
-  classDef red fill:#FFD9D9,stroke:#D64545,stroke-width:2px,color:#111;
-```
+v4.1.0 adds:
+
+- sovereign enterprise standard
+- permission-aware retrieval model
+- access policy schema
+- Context Board layer
+- Evidence-to-Draft layer
+- enterprise agent blueprint
+- security modules
+- README full rewrite
 
 ---
 
-## 📥 Ingestion Pipeline
+## 🔐 Permission-Aware Retrieval
 
-An **ingestion pipeline** is the controlled production line that transforms raw files into searchable and citable knowledge blocks.
-
-```mermaid
-flowchart LR
-  A[📄 Raw PDF]:::blue --> B[🧾 Register]:::blue
-  B --> C[📥 Parse]:::purple
-  C --> D[🧼 Normalize]:::purple
-  D --> E[🧩 Structure]:::purple
-  E --> F[✂️ Chunk]:::orange
-  F --> G[🧠 Embed]:::orange
-  G --> H[📦 Index]:::orange
-  H --> I[🧪 Validate]:::green
-  I --> J[📌 Cite]:::green
-
-  classDef blue fill:#DCEEFF,stroke:#2F6FDB,stroke-width:2px,color:#111;
-  classDef purple fill:#EADFFF,stroke:#7B3FE4,stroke-width:2px,color:#111;
-  classDef orange fill:#FFE5C2,stroke:#E68A00,stroke-width:2px,color:#111;
-  classDef green fill:#DDF6E5,stroke:#1F9D55,stroke-width:2px,color:#111;
-```
-
----
-
-## ✂️ Chunking Logic
-
-The current local MVP uses **page-aware chunking**.
-
-Default v1 settings:
-
-- `max_chars = 2400`
-- `overlap_chars = 250`
-
-Every chunk includes:
-
-- `chunk_id`
-- `document_id`
-- `file_name`
-- `page_start`
-- `page_end`
-- `section_title`
-- `chunk_index`
-- `text`
-- `text_hash`
-- `created_at`
-
----
-
-## 🔎 Retrieval and Evidence
-
-```mermaid
-flowchart LR
-  Q[❓ User Query]:::blue --> R1[🔎 Keyword Search]:::orange
-  Q --> R2[🧠 Vector Search]:::orange
-  R1 --> M[🔀 Merge Candidates]:::green
-  R2 --> M
-  M --> C[📌 Citation Pack]:::green
-  C --> A[✅ Answer Context]:::green
-  A --> H[🛡️ Human Review / Governance]:::red
-
-  classDef blue fill:#DCEEFF,stroke:#2F6FDB,stroke-width:2px,color:#111;
-  classDef orange fill:#FFE5C2,stroke:#E68A00,stroke-width:2px,color:#111;
-  classDef green fill:#DDF6E5,stroke:#1F9D55,stroke-width:2px,color:#111;
-  classDef red fill:#FFD9D9,stroke:#D64545,stroke-width:2px,color:#111;
-```
-
-### Citation Rule
+A serious enterprise RAG system must not retrieve what the user is not allowed to see.
 
 ```text
-No citation pack, no trusted answer.
+No permission match, no retrieval.
+```
+
+Permission context:
+
+```text
+user_id
+tenant_id
+roles
+clearance_level
+```
+
+Chunk policy:
+
+```text
+tenant_id
+classification
+allowed_roles
+allowed_users
+source_system
+permission_source
 ```
 
 ---
 
-## 🧪 Local Demo
+## 🧠 Context Board
 
-Run the local verification pass:
+The Context Board is a structured workspace for evidence.
+
+It is not chat history.
+
+It contains:
+
+- query
+- selected citations
+- evidence items
+- approval status
+- operator notes
+- draft outputs
+- review history
+
+Formula:
+
+```text
+Retrieval finds fragments.
+Context Board organizes evidence.
+Human turns evidence into judgment.
+```
+
+---
+
+## 📝 Evidence-to-Draft
+
+The repo can now turn evidence packs into controlled Markdown drafts.
+
+Rule:
+
+```text
+Draft must cite evidence.
+No citation, no enterprise draft.
+```
+
+---
+
+## 🧪 Quick Commands
+
+Verify:
 
 ```bash
-cd ~/Documents/Projects/andyai-rag-ingestion-factory
 ./scripts/verify.sh
 ```
 
-Or install the CLI:
+Run ingestion:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -e .
-andyai-rag ingest examples/sample_documents/demo_document.txt --out examples/output
+PYTHONPATH=src python3 -m rag_ingestion_factory.cli.main ingest examples/sample_documents/demo_document.txt --out examples/output/text_run
 ```
 
-
----
-
-## 📄 PDF Parser Adapter
-
-v1.2.0 adds the first real PDF parser adapter.
+Run evidence demo:
 
 ```bash
-python3 -m pip install pymupdf
-PYTHONPATH=src python3 -m rag_ingestion_factory.cli.main ingest path/to/document.pdf --out examples/output/pdf_run
+PYTHONPATH=src python3 -m rag_ingestion_factory.cli.main evidence-demo examples/sample_documents/demo_document.txt "What does the ingestion pipeline prepare?"
 ```
 
-The adapter preserves page-level identity and feeds extracted pages into the same chunking, manifest, keyword index, and citation pipeline.
+Run operator console:
 
+```bash
+./scripts/run_operator_console_demo.sh
+```
+
+Run Context Board demo:
+
+```bash
+PYTHONPATH=src python3 -m rag_ingestion_factory.cli.main context-board-demo examples/sample_documents/demo_document.txt "What does the ingestion pipeline prepare?"
+```
+
+Run draft demo:
+
+```bash
+PYTHONPATH=src python3 -m rag_ingestion_factory.cli.main draft-demo examples/sample_documents/demo_document.txt "What does the ingestion pipeline prepare?"
+```
+
+Run permission demo:
+
+```bash
+PYTHONPATH=src python3 -m rag_ingestion_factory.cli.main permission-demo examples/sample_documents/demo_document.txt "What does the ingestion pipeline prepare?"
+```
 
 ---
 
-## 🗄️ PostgreSQL Metadata Layer
+## 🐳 Production Bridge
 
-v1.3.0 adds the canonical database design for the ingestion factory.
+Start local infrastructure:
 
-PostgreSQL becomes the **system memory** for:
-
-- documents
-- ingestion runs
-- chunks
-- citation events
-- index versions
-
-Migration file:
-
-```text
-db/migrations/001_metadata_schema.sql
+```bash
+docker compose up -d
 ```
 
-Canonical rule:
+Services:
 
 ```text
-Vector DB is search memory.
-PostgreSQL is system memory.
-Original file is source truth.
-Citation pack is evidence truth.
+Qdrant:     http://localhost:6333
+PostgreSQL: localhost:5432
 ```
-
 
 ---
 
-## 🌍 Public Repo Metadata
-
-**Repository positioning:**
+## 🧱 Layer Roadmap
 
 ```text
-Production-grade RAG ingestion factory for large PDF libraries:
-PDF parsing, page-aware chunking, PostgreSQL metadata, citations,
-and hybrid retrieval architecture.
-```
-
-**Public canon:**
-
-```text
-Reliable RAG begins before retrieval.
-Most RAG demos start with a chat box.
-This repo starts with document control.
-```
-
-**Suggested GitHub topics:**
-
-```text
-rag · retrieval-augmented-generation · pdf-processing · document-ai
-ingestion-pipeline · vector-search · qdrant · postgresql
-metadata · citations · hybrid-search · llm · ai-engineering
-knowledge-base · andyai
+v1.x  Core ingestion, parser, metadata
+v2.0  Governed RAG ingestion architecture
+v3.0  Production bridge with Docker, API, batch jobs
+v4.0  Operator Evidence Console
+v4.1  Sovereign permissions + Context Board
+v4.2  Qdrant payload permission filters
+v4.3  Context Board persistence
+v4.4  Evidence-to-Draft templates
+v5.0  Sovereign Enterprise RAG Factory
 ```
 
 ---
@@ -300,275 +263,46 @@ knowledge-base · andyai
 
 ```text
 docs/
-  00-canon/
-  01-architecture/
-  02-ingestion/
-  03-retrieval/
-  04-governance/
-  05-ops/
-  06-roadmap/
-  07-cli/
-  08-examples/
-  09-visual/
-examples/
-src/
+  23-sovereign/
+  24-security/
+  25-context-board/
+  26-drafting/
+  27-agents/
+schemas/
+src/rag_ingestion_factory/
+  adapters/
+  api/
+  config/
+  context_board/
+  core/
+  drafting/
+  embeddings/
+  evidence/
+  governance/
+  indexes/
+  jobs/
+  operator/
+  retrieval/
+  security/
 tests/
 scripts/
-schemas/
-.github/workflows/
+docker-compose.yml
 ```
 
 ---
 
 ## 🛡️ Governance Rules
 
-- never lose **document identity**
-- never lose **page identity**
-- never lose **chunk identity**
-- never skip **manifests**
-- never trust answers without **citations**
-- never hide ingestion failure
-- never confuse extracted text with verified truth
+- never lose document identity
+- never lose page identity
+- never lose chunk identity
+- never skip manifests
+- never retrieve across unauthorized permission boundaries
+- never draft without citations
+- never hide weak evidence
+- never present generated text as verified truth
 
 ---
-
-## 🗺️ Roadmap
-
-- **v1.1.1** — full core MVP + visual canon rescue
-- **v1.2.0** — real PDF parser adapter ✅
-- **v1.3.0** — PostgreSQL metadata layer ✅
-- **v1.4.0** — Qdrant vector index adapter
-- **v1.5.0** — hybrid retrieval engine
-- **v1.6.0** — reranker + evidence pack
-- **v2.0.0** — production governance layer
-
----
-
-## 📚 Glossary
-
-| Term | Meaning |
-|---|---|
-| **RAG** | Retrieval-Augmented Generation — answering with retrieved evidence |
-| **Ingestion Pipeline** | Controlled document processing line |
-| **Chunk** | Searchable block of document text |
-| **Embedding** | Vector representation of meaning |
-| **Hybrid Retrieval** | Vector + keyword + metadata search |
-| **Citation Pack** | Evidence wrapper for retrieved chunks |
-| **Manifest** | Run record of the ingestion process |
-
----
-
----
-
-## 🤝 Contributing
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md).
-
-Good contributions improve:
-
-- parser adapters
-- metadata discipline
-- chunk quality
-- vector index adapters
-- hybrid retrieval
-- citation validation
-- governance
-
----
-
-## 🔐 Security
-
-See [`SECURITY.md`](SECURITY.md).
-
-Canonical rule:
-
-```text
-No permission boundary, no production RAG.
-```
-
-
-
----
-
-## 📦 v1.4.0 — Qdrant Vector Index Adapter
-
-This repo now has a vector-index layer.
-
-The current implementation includes:
-
-- deterministic local embeddings for verification
-- in-memory vector index
-- Qdrant adapter contract
-- future production payload design
-
-Canonical rule:
-
-```text
-Qdrant is search memory.
-PostgreSQL is system memory.
-Original PDF is source truth.
-Citation pack is evidence truth.
-```
-
-
-
----
-
-## 🔀 v1.5.0 — Hybrid Retrieval Engine
-
-The repo now includes a local hybrid retrieval engine.
-
-It combines:
-
-- keyword search
-- vector search
-- candidate merging
-- traceable metadata
-
-Canonical rule:
-
-```text
-Vector finds meaning.
-Keyword finds exactness.
-Metadata proves identity.
-Citation earns trust.
-```
-
-
-
----
-
-## 📌 v1.6.0 — Reranker + Evidence Pack
-
-The repo now includes an evidence layer.
-
-Retrieval candidates can be converted into:
-
-- ranked evidence
-- answer context
-- citation dictionaries
-- page-level source references
-
-Canonical rule:
-
-```text
-Candidate is not evidence.
-Evidence is candidate + source + page + chunk + score + reason.
-```
-
-
-
----
-
-## 🛡️ v2.0.0 — Governed RAG Ingestion Factory
-
-v2.0.0 is the first complete architecture release.
-
-The repo now includes:
-
-- real PDF parser adapter
-- page-aware chunking
-- PostgreSQL metadata schema
-- vector index layer
-- hybrid retrieval engine
-- reranker
-- evidence pack
-- governance audit log
-- public repo polish
-
-Final v2 formula:
-
-```text
-Parse carefully.
-Chunk intelligently.
-Index traceably.
-Retrieve hybridly.
-Rerank evidence.
-Cite always.
-Audit everything.
-```
-
-Production rule:
-
-```text
-No audit trail, no production answer.
-```
-
-
-
----
-
-## 🚀 v3.0.0 — Production Bridge Release
-
-v3.0.0 turns the repo into a production-bridge artifact.
-
-It adds:
-
-- Docker Compose stack for Qdrant and PostgreSQL
-- real Qdrant adapter implementation path
-- config/settings layer
-- local deterministic embedding provider
-- batch ingestion job
-- FastAPI-compatible API foundation
-- operator quickstart
-- production bridge docs
-
-Production bridge formula:
-
-```text
-Local proof becomes service shape.
-Service shape becomes deployment path.
-Deployment path becomes production system.
-```
-
-Operator command:
-
-```bash
-docker compose up -d
-./scripts/verify.sh
-```
-
-
-
----
-
-## 🧠 v4.0.0 — Operator Evidence Console
-
-v4.0.0 makes the factory visible to operators, reviewers, and future collaborators.
-
-It adds:
-
-- operator evidence console
-- readiness score
-- JSON report
-- HTML report
-- release evidence bundle
-- one-command demo script
-- API endpoint for operator demo
-
-One-command demo:
-
-```bash
-./scripts/run_operator_console_demo.sh
-```
-
-v4 formula:
-
-```text
-Run the factory.
-Collect the proof.
-Score readiness.
-Show the evidence.
-Invite review.
-```
-
-Public line:
-
-```text
-We do not just answer.
-We show why the answer deserves attention.
-```
-
 
 ## 👨‍💻 Founder
 

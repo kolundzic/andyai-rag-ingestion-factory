@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ContextBoard",
+  "type": "object",
+  "required": ["board_id", "query", "status", "evidence_items"],
+  "properties": {
+    "board_id": { "type": "string" },
+    "query": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "under_review", "approved", "rejected", "archived"]
+    },
+    "operator_notes": { "type": "string" },
+    "evidence_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["chunk_id", "file_name", "page_start", "page_end"],
+        "properties": {
+          "chunk_id": { "type": "string" },
+          "file_name": { "type": "string" },
+          "page_start": { "type": "integer" },
+          "page_end": { "type": "integer" },
+          "section_title": { "type": "string" },
+          "score": { "type": "number" }
+        }
+      }
+    }
+  }
+}

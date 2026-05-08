@@ -4,49 +4,79 @@ set -euo pipefail
 export PYTHONPATH="src${PYTHONPATH:+:$PYTHONPATH}"
 
 echo "━━━━━━━━━━━━━━━━━━━━"
-echo "🧪 VERIFY v4.0.0 — Operator Evidence Console"
+echo "🧪 VERIFY v4.1.0 — Sovereign Permission & Context Board"
 echo "━━━━━━━━━━━━━━━━━━━━"
 
 python3 -m compileall src >/dev/null
 
 python3 - <<'PY'
-from pathlib import Path
-from rag_ingestion_factory.operator.console import run_operator_console_demo
+from rag_ingestion_factory.core.registry import register_document
+from rag_ingestion_factory.adapters.router import parse_document
+from rag_ingestion_factory.core.chunker import chunk_page_blocks
+from rag_ingestion_factory.embeddings.local import LocalDeterministicEmbeddingProvider
+from rag_ingestion_factory.indexes.memory_vector_index import MemoryVectorIndex
+from rag_ingestion_factory.retrieval.hybrid import HybridRetriever
+from rag_ingestion_factory.retrieval.permission_aware import filter_candidates_by_permission
+from rag_ingestion_factory.evidence.pack import build_evidence_pack
+from rag_ingestion_factory.context_board.board import context_board_from_evidence_pack
+from rag_ingestion_factory.drafting.from_evidence import draft_markdown_from_evidence
+from rag_ingestion_factory.security.access_policy import AccessPolicy, PermissionContext
 
-report = run_operator_console_demo(
-    "examples/sample_documents/demo_document.txt",
-    "What does the ingestion pipeline prepare?",
-    "examples/output/operator_console_verify",
+doc = register_document("examples/sample_documents/demo_document.txt")
+pages = parse_document(doc)
+chunks = chunk_page_blocks(pages)
+
+embedder = LocalDeterministicEmbeddingProvider()
+idx = MemoryVectorIndex()
+for chunk in chunks:
+    idx.upsert_chunk(chunk, embedder.embed(chunk.text))
+
+query = "What does the ingestion pipeline prepare?"
+results = HybridRetriever(chunks, idx).search(query, limit=5)
+assert results
+
+policies = {
+    r.chunk_id: AccessPolicy(
+        tenant_id="default",
+        classification="internal",
+        allowed_roles=("reader",),
+    )
+    for r in results
+}
+context = PermissionContext(
+    user_id="demo-user",
+    tenant_id="default",
+    roles=("reader",),
+    clearance_level="internal",
 )
+allowed = filter_candidates_by_permission(results, policies, context)
+assert allowed
 
-assert report["readiness"]["score"] >= 90
-assert report["evidence_pack"]["citations"]
-assert report["audit_summary"]["failures"] == 0
+pack = build_evidence_pack(query, allowed, limit=3)
+assert pack["citations"]
 
-outputs = report["outputs"]
-for path in outputs.values():
-    assert Path(path).exists(), path
+board = context_board_from_evidence_pack(pack)
+assert board.evidence_items
 
-print("🟢 Operator console report generated")
-print(f"🟢 Readiness score: {report['readiness']['score']}")
-print(f"🟢 Readiness level: {report['readiness']['level']}")
+draft = draft_markdown_from_evidence(pack)
+assert "## Citations" in draft
+
+print("🟢 Permission-aware retrieval passed")
+print(f"🟢 Context Board: {board.board_id}")
+print("🟢 Evidence-to-Draft passed")
 PY
 
-python3 - <<'PY'
-import rag_ingestion_factory.api.app as app_module
-assert hasattr(app_module, "OperatorDemoRequest")
-print("🟢 API operator endpoint import passed")
-PY
-
-test -f docs/20-operator-console/OPERATOR_CONSOLE_v4_0.md
-test -f docs/21-evidence-bundle/RELEASE_EVIDENCE_BUNDLE_v4_0.md
-test -f docs/22-demo/DEMO_SCRIPT_v4_0.md
-test -f docs/releases/RELEASE_NOTES_v4.0.0.md
-test -f src/rag_ingestion_factory/operator/console.py
-test -f src/rag_ingestion_factory/operator/readiness.py
-test -f src/rag_ingestion_factory/reports/json_report.py
-test -f src/rag_ingestion_factory/reports/html_report.py
-test -f scripts/run_operator_console_demo.sh
+test -f docs/23-sovereign/SOVEREIGN_ENTERPRISE_STANDARD_v4_1.md
+test -f docs/24-security/PERMISSION_AWARE_RETRIEVAL_v4_1.md
+test -f docs/25-context-board/CONTEXT_BOARD_STANDARD_v4_1.md
+test -f docs/26-drafting/EVIDENCE_TO_DRAFT_STANDARD_v4_1.md
+test -f docs/27-agents/ENTERPRISE_AGENT_LAYER_v4_1.md
+test -f schemas/access_policy.schema.json
+test -f schemas/context_board.schema.json
+test -f src/rag_ingestion_factory/security/access_policy.py
+test -f src/rag_ingestion_factory/retrieval/permission_aware.py
+test -f src/rag_ingestion_factory/context_board/board.py
+test -f src/rag_ingestion_factory/drafting/from_evidence.py
 
 if command -v pytest >/dev/null 2>&1; then
   PYTHONPATH=src pytest

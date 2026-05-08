@@ -3,7 +3,7 @@ set -euo pipefail
 
 OWNER="${GITHUB_OWNER:-kolundzic}"
 REPO_NAME="${REPO_NAME:-andyai-rag-ingestion-factory}"
-DESCRIPTION="Production-grade RAG ingestion factory for large PDF libraries with Qdrant, PostgreSQL metadata, hybrid retrieval, evidence packs, and operator console."
+DESCRIPTION="Evidence-governed RAG ingestion factory for large PDF libraries with Qdrant, PostgreSQL metadata, permission-aware retrieval, Context Board, and sovereign enterprise architecture."
 
 echo "━━━━━━━━━━━━━━━━━━━━"
 echo "🌍 Applying GitHub metadata"
@@ -23,6 +23,8 @@ gh repo edit "$OWNER/$REPO_NAME" \
 
 gh repo edit "$OWNER/$REPO_NAME" \
   --add-topic rag \
+  --add-topic sovereign-ai \
+  --add-topic enterprise-ai \
   --add-topic retrieval-augmented-generation \
   --add-topic pdf-processing \
   --add-topic document-ai \
@@ -30,15 +32,12 @@ gh repo edit "$OWNER/$REPO_NAME" \
   --add-topic vector-search \
   --add-topic qdrant \
   --add-topic postgresql \
-  --add-topic metadata \
-  --add-topic citations \
+  --add-topic permission-aware \
+  --add-topic context-board \
   --add-topic evidence-pack \
-  --add-topic operator-console \
   --add-topic hybrid-search \
   --add-topic fastapi \
-  --add-topic llm \
   --add-topic ai-engineering \
-  --add-topic knowledge-base \
   --add-topic andyai || true
 
 echo "🟢 GitHub metadata pass completed."

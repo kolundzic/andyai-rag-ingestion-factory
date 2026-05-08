@@ -16,6 +16,10 @@ from rag_ingestion_factory.indexes.memory_vector_index import MemoryVectorIndex
 from rag_ingestion_factory.jobs.batch_ingest import batch_ingest
 from rag_ingestion_factory.operator.console import run_operator_console_demo
 from rag_ingestion_factory.retrieval.hybrid import HybridRetriever
+from rag_ingestion_factory.retrieval.permission_aware import filter_candidates_by_permission
+from rag_ingestion_factory.security.access_policy import AccessPolicy, PermissionContext
+from rag_ingestion_factory.drafting.from_evidence import draft_markdown_from_evidence
+from rag_ingestion_factory.context_board.board import context_board_from_evidence_pack, context_board_to_dict
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -44,6 +48,22 @@ def build_parser() -> argparse.ArgumentParser:
     operator.add_argument("input", help="Input .txt or .pdf file")
     operator.add_argument("query", help="Search query")
     operator.add_argument("--out", default="examples/output/operator_console", help="Output directory")
+
+    board = sub.add_parser("context-board-demo", help="Build a Context Board from an evidence demo")
+    board.add_argument("input", help="Input .txt or .pdf file")
+    board.add_argument("query", help="Search query")
+    board.add_argument("--limit", type=int, default=3)
+
+    draft = sub.add_parser("draft-demo", help="Build a Markdown draft from evidence")
+    draft.add_argument("input", help="Input .txt or .pdf file")
+    draft.add_argument("query", help="Search query")
+    draft.add_argument("--limit", type=int, default=3)
+
+    perm = sub.add_parser("permission-demo", help="Run permission-aware retrieval demo")
+    perm.add_argument("input", help="Input .txt or .pdf file")
+    perm.add_argument("query", help="Search query")
+    perm.add_argument("--tenant", default="default")
+    perm.add_argument("--role", default="reader")
 
     return parser
 
@@ -92,6 +112,30 @@ def main() -> None:
     if args.command == "operator-demo":
         report = run_operator_console_demo(args.input, args.query, args.out)
         print(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True))
+        return
+
+    if args.command == "context-board-demo":
+        results = _build_demo_retriever(args.input).search(args.query, limit=args.limit)
+        pack = build_evidence_pack(args.query, results, limit=args.limit)
+        board = context_board_from_evidence_pack(pack)
+        print(json.dumps(context_board_to_dict(board), ensure_ascii=False, indent=2, sort_keys=True))
+        return
+
+    if args.command == "draft-demo":
+        results = _build_demo_retriever(args.input).search(args.query, limit=args.limit)
+        pack = build_evidence_pack(args.query, results, limit=args.limit)
+        print(draft_markdown_from_evidence(pack, title="AndyAI Evidence-Based Draft"))
+        return
+
+    if args.command == "permission-demo":
+        results = _build_demo_retriever(args.input).search(args.query, limit=5)
+        policies = {
+            r.chunk_id: AccessPolicy(tenant_id=args.tenant, classification="internal", allowed_roles=(args.role,))
+            for r in results
+        }
+        context = PermissionContext(user_id="demo-user", tenant_id=args.tenant, roles=(args.role,), clearance_level="internal")
+        allowed = filter_candidates_by_permission(results, policies, context)
+        print(json.dumps([r.__dict__ for r in allowed], ensure_ascii=False, indent=2, sort_keys=True))
         return
 
     parser.error(f"Unknown command: {args.command}")
