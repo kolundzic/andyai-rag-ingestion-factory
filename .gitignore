@@ -8,3 +8,7 @@ data/processed/
 storage/
 *.sqlite
 *.log
+
+# Generated ingestion outputs
+examples/output/*
+!examples/output/.gitkeep

@@ -387,6 +387,30 @@ No permission boundary, no production RAG.
 ```
 
 
+
+---
+
+## 📦 v1.4.0 — Qdrant Vector Index Adapter
+
+This repo now has a vector-index layer.
+
+The current implementation includes:
+
+- deterministic local embeddings for verification
+- in-memory vector index
+- Qdrant adapter contract
+- future production payload design
+
+Canonical rule:
+
+```text
+Qdrant is search memory.
+PostgreSQL is system memory.
+Original PDF is source truth.
+Citation pack is evidence truth.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
