@@ -1776,3 +1776,10 @@ Adds publish job model, private/public/hybrid publishing plan, audit snapshot mo
 ## 💳 v29.0.0 — WikiPress Billing & Subscription Readiness
 
 Adds plan model, usage limits, billing abstraction, upgrade trigger model, and subscription readiness utilities.
+
+
+---
+
+## 🧠 v30.0.0 — KnowledgeFactory / WikiPress Launch Kernel
+
+Locks the repeatable product launch system connecting KnowledgeBlock Factory, LLM Wiki, AdAstraNova showcase, WikiPress offer, workspaces, publishing pipeline, and billing readiness.

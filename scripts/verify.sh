@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-./scripts/verify_wikipress_billing.sh
+./scripts/verify_launch_kernel.sh
 echo "🟢 VERIFY PASSED"

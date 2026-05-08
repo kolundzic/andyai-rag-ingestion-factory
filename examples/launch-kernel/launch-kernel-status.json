@@ -1,0 +1,5 @@
+{
+  "version": "v30.0.0",
+  "status": "knowledgefactory-wikipress-launch-kernel-ready",
+  "modules": ["KnowledgeBlock Factory", "LLM Wiki Bridge", "AdAstraNova Showcase", "WikiPress Offer", "Workspace Model", "Publishing Pipeline", "Billing Readiness"]
+}
