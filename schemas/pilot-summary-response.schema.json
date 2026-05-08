@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PilotSummaryResponse",
+  "type": "object",
+  "required": ["ok", "summary"],
+  "properties": {
+    "ok": {"type": "boolean"},
+    "summary": {"type": "object"}
+  }
+}

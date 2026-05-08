@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PilotListResponse",
+  "type": "object",
+  "required": ["ok", "items"],
+  "properties": {
+    "ok": {"type": "boolean"},
+    "items": {"type": "array"}
+  }
+}

@@ -1499,3 +1499,22 @@ Andrija (Andy) Kolundzic
 CEO and Owner
 
 📍 **Tokyo, Japan**
+
+
+---
+
+## 🛣️ v17.2.0 — Pilot Create/List API Route Scaffolding
+
+Adds API traffic lanes for pilot requests: create, list, and summary.
+
+```text
+POST /api/pilot-request/create
+GET  /api/pilot-request/list
+GET  /api/pilot-request/summary
+```
+
+Canonical rule:
+
+```text
+Runtime wiring connects the bridge. API routes define the traffic lanes.
+```

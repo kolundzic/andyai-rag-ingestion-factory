@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "mode": "mock-write-guarded",
+  "version": "v17.2.0",
+  "data": {
+    "id": "pilot-created-demo-001",
+    "review_status": "new",
+    "next_action": "assign reviewer"
+  }
+}

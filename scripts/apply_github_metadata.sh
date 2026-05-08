@@ -2,7 +2,7 @@
 set -euo pipefail
 OWNER="${GITHUB_OWNER:-kolundzic}"
 REPO_NAME="${REPO_NAME:-andyai-rag-ingestion-factory}"
-DESCRIPTION="AndyAI Knowledge Factory: Supabase client runtime wiring with safe mock fallback for pilot request persistence."
+DESCRIPTION="AndyAI Knowledge Factory: governed pilot intake, Supabase persistence, admin review, audit, proposals, follow-up, and command center."
 
 if command -v gh >/dev/null 2>&1; then
   gh repo edit "$OWNER/$REPO_NAME" \
@@ -18,8 +18,6 @@ if command -v gh >/dev/null 2>&1; then
     -f names[]=rag \
     -f names[]=knowledge-factory \
     -f names[]=supabase \
-    -f names[]=runtime-wiring \
-    -f names[]=safe-fallback \
     -f names[]=pilot-request \
     -f names[]=pilot-admin \
     -f names[]=operator-console \
@@ -27,6 +25,8 @@ if command -v gh >/dev/null 2>&1; then
     -f names[]=human-in-the-loop \
     -f names[]=permission-aware \
     -f names[]=enterprise-ai \
-    -f names[]=rls || true
+    -f names[]=command-center \
+    -f names[]=production-readiness \
+    -f names[]=business-intake || true
 fi
 echo "🟢 GitHub metadata pass completed."
