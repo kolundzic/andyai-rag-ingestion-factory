@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WikiPressProductBridge",
+  "type": "object",
+  "required": ["version", "engine", "memory_layer", "showcase", "product"],
+  "properties": {
+    "version": {"type": "string"},
+    "engine": {"type": "string"},
+    "memory_layer": {"type": "string"},
+    "showcase": {"type": "string"},
+    "product": {"type": "string"}
+  }
+}
