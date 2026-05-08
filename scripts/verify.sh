@@ -3,50 +3,61 @@ set -euo pipefail
 export PYTHONPATH="src${PYTHONPATH:+:$PYTHONPATH}"
 
 echo "━━━━━━━━━━━━━━━━━━━━"
-echo "🧪 VERIFY v14.0.0 — Visual Atlas & Graph Explorer"
+echo "🧪 VERIFY v15.0.0 — Knowledge Workflows & Agentic Compilation"
 echo "━━━━━━━━━━━━━━━━━━━━"
 
 python3 -m compileall src >/dev/null
 
 python3 - <<'PY'
-from rag_ingestion_factory.visual_atlas.status import build_v14_visual_atlas_status
-from rag_ingestion_factory.visual_atlas.builder import build_demo_atlas_view, build_demo_graph_explorer_session
+from rag_ingestion_factory.workflows.status import build_v15_workflow_status
+from rag_ingestion_factory.workflows.engine import build_wiki_compile_workflow, create_review_item_for_workflow, create_export_bundle
+from rag_ingestion_factory.agents.agentic_compiler import build_agentic_compiler_task, FORBIDDEN_COMPILER_ACTIONS
 
-status = build_v14_visual_atlas_status()
-atlas = build_demo_atlas_view()
-session = build_demo_graph_explorer_session()
+status = build_v15_workflow_status()
+workflow = build_wiki_compile_workflow("evpack_demo_001")
+review = create_review_item_for_workflow(workflow, "wiki_page", "wiki_permission_aware_retrieval")
+export = create_export_bundle(review)
+task = build_agentic_compiler_task("task_demo_001")
 
 assert status["site"] == "knowledgefactory.andyai.ai"
-assert "topic_map" in status["views"]
-assert atlas.view_type == "topic_map"
-assert "claim_permissions_before_context" in atlas.visible_node_ids
-assert session.view_type == "claim_network"
+assert "approve" in status["workflow"]
+assert workflow.status == "waiting_for_review"
+assert review.status == "pending"
+assert export.evidence_refs == ("evpack_demo_001",)
+assert task.requires_human_approval
+assert "bypass_permissions" in FORBIDDEN_COMPILER_ACTIONS
 
-print("🟢 v14 status verified")
-print("🟢 demo atlas builder verified")
-print("🟢 graph explorer session verified")
+print("🟢 v15 status verified")
+print("🟢 workflow engine verified")
+print("🟢 agentic compiler contract verified")
 PY
 
-test -f docs/56-visual-atlas/V14_VISUAL_ATLAS_GRAPH_EXPLORER.md
-test -f docs/56-visual-atlas/VISUAL_ATLAS_STANDARD.md
-test -f docs/56-visual-atlas/GRAPH_EXPLORER_UI_SPEC.md
-test -f docs/56-visual-atlas/ATLAS_VIEW_SCHEMA.md
-test -f docs/56-visual-atlas/CONTRADICTION_MAP_STANDARD.md
-test -f docs/56-visual-atlas/APPROVAL_STATUS_OVERLAY.md
-test -f docs/releases/RELEASE_NOTES_v14.0.0.md
-test -f schemas/atlas-view.schema.json
-test -f schemas/graph-layout.schema.json
-test -f examples/visual-atlas/sample-atlas.json
-test -f examples/visual-atlas/sample-graph-explorer-session.json
-test -f src/rag_ingestion_factory/visual_atlas/models.py
-test -f src/rag_ingestion_factory/visual_atlas/builder.py
-test -f src/rag_ingestion_factory/visual_atlas/status.py
-test -f apps/knowledgefactory-web/app/atlas/page.tsx
-test -f apps/knowledgefactory-web/app/graph-explorer/page.tsx
-test -f apps/knowledgefactory-web/app/api/atlas/demo/route.ts
-test -f apps/knowledgefactory-web/app/api/graph-explorer/demo/route.ts
-test -f scripts/print_v14_visual_atlas_status.sh
-test -f scripts/generate_v14_sample_atlas.sh
+test -f docs/57-knowledge-workflows/V15_KNOWLEDGE_WORKFLOWS_AGENTIC_COMPILATION.md
+test -f docs/57-knowledge-workflows/KNOWLEDGE_WORKFLOW_ENGINE.md
+test -f docs/57-knowledge-workflows/AGENTIC_COMPILER_CONTRACT.md
+test -f docs/57-knowledge-workflows/REVIEW_QUEUE_STANDARD.md
+test -f docs/57-knowledge-workflows/EXPORT_BUNDLE_STANDARD.md
+test -f docs/57-knowledge-workflows/REUSE_POLICY.md
+test -f docs/57-knowledge-workflows/WORKFLOW_AGENT_MAP.md
+test -f docs/releases/RELEASE_NOTES_v15.0.0.md
+test -f schemas/workflow-step.schema.json
+test -f schemas/workflow-run.schema.json
+test -f schemas/review-item.schema.json
+test -f schemas/export-bundle.schema.json
+test -f schemas/agentic-compiler-task.schema.json
+test -f examples/knowledge-workflows/sample-workflow-run.json
+test -f examples/knowledge-workflows/sample-review-item.json
+test -f examples/knowledge-workflows/sample-export-bundle.json
+test -f src/rag_ingestion_factory/workflows/models.py
+test -f src/rag_ingestion_factory/workflows/engine.py
+test -f src/rag_ingestion_factory/workflows/status.py
+test -f src/rag_ingestion_factory/agents/agentic_compiler.py
+test -f apps/knowledgefactory-web/app/workflows/page.tsx
+test -f apps/knowledgefactory-web/app/agentic-compiler/page.tsx
+test -f apps/knowledgefactory-web/app/api/workflows/demo/route.ts
+test -f apps/knowledgefactory-web/app/api/agentic-compiler/demo/route.ts
+test -f scripts/print_v15_workflow_status.sh
+test -f scripts/generate_v15_sample_workflow.sh
 
 if command -v pytest >/dev/null 2>&1; then
   PYTHONPATH=src pytest

@@ -1,0 +1,28 @@
+{
+  "workflow_run_id": "wf_demo_001",
+  "workflow_type": "wiki_compile",
+  "status": "waiting_for_review",
+  "steps": [
+    {
+      "step_id": "step_compile_001",
+      "step_type": "compile",
+      "status": "running",
+      "evidence_refs": ["evpack_demo_001"],
+      "human_required": false
+    },
+    {
+      "step_id": "step_review_001",
+      "step_type": "review",
+      "status": "waiting_for_review",
+      "evidence_refs": ["evpack_demo_001"],
+      "human_required": true
+    },
+    {
+      "step_id": "step_approve_001",
+      "step_type": "approve",
+      "status": "queued",
+      "evidence_refs": ["evpack_demo_001"],
+      "human_required": true
+    }
+  ]
+}

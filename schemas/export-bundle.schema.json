@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExportBundle",
+  "type": "object",
+  "required": ["export_bundle_id", "export_target", "approval_status", "evidence_refs"],
+  "properties": {
+    "export_bundle_id": { "type": "string" },
+    "export_target": {
+      "type": "string",
+      "enum": ["markdown", "json", "wiki_page", "client_report", "notion_pack", "public_page", "api_payload"]
+    },
+    "approval_status": {
+      "type": "string",
+      "enum": ["pending", "approved", "rejected", "locked"]
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "created_by": { "type": "string" },
+    "created_at": { "type": "string" }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AgenticCompilerTask",
+  "type": "object",
+  "required": ["task_id", "task_type", "allowed_actions", "requires_human_approval"],
+  "properties": {
+    "task_id": { "type": "string" },
+    "task_type": {
+      "type": "string",
+      "enum": ["compile_wiki_page", "propose_claim", "link_graph_nodes", "prepare_draft", "create_review_item", "prepare_export_bundle"]
+    },
+    "allowed_actions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "requires_human_approval": { "type": "boolean" },
+    "evidence_required": { "type": "boolean" }
+  }
+}

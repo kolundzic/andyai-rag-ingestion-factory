@@ -1,0 +1,11 @@
+{
+  "review_item_id": "review_demo_001",
+  "workflow_run_id": "wf_demo_001",
+  "subject_type": "wiki_page",
+  "subject_id": "wiki_permission_aware_retrieval",
+  "proposed_action": "approve_compiled_wiki_page",
+  "evidence_refs": ["evpack_demo_001"],
+  "status": "pending",
+  "reviewer": "",
+  "decision_reason": ""
+}

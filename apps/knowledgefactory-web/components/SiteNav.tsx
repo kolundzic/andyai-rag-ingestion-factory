@@ -1,4 +1,6 @@
 const links = [
+  ["Workflows", "/workflows"],
+  ["Agentic Compiler", "/agentic-compiler"],
   ["Atlas", "/atlas"],
   ["Graph Explorer", "/graph-explorer"],
   ["How it works", "/how-it-works"],

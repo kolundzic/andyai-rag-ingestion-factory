@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkflowRun",
+  "type": "object",
+  "required": ["workflow_run_id", "workflow_type", "status", "steps"],
+  "properties": {
+    "workflow_run_id": { "type": "string" },
+    "workflow_type": {
+      "type": "string",
+      "enum": ["wiki_compile", "claim_review", "graph_enrichment", "evidence_export", "draft_generation", "visual_atlas_review", "client_report"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["created", "queued", "running", "waiting_for_review", "approved", "rejected", "exported", "archived"]
+    },
+    "steps": {
+      "type": "array",
+      "items": { "$ref": "workflow-step.schema.json" }
+    },
+    "created_at": { "type": "string" }
+  }
+}

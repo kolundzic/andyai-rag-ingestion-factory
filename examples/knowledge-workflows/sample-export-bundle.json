@@ -1,0 +1,9 @@
+{
+  "export_bundle_id": "export_demo_001",
+  "export_target": "markdown",
+  "approval_status": "approved",
+  "evidence_refs": ["evpack_demo_001"],
+  "source_refs": ["demo_document.txt"],
+  "created_by": "operator",
+  "created_at": "2026-05-08T00:00:00Z"
+}

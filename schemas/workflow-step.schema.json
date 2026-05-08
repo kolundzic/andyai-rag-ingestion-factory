@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkflowStep",
+  "type": "object",
+  "required": ["step_id", "step_type", "status"],
+  "properties": {
+    "step_id": { "type": "string" },
+    "step_type": {
+      "type": "string",
+      "enum": ["compile", "review", "approve", "export", "reuse"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["created", "queued", "running", "waiting_for_review", "approved", "rejected", "exported", "archived"]
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "human_required": { "type": "boolean" }
+  }
+}
