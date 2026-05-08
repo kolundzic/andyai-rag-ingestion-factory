@@ -421,6 +421,20 @@ PermissionContext → Qdrant filter payload → vector boundary → evidence pac
 ```
 
 
+
+---
+
+## 🗄️ v5.2.0 — PostgreSQL Runtime Adapter
+
+v5.2.0 adds production-shaped SQL statement builders for runtime persistence.
+
+```text
+Vector DB searches.
+PostgreSQL remembers.
+Evidence proves.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
