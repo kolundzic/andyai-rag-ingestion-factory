@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProductionReadinessScore",
+  "type": "object",
+  "required": ["score", "ready", "blocked"],
+  "properties": {
+    "score": {"type": "integer"},
+    "ready": {"type": "array", "items": {"type": "string"}},
+    "blocked": {"type": "array", "items": {"type": "string"}}
+  }
+}

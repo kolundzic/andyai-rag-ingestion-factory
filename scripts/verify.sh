@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-./scripts/verify_pilot_ops_dashboard.sh
+./scripts/verify_command_center_v19.sh
 echo "🟢 VERIFY PASSED"

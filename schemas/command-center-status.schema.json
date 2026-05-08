@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CommandCenterStatus",
+  "type": "object",
+  "required": ["version", "status", "modules"],
+  "properties": {
+    "version": {"type": "string"},
+    "status": {"type": "string"},
+    "modules": {"type": "array", "items": {"type": "string"}}
+  }
+}

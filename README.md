@@ -1584,3 +1584,20 @@ Adds unified dashboard for pilot intake operations.
 ```text
 A factory needs a dashboard, not scattered windows.
 ```
+
+
+---
+
+## 🏭 v19.0.0 — Knowledge Factory Pilot System Command Center
+
+Locks the pilot/subscription/business intake system as a production-readiness milestone.
+
+```text
+/client-pitch → /pilot-request → /pilot-admin → /pilot-admin/persistence → /pilot-admin/runtime → /pilot-ops-dashboard → /command-center
+```
+
+Canonical rule:
+
+```text
+The pilot system is no longer a form. It is a governed business intake machine.
+```
