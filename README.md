@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v10.3.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v12.0.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -750,6 +750,29 @@ Rule:
 
 ```text
 API endpoints must return evidence metadata, not only generated text.
+```
+
+
+
+---
+
+## 📦 v12.0.0 — Live Qdrant Pipeline
+
+v12.0.0 defines the live vector retrieval path.
+
+```text
+embedding provider
+→ Qdrant collection
+→ payload permissions
+→ vector search
+→ hybrid merge
+→ evidence pack
+```
+
+Rule:
+
+```text
+Permissions shape vector retrieval before context reaches the model.
 ```
 
 
