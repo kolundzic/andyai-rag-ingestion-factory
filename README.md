@@ -509,6 +509,19 @@ If operators cannot see the factory, they cannot govern the factory.
 ```
 
 
+
+---
+
+## 🏷️ v9.0.0 — Release Factory Automation
+
+v9.0.0 defines release manifest discipline.
+
+```text
+Release is not a tag.
+Release is proof plus version plus rollback path.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
