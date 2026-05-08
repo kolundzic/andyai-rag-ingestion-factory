@@ -497,6 +497,18 @@ No tenant boundary, no enterprise RAG.
 ```
 
 
+
+---
+
+## 📡 v8.0.0 — Observability Dashboard
+
+v8.0.0 adds operator observability snapshots.
+
+```text
+If operators cannot see the factory, they cannot govern the factory.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
