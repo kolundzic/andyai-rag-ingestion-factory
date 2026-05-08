@@ -5,7 +5,6 @@ export default function ClientPitchPage() {
   return (
     <PageShell title="Visual Atlas Client Pitch Mode" eyebrow="v16.7 client-facing value layer">
       <p>{clientPitchMode.canonicalRule}</p>
-      <div className="card"><strong>Ready to convert interest into a pilot?</strong><p>Open the Pilot Request layer at /pilot-request.</p></div>
       <div className="card">
         <strong>{clientPitchMode.oneLiner}</strong>
         <p>{clientPitchMode.shortPitch}</p>

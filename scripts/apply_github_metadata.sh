@@ -2,7 +2,7 @@
 set -euo pipefail
 OWNER="${GITHUB_OWNER:-kolundzic}"
 REPO_NAME="${REPO_NAME:-andyai-rag-ingestion-factory}"
-DESCRIPTION="AndyAI Knowledge Factory: pilot request conversion layer for evidence-governed document intelligence pilots."
+DESCRIPTION="AndyAI Knowledge Factory: client pitch mode for evidence-governed RAG, Knowledge Graph, Visual Atlas, and human-approved knowledge."
 
 if command -v gh >/dev/null 2>&1; then
   gh repo edit "$OWNER/$REPO_NAME" \
@@ -17,16 +17,16 @@ if command -v gh >/dev/null 2>&1; then
     -f names[]=andyai \
     -f names[]=rag \
     -f names[]=knowledge-factory \
-    -f names[]=pilot-request \
-    -f names[]=client-pitch \
+    -f names[]=knowledge-graph \
     -f names[]=visual-atlas \
+    -f names[]=client-pitch \
+    -f names[]=product-demo \
+    -f names[]=pilot \
     -f names[]=evidence-pack \
     -f names[]=human-in-the-loop \
     -f names[]=permission-aware \
     -f names[]=enterprise-ai \
-    -f names[]=knowledge-graph \
     -f names[]=llm-wiki \
-    -f names[]=product-demo \
-    -f names[]=conversion || true
+    -f names[]=diagramming || true
 fi
 echo "🟢 GitHub metadata pass completed."
