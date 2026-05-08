@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PublicDemoSession",
+  "type": "object",
+  "required": ["session_id", "created_at"],
+  "properties": {
+    "session_id": { "type": "string" },
+    "created_at": { "type": "string" },
+    "query_count": { "type": "integer" },
+    "evidence_pack_count": { "type": "integer" }
+  }
+}

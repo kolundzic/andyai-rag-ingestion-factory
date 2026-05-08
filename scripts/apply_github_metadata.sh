@@ -3,7 +3,7 @@ set -euo pipefail
 
 OWNER="${GITHUB_OWNER:-kolundzic}"
 REPO_NAME="${REPO_NAME:-andyai-rag-ingestion-factory}"
-DESCRIPTION="Sovereign evidence-governed knowledge factory for large document libraries: ingestion, permissions, retrieval, evidence, context boards, drafting, approval, observability, and release governance."
+DESCRIPTION="AndyAI Knowledge Factory: sovereign evidence-governed RAG for serious document intelligence. Product site: knowledgefactory.andyai.ai"
 
 echo "━━━━━━━━━━━━━━━━━━━━"
 echo "🌍 Applying GitHub metadata"
@@ -17,11 +17,11 @@ fi
 
 gh repo edit "$OWNER/$REPO_NAME" \
   --description "$DESCRIPTION" \
+  --homepage "https://knowledgefactory.andyai.ai" \
   --enable-issues=true \
   --enable-wiki=false \
   --enable-projects=false || true
 
-# Use controlled topic list under GitHub 20-topic limit.
 gh api -X PUT "repos/$OWNER/$REPO_NAME/topics" \
   -H "Accept: application/vnd.github+json" \
   -f names[]=rag \
@@ -36,6 +36,7 @@ gh api -X PUT "repos/$OWNER/$REPO_NAME/topics" \
   -f names[]=hybrid-search \
   -f names[]=fastapi \
   -f names[]=knowledge-os \
+  -f names[]=knowledge-factory \
   -f names[]=ai-engineering \
   -f names[]=andyai || true
 

@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v10.0.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v10.1.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -549,6 +549,51 @@ Public message:
 ```text
 This is not a chatbot.
 This is a sovereign knowledge factory with evidence, permissions, and governance.
+```
+
+
+
+---
+
+## 🧃 v10.1.0 — Canon Recap & Public Product Bridge
+
+v10.1.0 locks the public product direction.
+
+```text
+Product: AndyAI Knowledge Factory
+Site:    knowledgefactory.andyai.ai
+Repo:    andyai-rag-ingestion-factory
+```
+
+Origin story:
+
+```text
+It started with a simple question:
+How do we ingest 100–200 PDFs, each with 1,000 pages?
+
+It became AndyAI Knowledge Factory.
+```
+
+Product formula:
+
+```text
+Recap the factory.
+Explain the value.
+Show the product.
+Prepare the web surface.
+Prepare the runtime backend.
+Prepare the subscription path.
+Open the road to v20.
+```
+
+Next public product arc:
+
+```text
+v10.2.0 — Vercel Product Shell
+v10.3.0 — Supabase Runtime Schema
+v10.4.0 — Auth + RLS Permission Model
+v10.5.0 — Public RAG Playground MVP
+v11.0.0 — Runtime API + Web Demo Release
 ```
 
 

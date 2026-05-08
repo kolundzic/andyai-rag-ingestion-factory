@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SubscriptionPlan",
+  "type": "object",
+  "required": ["plan_id", "name", "monthly_query_limit"],
+  "properties": {
+    "plan_id": { "type": "string" },
+    "name": { "type": "string" },
+    "monthly_query_limit": { "type": "integer" },
+    "monthly_page_limit": { "type": "integer" },
+    "max_workspaces": { "type": "integer" }
+  }
+}
