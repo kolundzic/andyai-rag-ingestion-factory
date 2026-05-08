@@ -485,6 +485,18 @@ Library becomes service only when runtime boundaries are explicit.
 ```
 
 
+
+---
+
+## 🏢 v7.0.0 — Multi-Tenant Governance
+
+v7.0.0 defines tenant isolation boundaries.
+
+```text
+No tenant boundary, no enterprise RAG.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
