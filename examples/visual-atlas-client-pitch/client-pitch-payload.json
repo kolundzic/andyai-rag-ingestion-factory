@@ -1,0 +1,17 @@
+{
+  "product": "AndyAI Knowledge Factory",
+  "site": "knowledgefactory.andyai.ai",
+  "version": "v16.7.1",
+  "one_liner": "AndyAI Knowledge Factory turns large document collections into evidence-backed, human-approved knowledge infrastructure.",
+  "canonical_rule": "The atlas teaches the product; the pitch mode sells the value.",
+  "pilot": {
+    "name": "AndyAI Knowledge Factory — Document Intelligence Pilot",
+    "scope": [
+      "20–50 documents",
+      "1 controlled workspace",
+      "evidence-backed Q&A",
+      "visual atlas walkthrough"
+    ],
+    "cta": "Start with one controlled document collection. Prove the value before scaling."
+  }
+}

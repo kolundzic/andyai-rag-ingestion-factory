@@ -1,6 +1,6 @@
 [project]
 name = "andyai-rag-ingestion-factory"
-version = "16.6.0"
+version = "16.7.1"
 description = "Canonical AndyAI RAG ingestion factory for large PDF libraries"
 requires-python = ">=3.11"
 dependencies = []

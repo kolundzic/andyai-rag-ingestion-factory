@@ -5,6 +5,7 @@ export default function VisualAtlasStoryPage() {
   return (
     <PageShell title="Visual Atlas Interactive Story Mode" eyebrow="v16.6 guided story">
       <p>{visualAtlasStoryMode.canonicalRule}</p>
+      <div className="card"><strong>Ready for client-facing value framing?</strong><p>Open Client Pitch Mode at /client-pitch.</p></div>
       <div className="card">
         <strong>{visualAtlasStoryMode.product}</strong>
         <p>Site: {visualAtlasStoryMode.site}</p>

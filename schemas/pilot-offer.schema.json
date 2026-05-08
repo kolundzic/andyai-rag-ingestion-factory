@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PilotOffer",
+  "type": "object",
+  "required": ["pilot_name", "scope", "goals", "success_metrics", "cta"],
+  "properties": {
+    "pilot_name": { "type": "string" },
+    "scope": { "type": "array", "items": { "type": "string" } },
+    "goals": { "type": "array", "items": { "type": "string" } },
+    "success_metrics": { "type": "array", "items": { "type": "string" } },
+    "cta": { "type": "string" }
+  }
+}
