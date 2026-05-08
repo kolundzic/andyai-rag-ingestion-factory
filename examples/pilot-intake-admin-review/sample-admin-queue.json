@@ -1,0 +1,23 @@
+{
+  "version": "v16.9.0",
+  "items": [
+    {
+      "request_id": "pilot-demo-001",
+      "submitted_at": "2026-05-08T12:00:00Z",
+      "organization": "Example Organization",
+      "qualification_score": 100,
+      "status": "approved_for_pilot",
+      "priority": "high",
+      "next_action": "Schedule pilot review call"
+    },
+    {
+      "request_id": "pilot-demo-002",
+      "submitted_at": "2026-05-08T12:15:00Z",
+      "organization": "Research Lab",
+      "qualification_score": 70,
+      "status": "needs_scope",
+      "priority": "medium",
+      "next_action": "Schedule scoping call"
+    }
+  ]
+}

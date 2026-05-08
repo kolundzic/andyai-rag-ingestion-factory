@@ -12,6 +12,7 @@ export default function PilotRequestPage() {
   return (
     <PageShell title="Pilot Request" eyebrow="v16.8 conversion layer">
       <p>{pilotRequestConversion.canonicalRule}</p>
+      <div className="card"><strong>Operator review layer</strong><p>Review incoming pilot requests at /pilot-admin.</p></div>
 
       <div className="card">
         <strong>{pilotRequestConversion.hero}</strong>

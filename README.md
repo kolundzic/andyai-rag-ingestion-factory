@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v16.8.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v16.9.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -1322,6 +1322,43 @@ Next:
 
 ```text
 v16.9.0 — Pilot Intake Admin Review Layer
+```
+
+
+
+
+---
+
+## 🛂 v16.9.0 — Pilot Intake Admin Review Layer
+
+v16.9.0 adds an operator/admin console for reviewing incoming pilot requests.
+
+```text
+/pilot-admin
+/api/pilot-request/admin-demo
+admin queue schema
+review decision model
+operator playbook
+admin review copy bank
+sample queue payload
+```
+
+Canonical rule:
+
+```text
+A pilot request is not complete when it is submitted. It is complete when an operator can review it, score it, and decide the next action.
+```
+
+Serbian:
+
+```text
+Pilot zahtev nije završen kad je poslat. Završen je kad operator može da ga pregleda, oceni i odredi sledeći potez.
+```
+
+Next:
+
+```text
+v17.0.0 — Supabase Pilot Request Persistence
 ```
 
 

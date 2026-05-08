@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PilotAdminReview",
+  "type": "object",
+  "required": [
+    "request_id",
+    "submitted_at",
+    "organization",
+    "qualification_score",
+    "status",
+    "priority",
+    "next_action"
+  ],
+  "properties": {
+    "request_id": { "type": "string" },
+    "submitted_at": { "type": "string" },
+    "name": { "type": "string" },
+    "email": { "type": "string" },
+    "organization": { "type": "string" },
+    "document_count_range": { "type": "string" },
+    "primary_domain": { "type": "string" },
+    "privacy_level": { "type": "string" },
+    "qualification_score": { "type": "integer" },
+    "status": {
+      "type": "string",
+      "enum": ["new", "reviewing", "needs_scope", "approved_for_pilot", "rejected", "archived"]
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "next_action": { "type": "string" },
+    "review_owner": { "type": "string" },
+    "review_notes": { "type": "string" }
+  }
+}
