@@ -1699,3 +1699,10 @@ KnowledgeBlocks are the bricks. The Knowledge Graph is the structure.
 ## 📏 v21.3.0 — KnowledgeBlock Benchmark Harness
 
 External benchmark numbers are signals. Local evidence decides.
+
+
+---
+
+## 🎛️ v22.0.0 — Knowledge Distillation Command Layer
+
+A factory needs commands for turning fragments into canon.
