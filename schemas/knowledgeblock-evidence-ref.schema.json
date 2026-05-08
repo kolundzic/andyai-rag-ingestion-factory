@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KnowledgeBlockEvidenceRef",
+  "type": "object",
+  "required": ["document_id", "source_hash"],
+  "properties": {
+    "document_id": {"type": "string"},
+    "page": {"type": "integer"},
+    "source_hash": {"type": "string"},
+    "quote_hash": {"type": "string"},
+    "pipeline_version": {"type": "string"}
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KnowledgeBlockStatus",
+  "type": "string",
+  "enum": ["candidate", "needs_review", "approved", "rejected", "needs_evidence", "conflict_detected", "human_locked", "deprecated"]
+}

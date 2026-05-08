@@ -1,0 +1,13 @@
+{
+  "id": "kb-legal-001",
+  "question": "What is the legal KnowledgeBlock example?",
+  "answer": "This is a legal example KnowledgeBlock.",
+  "claim": "A legal claim must preserve source and review state.",
+  "source_document_id": "legal-doc-001",
+  "evidence_refs": [{"document_id": "legal-doc-001", "page": 1, "source_hash": "legal-hash"}],
+  "confidence": 0.9,
+  "version": "v1",
+  "status": "candidate",
+  "governance_tags": ["internal", "needs_review"],
+  "human_review_state": "needs_review"
+}

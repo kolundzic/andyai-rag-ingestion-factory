@@ -1,0 +1,13 @@
+{
+  "id": "kb-research-001",
+  "question": "What is the research KnowledgeBlock example?",
+  "answer": "This is a research example KnowledgeBlock.",
+  "claim": "A research claim must preserve source and review state.",
+  "source_document_id": "research-doc-001",
+  "evidence_refs": [{"document_id": "research-doc-001", "page": 1, "source_hash": "research-hash"}],
+  "confidence": 0.9,
+  "version": "v1",
+  "status": "candidate",
+  "governance_tags": ["internal", "needs_review"],
+  "human_review_state": "needs_review"
+}

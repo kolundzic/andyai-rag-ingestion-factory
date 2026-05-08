@@ -1608,3 +1608,10 @@ The pilot system is no longer a form. It is a governed business intake machine.
 ## 🧱 v20.0.0 — KnowledgeBlock Standard
 
 A chunk is a fragment. A KnowledgeBlock is a governed unit of knowledge.
+
+
+---
+
+## 📐 v20.1.0 — KnowledgeBlock Schema + Examples
+
+A KnowledgeBlock must be readable by humans and enforceable by machines.

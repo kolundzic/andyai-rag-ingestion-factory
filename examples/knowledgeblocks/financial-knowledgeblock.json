@@ -1,0 +1,13 @@
+{
+  "id": "kb-financial-001",
+  "question": "What is the financial KnowledgeBlock example?",
+  "answer": "This is a financial example KnowledgeBlock.",
+  "claim": "A financial claim must preserve source and review state.",
+  "source_document_id": "financial-doc-001",
+  "evidence_refs": [{"document_id": "financial-doc-001", "page": 1, "source_hash": "financial-hash"}],
+  "confidence": 0.9,
+  "version": "v1",
+  "status": "candidate",
+  "governance_tags": ["internal", "needs_review"],
+  "human_review_state": "needs_review"
+}
