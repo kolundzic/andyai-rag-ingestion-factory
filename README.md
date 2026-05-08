@@ -411,6 +411,30 @@ Citation pack is evidence truth.
 ```
 
 
+
+---
+
+## 🔀 v1.5.0 — Hybrid Retrieval Engine
+
+The repo now includes a local hybrid retrieval engine.
+
+It combines:
+
+- keyword search
+- vector search
+- candidate merging
+- traceable metadata
+
+Canonical rule:
+
+```text
+Vector finds meaning.
+Keyword finds exactness.
+Metadata proves identity.
+Citation earns trust.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
