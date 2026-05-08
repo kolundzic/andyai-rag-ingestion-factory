@@ -1650,3 +1650,10 @@ A merge is not deletion. A merge is controlled knowledge compression.
 ## 🛡️ v20.6.0 — Governance-Attached KnowledgeBlocks
 
 Knowledge without governance becomes risk.
+
+
+---
+
+## 📎 v20.7.0 — Evidence-Attached KnowledgeBlocks
+
+A KnowledgeBlock without evidence is only a polished guess.

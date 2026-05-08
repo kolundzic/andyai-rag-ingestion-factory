@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"EvidenceIntegrity","type":"object","required":["source_hash"],"properties":{"source_hash":{"type":"string"},"quote_hash":{"type":"string"}}}
