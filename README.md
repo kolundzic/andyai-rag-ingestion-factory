@@ -1678,3 +1678,10 @@ A KnowledgeBlock is useful only when it can travel safely across systems.
 ## 🧼 v21.0.0 — Vector Store Clean Surface Model
 
 The vector store should index governed knowledge, not uncontrolled noise.
+
+
+---
+
+## 📚 v21.1.0 — KnowledgeBlock → LLM Wiki Compiler Bridge
+
+The wiki is not written from chunks. It is compiled from approved KnowledgeBlocks.

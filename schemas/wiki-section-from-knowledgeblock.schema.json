@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"WikiSectionFromKnowledgeBlock","type":"object","required":["knowledgeblock_id","content"],"properties":{"knowledgeblock_id":{"type":"string"},"content":{"type":"string"}}}

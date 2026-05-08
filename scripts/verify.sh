@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-./scripts/verify_clean_vector_surface.sh
+./scripts/verify_wiki_bridge.sh
 echo "🟢 VERIFY PASSED"
