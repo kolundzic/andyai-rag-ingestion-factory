@@ -1713,3 +1713,10 @@ A factory needs commands for turning fragments into canon.
 ## ✅ v23.0.0 — Knowledge Quality Control Layer
 
 Knowledge quality is not decoration. It is the safety system of the factory.
+
+
+---
+
+## 🏗️ v24.0.0 — KnowledgeBlock Production Pipeline
+
+A Knowledge Factory is real when the pipeline can repeat the same discipline every time.

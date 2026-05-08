@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"PipelineFailure","type":"object","required":["stage","error"],"properties":{"stage":{"type":"string"},"error":{"type":"string"}}}
