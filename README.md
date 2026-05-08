@@ -4,7 +4,7 @@
 > Turn raw PDFs into **structured chunks, searchable indexes, retrieval evidence, and citable answers**.
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v1.1.1-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v1.2.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="focus" src="https://img.shields.io/badge/focus-evidence--first-purple">
@@ -220,6 +220,20 @@ pip install -e .
 andyai-rag ingest examples/sample_documents/demo_document.txt --out examples/output
 ```
 
+
+---
+
+## 📄 PDF Parser Adapter
+
+v1.2.0 adds the first real PDF parser adapter.
+
+```bash
+python3 -m pip install pymupdf
+PYTHONPATH=src python3 -m rag_ingestion_factory.cli.main ingest path/to/document.pdf --out examples/output/pdf_run
+```
+
+The adapter preserves page-level identity and feeds extracted pages into the same chunking, manifest, keyword index, and citation pipeline.
+
 ---
 
 ## 📁 Repo Structure
@@ -261,7 +275,7 @@ schemas/
 ## 🗺️ Roadmap
 
 - **v1.1.1** — full core MVP + visual canon rescue
-- **v1.2.0** — real PDF parser adapter
+- **v1.2.0** — real PDF parser adapter ✅
 - **v1.3.0** — PostgreSQL metadata layer
 - **v1.4.0** — Qdrant vector index adapter
 - **v1.5.0** — hybrid retrieval engine

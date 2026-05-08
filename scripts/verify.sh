@@ -18,20 +18,25 @@ manifest = ingest_local_file("examples/sample_documents/demo_document.txt", out)
 
 assert manifest["status"] == "completed"
 assert manifest["chunks_count"] >= 1
+assert manifest["pipeline_version"] == "1.2.0"
 assert (out / "chunks.jsonl").exists()
 assert (out / "manifest.json").exists()
 assert (out / "keyword_index.json").exists()
 
-print("🟢 Local ingestion MVP smoke test passed")
+print("🟢 Local text ingestion smoke test passed")
 print(f"🟢 Chunks created: {manifest['chunks_count']}")
 PY
 
-test -f README.md
-test -f docs/09-visual/ANDYAI_VISUAL_CANON.md
-test -f docs/diagrams/README_VISUALS.md
-test -f assets/visual/README_ICON_LEGEND.md
-test -f src/rag_ingestion_factory/core/pipeline_v1.py
-test -f src/rag_ingestion_factory/core/__init__.py
+python3 - <<'PY'
+from rag_ingestion_factory.adapters.pdf_parser import PdfParserDependencyError
+print("🟢 PDF parser adapter import passed")
+print("🟢 PDF dependency is optional; install with: python3 -m pip install pymupdf")
+PY
+
+test -f src/rag_ingestion_factory/adapters/pdf_parser.py
+test -f src/rag_ingestion_factory/adapters/router.py
+test -f docs/10-parser/PDF_PARSER_ADAPTER_v1_2.md
+test -f docs/02-ingestion/PDF_INGESTION_STANDARD_v1_2.md
 
 if command -v pytest >/dev/null 2>&1; then
   PYTHONPATH=src pytest
