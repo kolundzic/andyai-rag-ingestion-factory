@@ -1755,3 +1755,10 @@ Locks the engine-memory-showcase-product map: Knowledge Factory → LLM Wiki →
 ## 🧲 v26.1.0 — WikiPress Offer & Landing Structure
 
 Defines the offer, audiences, tiers, pilot copy, landing copy, API route, and product page for AndyAI WikiPress.
+
+
+---
+
+## 🧩 v27.0.0 — WikiPress Workspace & Project Model
+
+Adds workspace/project schemas, role model, Supabase RLS plan, examples, Vercel page, and demo API.

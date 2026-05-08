@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WikiPressProject",
+  "type": "object",
+  "required": ["id", "workspace_id", "name", "publishing_mode"],
+  "properties": {
+    "id": {"type": "string"},
+    "workspace_id": {"type": "string"},
+    "name": {"type": "string"},
+    "publishing_mode": {"type": "string"}
+  }
+}
