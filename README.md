@@ -1769,3 +1769,10 @@ Adds workspace/project schemas, role model, Supabase RLS plan, examples, Vercel 
 ## 🚀 v28.0.0 — WikiPress Publishing Pipeline
 
 Adds publish job model, private/public/hybrid publishing plan, audit snapshot model, Vercel page, and API route.
+
+
+---
+
+## 💳 v29.0.0 — WikiPress Billing & Subscription Readiness
+
+Adds plan model, usage limits, billing abstraction, upgrade trigger model, and subscription readiness utilities.

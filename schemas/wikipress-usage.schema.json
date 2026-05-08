@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WikiPressUsage",
+  "type": "object",
+  "required": ["workspace_id", "usage"],
+  "properties": {
+    "workspace_id": {"type": "string"},
+    "usage": {"type": "object"}
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WikiPressPlan",
+  "type": "object",
+  "required": ["name", "limits"],
+  "properties": {
+    "name": {"type": "string"},
+    "limits": {"type": "object"}
+  }
+}
