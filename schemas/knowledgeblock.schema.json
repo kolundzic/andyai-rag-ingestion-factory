@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KnowledgeBlock",
+  "type": "object",
+  "required": ["id", "question", "answer", "claim", "source_document_id", "version", "status", "human_review_state"],
+  "properties": {
+    "id": {"type": "string"},
+    "question": {"type": "string"},
+    "answer": {"type": "string"},
+    "claim": {"type": "string"},
+    "source_document_id": {"type": "string"},
+    "evidence_refs": {"type": "array"},
+    "confidence": {"type": "number"},
+    "version": {"type": "string"},
+    "status": {"type": "string"},
+    "governance_tags": {"type": "array", "items": {"type": "string"}},
+    "human_review_state": {"type": "string"}
+  }
+}

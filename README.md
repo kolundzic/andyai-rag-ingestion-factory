@@ -1601,3 +1601,10 @@ Canonical rule:
 ```text
 The pilot system is no longer a form. It is a governed business intake machine.
 ```
+
+
+---
+
+## 🧱 v20.0.0 — KnowledgeBlock Standard
+
+A chunk is a fragment. A KnowledgeBlock is a governed unit of knowledge.
