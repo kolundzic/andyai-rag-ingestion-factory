@@ -333,6 +333,28 @@ If evidence shaped a decision, the board must be saved.
 ```
 
 
+
+---
+
+## 📝 v4.4.0 — Evidence-to-Draft Templates
+
+v4.4.0 adds deterministic templates:
+
+```text
+executive_brief
+technical_summary
+operator_report
+client_explanation
+```
+
+Canonical rule:
+
+```text
+Drafts may be polished later.
+But first they must be evidence-grounded.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
