@@ -1629,3 +1629,10 @@ Most RAG failures are not retrieval failures. They are knowledge-unit failures.
 ## 🧪 v20.3.0 — Knowledge Distillation Layer Spec
 
 Distillation is the moment when retrieved text becomes structured knowledge.
+
+
+---
+
+## 🧬 v20.4.0 — Near-Duplicate Clustering Policy
+
+Duplicates inflate the corpus. Clusters reveal the knowledge.

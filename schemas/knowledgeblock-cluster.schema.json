@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"KnowledgeBlockCluster","type":"object","required":["cluster_id","members"],"properties":{"cluster_id":{"type":"string"},"members":{"type":"array","items":{"type":"string"}}}}
