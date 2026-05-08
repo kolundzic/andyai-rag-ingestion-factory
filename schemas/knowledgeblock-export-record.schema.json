@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"KnowledgeBlockExportRecord","type":"object","required":["id","format"],"properties":{"id":{"type":"string"},"format":{"type":"string"}}}

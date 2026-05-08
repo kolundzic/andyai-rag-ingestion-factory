@@ -1664,3 +1664,10 @@ A KnowledgeBlock without evidence is only a polished guess.
 ## 👤 v20.8.0 — Human Review Queue for KnowledgeBlocks
 
 AI can propose knowledge. Humans approve canon.
+
+
+---
+
+## 📤 v20.9.0 — KnowledgeBlock Export Adapter
+
+A KnowledgeBlock is useful only when it can travel safely across systems.
