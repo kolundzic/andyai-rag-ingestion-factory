@@ -1,0 +1,1 @@
+{"nodes":[{"id":"kb-demo-001","type":"KnowledgeBlock"}],"edges":[{"from":"kb-demo-001","to":"demo-doc-001","type":"supported_by"}]}

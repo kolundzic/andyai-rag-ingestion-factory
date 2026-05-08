@@ -1685,3 +1685,10 @@ The vector store should index governed knowledge, not uncontrolled noise.
 ## 📚 v21.1.0 — KnowledgeBlock → LLM Wiki Compiler Bridge
 
 The wiki is not written from chunks. It is compiled from approved KnowledgeBlocks.
+
+
+---
+
+## 🕸️ v21.2.0 — KnowledgeBlock → Knowledge Graph Bridge
+
+KnowledgeBlocks are the bricks. The Knowledge Graph is the structure.
