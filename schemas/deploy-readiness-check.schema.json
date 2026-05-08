@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeployReadinessCheck",
+  "type": "object",
+  "required": ["check_id", "area", "status", "required"],
+  "properties": {
+    "check_id": { "type": "string" },
+    "area": {
+      "type": "string",
+      "enum": ["repo", "vercel", "supabase", "qdrant", "env", "domain", "security", "rollback", "human"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pass", "fail", "warning", "not_checked"]
+    },
+    "required": { "type": "boolean" },
+    "detail": { "type": "string" }
+  }
+}

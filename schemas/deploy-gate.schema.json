@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeployGate",
+  "type": "object",
+  "required": ["gate_id", "name", "status"],
+  "properties": {
+    "gate_id": { "type": "string" },
+    "name": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["open", "blocked", "passed", "failed"]
+    },
+    "checks": {
+      "type": "array",
+      "items": { "$ref": "deploy-readiness-check.schema.json" }
+    }
+  }
+}

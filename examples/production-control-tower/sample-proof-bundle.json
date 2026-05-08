@@ -1,0 +1,14 @@
+{
+  "release_version": "v16.0.0",
+  "product_site": "knowledgefactory.andyai.ai",
+  "repo_status": "pass",
+  "vercel_status": "candidate",
+  "supabase_status": "planned",
+  "qdrant_status": "planned",
+  "env_status": "documented",
+  "domain_status": "locked",
+  "gate_results": [],
+  "rollback_path": "git checkout v15.0.0",
+  "operator_notes": "Production Control Tower introduced. Live deploy remains gated.",
+  "created_at": "2026-05-08T00:00:00Z"
+}

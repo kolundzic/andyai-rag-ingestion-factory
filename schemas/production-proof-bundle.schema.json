@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProductionProofBundle",
+  "type": "object",
+  "required": ["release_version", "product_site", "gate_results", "rollback_path"],
+  "properties": {
+    "release_version": { "type": "string" },
+    "product_site": { "type": "string" },
+    "repo_status": { "type": "string" },
+    "vercel_status": { "type": "string" },
+    "supabase_status": { "type": "string" },
+    "qdrant_status": { "type": "string" },
+    "env_status": { "type": "string" },
+    "domain_status": { "type": "string" },
+    "gate_results": {
+      "type": "array",
+      "items": { "$ref": "deploy-readiness-check.schema.json" }
+    },
+    "rollback_path": { "type": "string" },
+    "operator_notes": { "type": "string" },
+    "created_at": { "type": "string" }
+  }
+}

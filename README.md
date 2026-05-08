@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v15.0.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v16.0.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -883,6 +883,51 @@ Next:
 
 ```text
 v16.0.0 — Production Deploy Control Tower
+```
+
+
+
+---
+
+## 🗼 v16.0.0 — Production Deploy Control Tower
+
+v16.0.0 introduces production readiness governance for AndyAI Knowledge Factory.
+
+```text
+Check.
+Gate.
+Deploy.
+Verify.
+Prove.
+Rollback if needed.
+Record the release.
+```
+
+Control tower areas:
+
+```text
+Vercel readiness
+Supabase readiness
+Qdrant readiness
+environment variables
+domain checklist
+security gates
+deploy gates
+rollback plan
+production proof bundle
+release runway
+```
+
+Canonical rule:
+
+```text
+No production deploy without readiness gates, rollback path, and proof bundle.
+```
+
+Next:
+
+```text
+v16.1.0 — Vercel Build Verification
 ```
 
 

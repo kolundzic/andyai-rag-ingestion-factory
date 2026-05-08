@@ -3,61 +3,59 @@ set -euo pipefail
 export PYTHONPATH="src${PYTHONPATH:+:$PYTHONPATH}"
 
 echo "━━━━━━━━━━━━━━━━━━━━"
-echo "🧪 VERIFY v15.0.0 — Knowledge Workflows & Agentic Compilation"
+echo "🧪 VERIFY v16.0.0 — Production Deploy Control Tower"
 echo "━━━━━━━━━━━━━━━━━━━━"
 
 python3 -m compileall src >/dev/null
 
 python3 - <<'PY'
-from rag_ingestion_factory.workflows.status import build_v15_workflow_status
-from rag_ingestion_factory.workflows.engine import build_wiki_compile_workflow, create_review_item_for_workflow, create_export_bundle
-from rag_ingestion_factory.agents.agentic_compiler import build_agentic_compiler_task, FORBIDDEN_COMPILER_ACTIONS
+from rag_ingestion_factory.control_tower.status import build_v16_control_tower_status
+from rag_ingestion_factory.control_tower.readiness import build_default_v16_checks, calculate_deploy_readiness
+from rag_ingestion_factory.control_tower.proof_bundle import build_v16_production_proof_bundle
 
-status = build_v15_workflow_status()
-workflow = build_wiki_compile_workflow("evpack_demo_001")
-review = create_review_item_for_workflow(workflow, "wiki_page", "wiki_permission_aware_retrieval")
-export = create_export_bundle(review)
-task = build_agentic_compiler_task("task_demo_001")
+status = build_v16_control_tower_status()
+checks = build_default_v16_checks()
+readiness = calculate_deploy_readiness(checks)
+bundle = build_v16_production_proof_bundle()
 
 assert status["site"] == "knowledgefactory.andyai.ai"
-assert "approve" in status["workflow"]
-assert workflow.status == "waiting_for_review"
-assert review.status == "pending"
-assert export.evidence_refs == ("evpack_demo_001",)
-assert task.requires_human_approval
-assert "bypass_permissions" in FORBIDDEN_COMPILER_ACTIONS
+assert status["readiness"]["blocking_failures"] == 0
+assert readiness["level"] in {"deploy-candidate", "production-ready"}
+assert bundle.rollback_path == "git checkout v15.0.0"
+assert len(bundle.gate_results) >= 5
 
-print("🟢 v15 status verified")
-print("🟢 workflow engine verified")
-print("🟢 agentic compiler contract verified")
+print("🟢 v16 control tower status verified")
+print("🟢 deploy readiness scoring verified")
+print("🟢 production proof bundle verified")
 PY
 
-test -f docs/57-knowledge-workflows/V15_KNOWLEDGE_WORKFLOWS_AGENTIC_COMPILATION.md
-test -f docs/57-knowledge-workflows/KNOWLEDGE_WORKFLOW_ENGINE.md
-test -f docs/57-knowledge-workflows/AGENTIC_COMPILER_CONTRACT.md
-test -f docs/57-knowledge-workflows/REVIEW_QUEUE_STANDARD.md
-test -f docs/57-knowledge-workflows/EXPORT_BUNDLE_STANDARD.md
-test -f docs/57-knowledge-workflows/REUSE_POLICY.md
-test -f docs/57-knowledge-workflows/WORKFLOW_AGENT_MAP.md
-test -f docs/releases/RELEASE_NOTES_v15.0.0.md
-test -f schemas/workflow-step.schema.json
-test -f schemas/workflow-run.schema.json
-test -f schemas/review-item.schema.json
-test -f schemas/export-bundle.schema.json
-test -f schemas/agentic-compiler-task.schema.json
-test -f examples/knowledge-workflows/sample-workflow-run.json
-test -f examples/knowledge-workflows/sample-review-item.json
-test -f examples/knowledge-workflows/sample-export-bundle.json
-test -f src/rag_ingestion_factory/workflows/models.py
-test -f src/rag_ingestion_factory/workflows/engine.py
-test -f src/rag_ingestion_factory/workflows/status.py
-test -f src/rag_ingestion_factory/agents/agentic_compiler.py
-test -f apps/knowledgefactory-web/app/workflows/page.tsx
-test -f apps/knowledgefactory-web/app/agentic-compiler/page.tsx
-test -f apps/knowledgefactory-web/app/api/workflows/demo/route.ts
-test -f apps/knowledgefactory-web/app/api/agentic-compiler/demo/route.ts
-test -f scripts/print_v15_workflow_status.sh
-test -f scripts/generate_v15_sample_workflow.sh
+test -f docs/58-production-control-tower/V16_PRODUCTION_DEPLOY_CONTROL_TOWER.md
+test -f docs/58-production-control-tower/VERCEL_DEPLOY_READINESS.md
+test -f docs/58-production-control-tower/SUPABASE_DEPLOY_READINESS.md
+test -f docs/58-production-control-tower/QDRANT_DEPLOY_READINESS.md
+test -f docs/58-production-control-tower/ENVIRONMENT_VARIABLES_CHECKLIST.md
+test -f docs/58-production-control-tower/DOMAIN_DNS_CHECKLIST.md
+test -f docs/58-production-control-tower/PRODUCTION_GATES.md
+test -f docs/58-production-control-tower/ROLLBACK_PLAN.md
+test -f docs/58-production-control-tower/PRODUCTION_PROOF_BUNDLE.md
+test -f docs/58-production-control-tower/RELEASE_RUNWAY_v16_TO_v20.md
+test -f docs/releases/RELEASE_NOTES_v16.0.0.md
+test -f schemas/deploy-readiness-check.schema.json
+test -f schemas/production-proof-bundle.schema.json
+test -f schemas/deploy-gate.schema.json
+test -f examples/production-control-tower/sample-readiness-report.json
+test -f examples/production-control-tower/sample-proof-bundle.json
+test -f src/rag_ingestion_factory/control_tower/models.py
+test -f src/rag_ingestion_factory/control_tower/readiness.py
+test -f src/rag_ingestion_factory/control_tower/proof_bundle.py
+test -f src/rag_ingestion_factory/control_tower/status.py
+test -f apps/knowledgefactory-web/app/control-tower/page.tsx
+test -f apps/knowledgefactory-web/app/deploy-readiness/page.tsx
+test -f apps/knowledgefactory-web/app/api/control-tower/status/route.ts
+test -f apps/knowledgefactory-web/app/api/deploy-readiness/demo/route.ts
+test -f .github/workflows/production-control-tower.yml
+test -f scripts/print_v16_control_tower_status.sh
+test -f scripts/generate_v16_production_proof_bundle.sh
 
 if command -v pytest >/dev/null 2>&1; then
   PYTHONPATH=src pytest

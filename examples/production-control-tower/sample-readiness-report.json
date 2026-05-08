@@ -1,0 +1,36 @@
+{
+  "release_version": "v16.0.0",
+  "product_site": "knowledgefactory.andyai.ai",
+  "readiness_score": 88,
+  "level": "deploy-candidate",
+  "checks": [
+    {
+      "check_id": "repo_verify",
+      "area": "repo",
+      "status": "pass",
+      "required": true,
+      "detail": "Local verify passed."
+    },
+    {
+      "check_id": "vercel_shell_exists",
+      "area": "vercel",
+      "status": "pass",
+      "required": true,
+      "detail": "apps/knowledgefactory-web exists."
+    },
+    {
+      "check_id": "supabase_schema_exists",
+      "area": "supabase",
+      "status": "pass",
+      "required": true,
+      "detail": "Supabase migrations exist."
+    },
+    {
+      "check_id": "live_qdrant_not_connected",
+      "area": "qdrant",
+      "status": "warning",
+      "required": false,
+      "detail": "Live Qdrant connection is planned for later release."
+    }
+  ]
+}

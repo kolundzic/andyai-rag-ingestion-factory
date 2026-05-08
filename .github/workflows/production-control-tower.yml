@@ -1,0 +1,23 @@
+name: Production Control Tower
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v16*"
+
+jobs:
+  control-tower:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify Python package
+        run: |
+          python -m compileall src
+      - name: Print v16 control tower status
+        run: |
+          PYTHONPATH=src python - <<'PY'
+          from rag_ingestion_factory.control_tower.status import build_v16_control_tower_status
+          import json
+          print(json.dumps(build_v16_control_tower_status(), indent=2))
+          PY
