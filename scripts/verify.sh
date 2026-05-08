@@ -3,28 +3,26 @@ set -euo pipefail
 export PYTHONPATH="src${PYTHONPATH:+:$PYTHONPATH}"
 
 echo "━━━━━━━━━━━━━━━━━━━━"
-echo "🧪 VERIFY v4.4.0 — Evidence-to-Draft Templates"
+echo "🧪 VERIFY v4.5.0 — External Gateway Policy"
 echo "━━━━━━━━━━━━━━━━━━━━"
 
 python3 -m compileall src >/dev/null
 
 python3 - <<'PY'
-from rag_ingestion_factory.drafting.templates import render_template_draft, DEFAULT_TEMPLATES
+from rag_ingestion_factory.gateway.policy import ExternalGatewayPolicy, can_externalize_evidence_pack
 
 pack = {
-    "query": "demo",
-    "answer_context": "Evidence says the pipeline prepares chunks.",
-    "citations": [{"file_name": "demo.txt", "page_start": 1, "page_end": 1, "section_title": "Demo", "chunk_id": "chk_1"}]
+    "citations": [{"chunk_id": "chk_1", "file_name": "demo.txt"}],
+    "evidence_policy": "No citation pack, no trusted answer."
 }
-draft = render_template_draft(pack, template_name="executive_brief")
-assert "Executive Brief" in draft
-assert "chk_1" in draft
-assert "Citations" in draft
-assert "executive_brief" in DEFAULT_TEMPLATES
-print("🟢 Evidence-to-Draft template smoke test passed")
+policy = ExternalGatewayPolicy(allow_external=True, require_citations=True, max_citations=5)
+result = can_externalize_evidence_pack(pack, policy)
+assert result.allowed
+assert result.reason == "allowed"
+print("🟢 External gateway policy smoke test passed")
 PY
 
-test -f docs/30-drafting-templates/EVIDENCE_TO_DRAFT_TEMPLATES_v4_4.md
-test -f src/rag_ingestion_factory/drafting/templates.py
+test -f docs/31-external-gateway/EXTERNAL_SERVICE_GATEWAY_v4_5.md
+test -f src/rag_ingestion_factory/gateway/policy.py
 
 echo "🟢 VERIFY PASSED"

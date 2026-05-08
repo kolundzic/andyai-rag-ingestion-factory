@@ -355,6 +355,20 @@ But first they must be evidence-grounded.
 ```
 
 
+
+---
+
+## 🌐 v4.5.0 — External Service Gateway
+
+v4.5.0 defines the external gateway policy.
+
+Canonical rule:
+
+```text
+External agents access approved evidence, not raw private memory.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
