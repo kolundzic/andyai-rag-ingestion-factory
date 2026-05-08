@@ -461,6 +461,18 @@ Evidence that shaped a decision must be tamper-evident.
 ```
 
 
+
+---
+
+## 📊 v5.5.0 — Evaluation Bench
+
+v5.5.0 adds simple evidence evaluation metrics.
+
+```text
+A RAG factory must measure retrieval, not only celebrate answers.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
