@@ -18,6 +18,7 @@ from rag_ingestion_factory.indexes.deterministic_embeddings import embed_text
 from rag_ingestion_factory.indexes.memory_vector_index import MemoryVectorIndex
 from rag_ingestion_factory.retrieval.hybrid import HybridRetriever
 from rag_ingestion_factory.evidence.pack import build_evidence_pack
+from rag_ingestion_factory.operator.console import run_operator_console_demo
 
 
 if FastAPI is None:
@@ -35,6 +36,12 @@ class RetrieveDemoRequest(BaseModel):  # type: ignore[misc]
     input_path: str
     query: str
     limit: int = 3
+
+
+class OperatorDemoRequest(BaseModel):  # type: ignore[misc]
+    input_path: str
+    query: str
+    output_dir: str = "examples/output/operator_console_api"
 
 
 if app is not None:
@@ -58,3 +65,7 @@ if app is not None:
 
         results = HybridRetriever(chunks, idx).search(request.query, limit=request.limit)
         return build_evidence_pack(request.query, results, limit=request.limit)
+
+    @app.post("/operator/demo")
+    def operator_demo(request: OperatorDemoRequest) -> dict[str, Any]:
+        return run_operator_console_demo(request.input_path, request.query, request.output_dir)

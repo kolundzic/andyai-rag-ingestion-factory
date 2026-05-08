@@ -4,7 +4,7 @@
 > Turn raw PDFs into **structured chunks, searchable indexes, retrieval evidence, and citable answers**.
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v3.0.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v4.0.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="focus" src="https://img.shields.io/badge/focus-evidence--first-purple">
@@ -526,6 +526,47 @@ Operator command:
 ```bash
 docker compose up -d
 ./scripts/verify.sh
+```
+
+
+
+---
+
+## 🧠 v4.0.0 — Operator Evidence Console
+
+v4.0.0 makes the factory visible to operators, reviewers, and future collaborators.
+
+It adds:
+
+- operator evidence console
+- readiness score
+- JSON report
+- HTML report
+- release evidence bundle
+- one-command demo script
+- API endpoint for operator demo
+
+One-command demo:
+
+```bash
+./scripts/run_operator_console_demo.sh
+```
+
+v4 formula:
+
+```text
+Run the factory.
+Collect the proof.
+Score readiness.
+Show the evidence.
+Invite review.
+```
+
+Public line:
+
+```text
+We do not just answer.
+We show why the answer deserves attention.
 ```
 
 

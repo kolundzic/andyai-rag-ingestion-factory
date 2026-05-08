@@ -14,6 +14,7 @@ from rag_ingestion_factory.evidence.pack import build_evidence_pack
 from rag_ingestion_factory.indexes.deterministic_embeddings import embed_text
 from rag_ingestion_factory.indexes.memory_vector_index import MemoryVectorIndex
 from rag_ingestion_factory.jobs.batch_ingest import batch_ingest
+from rag_ingestion_factory.operator.console import run_operator_console_demo
 from rag_ingestion_factory.retrieval.hybrid import HybridRetriever
 
 
@@ -38,6 +39,11 @@ def build_parser() -> argparse.ArgumentParser:
     evidence.add_argument("input", help="Input .txt or .pdf file")
     evidence.add_argument("query", help="Search query")
     evidence.add_argument("--limit", type=int, default=3)
+
+    operator = sub.add_parser("operator-demo", help="Run full operator evidence console demo")
+    operator.add_argument("input", help="Input .txt or .pdf file")
+    operator.add_argument("query", help="Search query")
+    operator.add_argument("--out", default="examples/output/operator_console", help="Output directory")
 
     return parser
 
@@ -81,6 +87,11 @@ def main() -> None:
         results = _build_demo_retriever(args.input).search(args.query, limit=args.limit)
         pack = build_evidence_pack(args.query, results, limit=args.limit)
         print(json.dumps(pack, ensure_ascii=False, indent=2, sort_keys=True))
+        return
+
+    if args.command == "operator-demo":
+        report = run_operator_console_demo(args.input, args.query, args.out)
+        print(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True))
         return
 
     parser.error(f"Unknown command: {args.command}")
