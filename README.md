@@ -709,6 +709,27 @@ No RLS, no multi-tenant production.
 ```
 
 
+
+---
+
+## 🧪 v10.5.0 — Public RAG Playground MVP
+
+v10.5.0 creates the first public demo surface.
+
+```text
+demo query
+→ evidence pack
+→ citations panel
+→ public explanation
+```
+
+Rule:
+
+```text
+The playground must always show citations.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
