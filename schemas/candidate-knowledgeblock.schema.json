@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"CandidateKnowledgeBlock","type":"object","required":["candidate_id","raw_chunk_id","claim"],"properties":{"candidate_id":{"type":"string"},"raw_chunk_id":{"type":"string"},"claim":{"type":"string"}}}
