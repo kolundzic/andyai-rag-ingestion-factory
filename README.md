@@ -449,6 +449,18 @@ Evidence remains attached.
 ```
 
 
+
+---
+
+## 🔏 v5.4.0 — Signed Evidence Bundle
+
+v5.4.0 adds deterministic evidence hashing.
+
+```text
+Evidence that shaped a decision must be tamper-evident.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI

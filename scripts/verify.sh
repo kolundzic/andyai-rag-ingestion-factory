@@ -3,7 +3,7 @@ set -euo pipefail
 export PYTHONPATH="src${PYTHONPATH:+:$PYTHONPATH}"
 
 echo "━━━━━━━━━━━━━━━━━━━━"
-echo "🧪 VERIFY v5.3.0"
+echo "🧪 VERIFY v5.4.0"
 echo "━━━━━━━━━━━━━━━━━━━━"
 
 python3 -m compileall src >/dev/null
