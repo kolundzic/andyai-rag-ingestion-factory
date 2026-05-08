@@ -1,0 +1,7 @@
+{
+  "query": "What does the document say about tenant isolation?",
+  "retrieved_context_count": 0,
+  "answer": "Not found in context.",
+  "policy": "strict_context_answering",
+  "trusted": false
+}

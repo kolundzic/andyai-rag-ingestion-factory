@@ -1,0 +1,20 @@
+{
+  "adapters": [
+    {
+      "adapter_id": "adapter_turbovec_local",
+      "backend": "turbovec",
+      "capabilities": ["local_vector_search", "self_hosted_lab", "semantic_retrieval"],
+      "self_hosted": true,
+      "permission_filtering": false,
+      "evidence_metadata_required": true
+    },
+    {
+      "adapter_id": "adapter_qdrant_payload",
+      "backend": "qdrant",
+      "capabilities": ["vector_search", "payload_filtering", "permission_aware_retrieval"],
+      "self_hosted": true,
+      "permission_filtering": true,
+      "evidence_metadata_required": true
+    }
+  ]
+}

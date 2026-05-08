@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RetrievalLabRun",
+  "type": "object",
+  "required": ["run_id", "adapter_backend", "embedding_model", "status"],
+  "properties": {
+    "run_id": { "type": "string" },
+    "adapter_backend": { "type": "string" },
+    "embedding_model": { "type": "string" },
+    "document_count": { "type": "integer" },
+    "page_count": { "type": "integer" },
+    "chunk_count": { "type": "integer" },
+    "status": {
+      "type": "string",
+      "enum": ["planned", "running", "completed", "failed"]
+    },
+    "strict_context_policy": { "type": "boolean" }
+  }
+}

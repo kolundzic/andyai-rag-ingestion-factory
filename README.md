@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v16.2.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v16.3.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -990,6 +990,49 @@ Next:
 
 ```text
 v16.3.0 — Visual Atlas Product Demo Layer
+```
+
+
+
+
+---
+
+## 🧪 v16.3.0 — Self-Hosted Retrieval Lab Signal
+
+v16.3.0 integrates the DeepSeek V4 + TurboVec + RAG signal as a local retrieval lab direction.
+
+```text
+PDF / OCR / Documents
+→ Text Extraction
+→ Chunking
+→ Embeddings
+→ Vector Index / TurboVec / Qdrant / pgvector / FAISS / LanceDB
+→ Retrieval
+→ Evidence Pack
+→ LLM Wiki
+→ Knowledge Graph
+→ Human Approval
+→ Canonical Knowledge
+```
+
+Canonical sentence:
+
+```text
+RAG finds fragments.
+Knowledge Factory turns them into proven, linked, approved knowledge.
+```
+
+Serbian:
+
+```text
+RAG pronalazi fragmente.
+Knowledge Factory ih pretvara u dokazano, povezano i odobreno znanje.
+```
+
+Next:
+
+```text
+v16.4.0 — Local Retrieval Adapter Prototype
 ```
 
 

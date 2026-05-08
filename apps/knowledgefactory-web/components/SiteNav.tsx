@@ -1,4 +1,6 @@
 const links = [
+  ["Self-Hosted Retrieval", "/self-hosted-retrieval"],
+  ["Vector Adapters", "/vector-adapters"],
   ["Canon", "/canon"],
   ["Visuals", "/visuals"],
   ["Extended Visuals", "/visuals/extended"],

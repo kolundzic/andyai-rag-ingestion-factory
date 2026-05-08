@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VectorAdapter",
+  "type": "object",
+  "required": ["adapter_id", "backend", "capabilities"],
+  "properties": {
+    "adapter_id": { "type": "string" },
+    "backend": {
+      "type": "string",
+      "enum": ["turbovec", "qdrant", "pgvector", "faiss", "lancedb", "other"]
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "self_hosted": { "type": "boolean" },
+    "permission_filtering": { "type": "boolean" },
+    "evidence_metadata_required": { "type": "boolean" }
+  }
+}
