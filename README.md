@@ -1748,3 +1748,10 @@ Connects KnowledgeBlock Factory with LLM Wiki, AdAstraNova/BEYOND, query save-ba
 ## 🧭 v26.0.0 — WikiPress Product Bridge & Strategic Launch Pack
 
 Locks the engine-memory-showcase-product map: Knowledge Factory → LLM Wiki → AdAstraNova / BEYOND → WikiPress.
+
+
+---
+
+## 🧲 v26.1.0 — WikiPress Offer & Landing Structure
+
+Defines the offer, audiences, tiers, pilot copy, landing copy, API route, and product page for AndyAI WikiPress.

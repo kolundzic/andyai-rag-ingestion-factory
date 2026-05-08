@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WikiPressOffer",
+  "type": "object",
+  "required": ["version", "promise", "tiers"],
+  "properties": {
+    "version": {"type": "string"},
+    "promise": {"type": "string"},
+    "tiers": {"type": "array"}
+  }
+}
