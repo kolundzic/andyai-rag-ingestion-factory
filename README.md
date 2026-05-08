@@ -1720,3 +1720,10 @@ Knowledge quality is not decoration. It is the safety system of the factory.
 ## 🏗️ v24.0.0 — KnowledgeBlock Production Pipeline
 
 A Knowledge Factory is real when the pipeline can repeat the same discipline every time.
+
+
+---
+
+## 🧠 v25.0.0 — Sovereign KnowledgeBlock Factory
+
+RAG finds fragments. KnowledgeBlock distillation creates trusted knowledge. Knowledge Factory turns that knowledge into wiki, graph, evidence, and action.
