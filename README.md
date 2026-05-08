@@ -1636,3 +1636,10 @@ Distillation is the moment when retrieved text becomes structured knowledge.
 ## 🧬 v20.4.0 — Near-Duplicate Clustering Policy
 
 Duplicates inflate the corpus. Clusters reveal the knowledge.
+
+
+---
+
+## 🧲 v20.5.0 — Canonical Merge Policy
+
+A merge is not deletion. A merge is controlled knowledge compression.

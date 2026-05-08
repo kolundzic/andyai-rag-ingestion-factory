@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"CanonicalMerge","type":"object","required":["canonical_id","merged_ids"],"properties":{"canonical_id":{"type":"string"},"merged_ids":{"type":"array","items":{"type":"string"}}}}
