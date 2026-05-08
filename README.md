@@ -1643,3 +1643,10 @@ Duplicates inflate the corpus. Clusters reveal the knowledge.
 ## 🧲 v20.5.0 — Canonical Merge Policy
 
 A merge is not deletion. A merge is controlled knowledge compression.
+
+
+---
+
+## 🛡️ v20.6.0 — Governance-Attached KnowledgeBlocks
+
+Knowledge without governance becomes risk.

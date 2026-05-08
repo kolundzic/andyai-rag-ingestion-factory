@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"KnowledgeBlockGovernance","type":"object","required":["tags","risk_level"],"properties":{"tags":{"type":"array","items":{"type":"string"}},"risk_level":{"type":"string"}}}
