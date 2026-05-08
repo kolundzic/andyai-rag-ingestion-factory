@@ -435,6 +435,20 @@ Evidence proves.
 ```
 
 
+
+---
+
+## ✅ v5.3.0 — Approval Workflow
+
+v5.3.0 adds human approval decisions.
+
+```text
+Agents prepare.
+Humans approve.
+Evidence remains attached.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
