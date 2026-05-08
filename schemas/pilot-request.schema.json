@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PilotRequest",
+  "type": "object",
+  "required": ["name", "email", "organization", "document_count_range", "primary_domain", "main_problem", "success_criteria", "privacy_level"],
+  "properties": {
+    "name": { "type": "string" },
+    "email": { "type": "string" },
+    "organization": { "type": "string" },
+    "document_count_range": { "type": "string" },
+    "document_type": { "type": "string" },
+    "primary_domain": { "type": "string" },
+    "main_problem": { "type": "string" },
+    "success_criteria": { "type": "string" },
+    "privacy_level": { "type": "string" },
+    "pilot_timeline": { "type": "string" },
+    "notes": { "type": "string" }
+  }
+}

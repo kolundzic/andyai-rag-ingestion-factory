@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v16.7.1-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v16.8.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -1286,6 +1286,42 @@ Next:
 
 ```text
 v16.8.0 — Pilot Request Conversion Layer
+```
+
+
+
+
+---
+
+## 🛫 v16.8.0 — Pilot Request Conversion Layer
+
+v16.8.0 turns Client Pitch Mode into a concrete pilot-request conversion path.
+
+```text
+/pilot-request
+/api/pilot-request/demo
+pilot request schema
+qualification result schema
+pilot success metrics
+conversion copy bank
+```
+
+Canonical rule:
+
+```text
+A pitch without a pilot path is only a presentation.
+```
+
+Serbian:
+
+```text
+Pitch bez pilot puta je samo prezentacija.
+```
+
+Next:
+
+```text
+v16.9.0 — Pilot Intake Admin Review Layer
 ```
 
 

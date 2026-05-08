@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 echo "━━━━━━━━━━━━━━━━━━━━"
-echo "🧪 VERIFY v16.7.1 — Client Pitch Verify Rescue"
+echo "🧪 VERIFY v16.8.0 — Pilot Request Conversion Layer"
 echo "━━━━━━━━━━━━━━━━━━━━"
-./scripts/verify_visual_atlas_client_pitch.sh
+./scripts/verify_pilot_request_conversion.sh
 echo "🟢 VERIFY PASSED"

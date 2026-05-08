@@ -1,0 +1,13 @@
+{
+  "name": "Demo Client",
+  "email": "client@example.com",
+  "organization": "Example Organization",
+  "document_count_range": "50–200 documents",
+  "document_type": "PDF reports and technical manuals",
+  "primary_domain": "technical documentation",
+  "main_problem": "We need evidence-backed search across technical PDFs and internal reports.",
+  "success_criteria": "Users should find answers faster and verify source documents.",
+  "privacy_level": "internal business documents",
+  "pilot_timeline": "30 days",
+  "notes": "Start with a limited controlled workspace."
+}
