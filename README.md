@@ -730,6 +730,29 @@ The playground must always show citations.
 ```
 
 
+
+---
+
+## 🌐 v11.0.0 — Runtime API + Web Demo Release
+
+v11.0.0 adds product API endpoints:
+
+```text
+/api/health
+/api/runtime/status
+/api/playground/demo
+/api/evidence/demo
+/api/context-board/demo
+/api/qdrant/demo
+```
+
+Rule:
+
+```text
+API endpoints must return evidence metadata, not only generated text.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI

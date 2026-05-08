@@ -3,22 +3,25 @@ set -euo pipefail
 export PYTHONPATH="src${PYTHONPATH:+:$PYTHONPATH}"
 
 echo "━━━━━━━━━━━━━━━━━━━━"
-echo "🧪 VERIFY v10.5.0 — Public RAG Playground MVP"
+echo "🧪 VERIFY v11.0.0 — Runtime API + Web Demo"
 echo "━━━━━━━━━━━━━━━━━━━━"
 
 python3 -m compileall src >/dev/null
 
 python3 - <<'PY'
-from rag_ingestion_factory.web_demo.playground import build_playground_demo_response
-response = build_playground_demo_response("What does the ingestion pipeline prepare?")
-assert response["evidence_pack"]["citations"]
-assert response["public_rule"] == "No citation, no trusted answer."
-print("🟢 Playground evidence demo passed")
+from rag_ingestion_factory.api_runtime.status import build_runtime_api_status
+status = build_runtime_api_status()
+assert "/api/health" in status["routes"]
+assert "/api/evidence/demo" in status["routes"]
+assert status["site"] == "knowledgefactory.andyai.ai"
+print("🟢 Runtime API status passed")
 PY
 
-test -f docs/52-public-playground/PUBLIC_RAG_PLAYGROUND_MVP_v10_5.md
-test -f apps/knowledgefactory-web/lib/demo.ts
-test -f apps/knowledgefactory-web/app/playground/page.tsx
-test -f apps/knowledgefactory-web/app/api/playground/demo/route.ts
+test -f docs/53-runtime-api/RUNTIME_API_WEB_DEMO_v11_0.md
+test -f apps/knowledgefactory-web/app/api/health/route.ts
+test -f apps/knowledgefactory-web/app/api/runtime/status/route.ts
+test -f apps/knowledgefactory-web/app/api/evidence/demo/route.ts
+test -f apps/knowledgefactory-web/app/api/context-board/demo/route.ts
+test -f apps/knowledgefactory-web/app/runtime/page.tsx
 
 echo "🟢 VERIFY PASSED"
