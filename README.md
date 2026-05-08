@@ -1573,3 +1573,14 @@ Generates follow-up drafts from review decisions.
 ```text
 The review is internal. The follow-up turns it into client movement.
 ```
+
+
+---
+
+## 📊 v18.3.0 — Pilot Ops Dashboard
+
+Adds unified dashboard for pilot intake operations.
+
+```text
+A factory needs a dashboard, not scattered windows.
+```
