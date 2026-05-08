@@ -1706,3 +1706,10 @@ External benchmark numbers are signals. Local evidence decides.
 ## 🎛️ v22.0.0 — Knowledge Distillation Command Layer
 
 A factory needs commands for turning fragments into canon.
+
+
+---
+
+## ✅ v23.0.0 — Knowledge Quality Control Layer
+
+Knowledge quality is not decoration. It is the safety system of the factory.
