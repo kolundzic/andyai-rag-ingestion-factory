@@ -435,6 +435,28 @@ Citation earns trust.
 ```
 
 
+
+---
+
+## 📌 v1.6.0 — Reranker + Evidence Pack
+
+The repo now includes an evidence layer.
+
+Retrieval candidates can be converted into:
+
+- ranked evidence
+- answer context
+- citation dictionaries
+- page-level source references
+
+Canonical rule:
+
+```text
+Candidate is not evidence.
+Evidence is candidate + source + page + chunk + score + reason.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI

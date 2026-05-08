@@ -3,7 +3,7 @@ set -euo pipefail
 export PYTHONPATH="src${PYTHONPATH:+:$PYTHONPATH}"
 
 echo "━━━━━━━━━━━━━━━━━━━━"
-echo "🧪 VERIFY v1.5.0"
+echo "🧪 VERIFY v1.6.0"
 echo "━━━━━━━━━━━━━━━━━━━━"
 
 python3 -m compileall src >/dev/null
@@ -16,6 +16,7 @@ from rag_ingestion_factory.core.chunker import chunk_page_blocks
 from rag_ingestion_factory.indexes.deterministic_embeddings import embed_text
 from rag_ingestion_factory.indexes.memory_vector_index import MemoryVectorIndex
 from rag_ingestion_factory.retrieval.hybrid import HybridRetriever
+from rag_ingestion_factory.evidence.pack import build_evidence_pack
 
 doc = register_document("examples/sample_documents/demo_document.txt")
 pages = parse_document(doc)
@@ -24,12 +25,13 @@ idx = MemoryVectorIndex()
 for c in chunks:
     idx.upsert_chunk(c, embed_text(c.text))
 results = HybridRetriever(chunks, idx).search("What does the ingestion pipeline prepare?", limit=3)
-assert results
-print("🟢 v1.5 hybrid retrieval smoke test passed")
+pack = build_evidence_pack("What does the ingestion pipeline prepare?", results)
+assert pack["citations"]
+assert pack["answer_context"]
+print("🟢 v1.6 evidence pack smoke test passed")
 PY
 
-test -f docs/14-retrieval/HYBRID_RETRIEVAL_ENGINE_v1_5.md
-test -f src/rag_ingestion_factory/retrieval/hybrid.py
-test -f src/rag_ingestion_factory/retrieval/keyword.py
+test -f docs/15-evidence/EVIDENCE_RERANKER_v1_6.md
+test -f src/rag_ingestion_factory/evidence/pack.py
 
 echo "🟢 VERIFY PASSED"

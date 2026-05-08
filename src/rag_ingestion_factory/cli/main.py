@@ -12,6 +12,7 @@ from rag_ingestion_factory.core.registry import register_document
 from rag_ingestion_factory.indexes.deterministic_embeddings import embed_text
 from rag_ingestion_factory.indexes.memory_vector_index import MemoryVectorIndex
 from rag_ingestion_factory.retrieval.hybrid import HybridRetriever
+from rag_ingestion_factory.evidence.pack import build_evidence_pack
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="andyai-rag", description="AndyAI RAG Ingestion Factory CLI")
@@ -25,6 +26,11 @@ def build_parser() -> argparse.ArgumentParser:
     search.add_argument("input", help="Input .txt or .pdf file")
     search.add_argument("query", help="Search query")
     search.add_argument("--limit", type=int, default=3)
+
+    evidence = sub.add_parser("evidence-demo", help="Run retrieval and build an evidence pack")
+    evidence.add_argument("input", help="Input .txt or .pdf file")
+    evidence.add_argument("query", help="Search query")
+    evidence.add_argument("--limit", type=int, default=3)
     return parser
 
 def _build_demo_retriever(input_path: str) -> HybridRetriever:
@@ -52,6 +58,12 @@ def main() -> None:
     if args.command == "search-demo":
         results = _build_demo_retriever(args.input).search(args.query, limit=args.limit)
         print(json.dumps([r.__dict__ for r in results], ensure_ascii=False, indent=2, sort_keys=True))
+        return
+
+    if args.command == "evidence-demo":
+        results = _build_demo_retriever(args.input).search(args.query, limit=args.limit)
+        pack = build_evidence_pack(args.query, results, limit=args.limit)
+        print(json.dumps(pack, ensure_ascii=False, indent=2, sort_keys=True))
         return
 
     parser.error(f"Unknown command: {args.command}")
