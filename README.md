@@ -1762,3 +1762,10 @@ Defines the offer, audiences, tiers, pilot copy, landing copy, API route, and pr
 ## 🧩 v27.0.0 — WikiPress Workspace & Project Model
 
 Adds workspace/project schemas, role model, Supabase RLS plan, examples, Vercel page, and demo API.
+
+
+---
+
+## 🚀 v28.0.0 — WikiPress Publishing Pipeline
+
+Adds publish job model, private/public/hybrid publishing plan, audit snapshot model, Vercel page, and API route.

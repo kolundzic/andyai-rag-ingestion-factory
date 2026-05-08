@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WikiPressPublishJob",
+  "type": "object",
+  "required": ["id", "project_id", "visibility", "status"],
+  "properties": {
+    "id": {"type": "string"},
+    "project_id": {"type": "string"},
+    "visibility": {"type": "string"},
+    "status": {"type": "string"}
+  }
+}

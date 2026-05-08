@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WikiPressPublishSnapshot",
+  "type": "object",
+  "required": ["publish_job_id", "pages"],
+  "properties": {
+    "publish_job_id": {"type": "string"},
+    "pages": {"type": "array"}
+  }
+}
