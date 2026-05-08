@@ -1692,3 +1692,10 @@ The wiki is not written from chunks. It is compiled from approved KnowledgeBlock
 ## 🕸️ v21.2.0 — KnowledgeBlock → Knowledge Graph Bridge
 
 KnowledgeBlocks are the bricks. The Knowledge Graph is the structure.
+
+
+---
+
+## 📏 v21.3.0 — KnowledgeBlock Benchmark Harness
+
+External benchmark numbers are signals. Local evidence decides.

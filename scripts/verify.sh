@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-./scripts/verify_graph_bridge.sh
+./scripts/verify_knowledgeblock_benchmark.sh
 echo "🟢 VERIFY PASSED"

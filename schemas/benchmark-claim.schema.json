@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"BenchmarkClaim","type":"object","required":["claim","evidence"],"properties":{"claim":{"type":"string"},"evidence":{"type":"string"}}}
