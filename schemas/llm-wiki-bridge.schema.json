@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LLMWikiBridge",
+  "type": "object",
+  "required": ["version", "layers", "canon"],
+  "properties": {
+    "version": {"type": "string"},
+    "layers": {"type": "array", "items": {"type": "string"}},
+    "canon": {"type": "string"}
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "version": "v25.2.0",
+  "status": "karpathy-llm-wiki-bridge-ready",
+  "layers": ["raw", "knowledgeblocks", "wiki", "query", "save_back", "lint", "health_check"]
+}

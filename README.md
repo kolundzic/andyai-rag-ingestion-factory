@@ -1734,3 +1734,10 @@ RAG finds fragments. KnowledgeBlock distillation creates trusted knowledge. Know
 ## 🖼️ v25.1.0 — Canon Strategic Visual Integration Layer
 
 Adds 10 strategic canon visuals with legends, repo mapping, Vercel page, and API route.
+
+
+---
+
+## 🌌 v25.2.0 — Karpathy LLM Wiki Bridge & AdAstraNova Integration Map
+
+Connects KnowledgeBlock Factory with LLM Wiki, AdAstraNova/BEYOND, query save-back, context farmer, and future WikiPress productization.
