@@ -4,7 +4,7 @@
 > Turn raw PDFs into **structured chunks, searchable indexes, retrieval evidence, and citable answers**.
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v1.3.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v1.3.1-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="focus" src="https://img.shields.io/badge/focus-evidence--first-purple">
@@ -264,6 +264,36 @@ Original file is source truth.
 Citation pack is evidence truth.
 ```
 
+
+---
+
+## 🌍 Public Repo Metadata
+
+**Repository positioning:**
+
+```text
+Production-grade RAG ingestion factory for large PDF libraries:
+PDF parsing, page-aware chunking, PostgreSQL metadata, citations,
+and hybrid retrieval architecture.
+```
+
+**Public canon:**
+
+```text
+Reliable RAG begins before retrieval.
+Most RAG demos start with a chat box.
+This repo starts with document control.
+```
+
+**Suggested GitHub topics:**
+
+```text
+rag · retrieval-augmented-generation · pdf-processing · document-ai
+ingestion-pipeline · vector-search · qdrant · postgresql
+metadata · citations · hybrid-search · llm · ai-engineering
+knowledge-base · andyai
+```
+
 ---
 
 ## 📁 Repo Structure
@@ -327,6 +357,35 @@ schemas/
 | **Manifest** | Run record of the ingestion process |
 
 ---
+
+---
+
+## 🤝 Contributing
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+Good contributions improve:
+
+- parser adapters
+- metadata discipline
+- chunk quality
+- vector index adapters
+- hybrid retrieval
+- citation validation
+- governance
+
+---
+
+## 🔐 Security
+
+See [`SECURITY.md`](SECURITY.md).
+
+Canonical rule:
+
+```text
+No permission boundary, no production RAG.
+```
+
 
 ## 👨‍💻 Founder
 

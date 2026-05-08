@@ -5,7 +5,7 @@
   "errors": [],
   "file_hash": "de7201a41e2296eec9b11b07c264613c01811c92437180301066e2abfbaf474d",
   "file_name": "demo_document.txt",
-  "finished_at": "2026-05-08T10:58:51.756859+00:00",
+  "finished_at": "2026-05-08T11:01:50.106174+00:00",
   "outputs": {
     "chunks": "/Users/andrijakolundzic/Documents/Projects/andyai-rag-ingestion-factory/examples/output/verify_run/chunks.jsonl",
     "keyword_index": "/Users/andrijakolundzic/Documents/Projects/andyai-rag-ingestion-factory/examples/output/verify_run/keyword_index.json",
@@ -17,6 +17,6 @@
   "pipeline_version": "1.3.0",
   "run_id": "run_doc_de7201a41e2296ee_1_3_0",
   "source_path": "/Users/andrijakolundzic/Documents/Projects/andyai-rag-ingestion-factory/examples/sample_documents/demo_document.txt",
-  "started_at": "2026-05-08T10:58:51.756859+00:00",
+  "started_at": "2026-05-08T11:01:50.106174+00:00",
   "status": "completed"
 }
