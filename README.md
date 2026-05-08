@@ -4,7 +4,7 @@
 > Turn raw PDFs into **structured chunks, searchable indexes, retrieval evidence, and citable answers**.
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v1.2.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v1.3.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="focus" src="https://img.shields.io/badge/focus-evidence--first-purple">
@@ -234,6 +234,36 @@ PYTHONPATH=src python3 -m rag_ingestion_factory.cli.main ingest path/to/document
 
 The adapter preserves page-level identity and feeds extracted pages into the same chunking, manifest, keyword index, and citation pipeline.
 
+
+---
+
+## 🗄️ PostgreSQL Metadata Layer
+
+v1.3.0 adds the canonical database design for the ingestion factory.
+
+PostgreSQL becomes the **system memory** for:
+
+- documents
+- ingestion runs
+- chunks
+- citation events
+- index versions
+
+Migration file:
+
+```text
+db/migrations/001_metadata_schema.sql
+```
+
+Canonical rule:
+
+```text
+Vector DB is search memory.
+PostgreSQL is system memory.
+Original file is source truth.
+Citation pack is evidence truth.
+```
+
 ---
 
 ## 📁 Repo Structure
@@ -276,7 +306,7 @@ schemas/
 
 - **v1.1.1** — full core MVP + visual canon rescue
 - **v1.2.0** — real PDF parser adapter ✅
-- **v1.3.0** — PostgreSQL metadata layer
+- **v1.3.0** — PostgreSQL metadata layer ✅
 - **v1.4.0** — Qdrant vector index adapter
 - **v1.5.0** — hybrid retrieval engine
 - **v1.6.0** — reranker + evidence pack

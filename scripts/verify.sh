@@ -18,25 +18,47 @@ manifest = ingest_local_file("examples/sample_documents/demo_document.txt", out)
 
 assert manifest["status"] == "completed"
 assert manifest["chunks_count"] >= 1
-assert manifest["pipeline_version"] == "1.2.0"
+assert manifest["pipeline_version"] == "1.3.0"
 assert (out / "chunks.jsonl").exists()
 assert (out / "manifest.json").exists()
 assert (out / "keyword_index.json").exists()
 
-print("🟢 Local text ingestion smoke test passed")
+print("🟢 Local ingestion smoke test passed")
 print(f"🟢 Chunks created: {manifest['chunks_count']}")
 PY
 
 python3 - <<'PY'
-from rag_ingestion_factory.adapters.pdf_parser import PdfParserDependencyError
-print("🟢 PDF parser adapter import passed")
-print("🟢 PDF dependency is optional; install with: python3 -m pip install pymupdf")
+from pathlib import Path
+from rag_ingestion_factory.core.registry import register_document
+from rag_ingestion_factory.adapters.router import parse_document
+from rag_ingestion_factory.core.chunker import chunk_page_blocks
+from rag_ingestion_factory.core.citations import citation_from_chunk
+from rag_ingestion_factory.db.memory_repository import InMemoryMetadataRepository
+
+source = Path("examples/sample_documents/demo_document.txt")
+document = register_document(source)
+pages = parse_document(document)
+chunks = chunk_page_blocks(pages)
+citations = [citation_from_chunk(chunk) for chunk in chunks]
+
+repo = InMemoryMetadataRepository()
+repo.save_document(document)
+repo.save_chunks(chunks)
+repo.save_citation_events(citations)
+
+summary = repo.summary()
+assert summary["documents"] == 1
+assert summary["chunks"] >= 1
+assert summary["citation_events"] >= 1
+
+print("🟢 Metadata repository smoke test passed")
+print(f"🟢 Metadata summary: {summary}")
 PY
 
-test -f src/rag_ingestion_factory/adapters/pdf_parser.py
-test -f src/rag_ingestion_factory/adapters/router.py
-test -f docs/10-parser/PDF_PARSER_ADAPTER_v1_2.md
-test -f docs/02-ingestion/PDF_INGESTION_STANDARD_v1_2.md
+test -f db/migrations/001_metadata_schema.sql
+test -f docs/11-database/POSTGRES_METADATA_LAYER_v1_3.md
+test -f src/rag_ingestion_factory/db/metadata_models.py
+test -f src/rag_ingestion_factory/db/memory_repository.py
 
 if command -v pytest >/dev/null 2>&1; then
   PYTHONPATH=src pytest

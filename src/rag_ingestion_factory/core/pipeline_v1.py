@@ -11,7 +11,7 @@ from rag_ingestion_factory.indexes.simple_keyword import build_simple_keyword_in
 from rag_ingestion_factory.storage.jsonl_store import write_json, write_jsonl
 
 
-PIPELINE_VERSION = "1.2.0"
+PIPELINE_VERSION = "1.3.0"
 
 
 def ingest_local_file(input_path: str | Path, output_dir: str | Path) -> dict:
