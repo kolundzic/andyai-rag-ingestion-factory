@@ -1657,3 +1657,10 @@ Knowledge without governance becomes risk.
 ## 📎 v20.7.0 — Evidence-Attached KnowledgeBlocks
 
 A KnowledgeBlock without evidence is only a polished guess.
+
+
+---
+
+## 👤 v20.8.0 — Human Review Queue for KnowledgeBlocks
+
+AI can propose knowledge. Humans approve canon.
