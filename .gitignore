@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+data/raw/
+data/processed/
+storage/
+*.sqlite
+*.log

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Document",
+  "type": "object",
+  "required": ["document_id", "file_name", "file_hash", "status"],
+  "properties": {
+    "document_id": { "type": "string" },
+    "file_name": { "type": "string" },
+    "file_hash": { "type": "string" },
+    "storage_path": { "type": "string" },
+    "page_count": { "type": "integer" },
+    "language": { "type": "string" },
+    "status": { "type": "string" },
+    "created_at": { "type": "string" },
+    "updated_at": { "type": "string" }
+  }
+}
