@@ -3,7 +3,7 @@ set -euo pipefail
 
 OWNER="${GITHUB_OWNER:-kolundzic}"
 REPO_NAME="${REPO_NAME:-andyai-rag-ingestion-factory}"
-DESCRIPTION="Evidence-governed RAG ingestion factory for large PDF libraries with Qdrant, PostgreSQL metadata, permission-aware retrieval, Context Board, and sovereign enterprise architecture."
+DESCRIPTION="Sovereign evidence-governed RAG factory for large PDF libraries with permissions, Context Board, Qdrant, PostgreSQL metadata, and enterprise AI architecture."
 
 echo "━━━━━━━━━━━━━━━━━━━━"
 echo "🌍 Applying GitHub metadata"
@@ -35,6 +35,7 @@ gh repo edit "$OWNER/$REPO_NAME" \
   --add-topic permission-aware \
   --add-topic context-board \
   --add-topic evidence-pack \
+  --add-topic external-gateway \
   --add-topic hybrid-search \
   --add-topic fastapi \
   --add-topic ai-engineering \

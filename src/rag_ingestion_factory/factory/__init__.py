@@ -1,0 +1,1 @@
+"""Sovereign factory status package."""

@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v4.1.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v5.0.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -254,7 +254,7 @@ v4.1  Sovereign permissions + Context Board
 v4.2  Qdrant payload permission filters
 v4.3  Context Board persistence
 v4.4  Evidence-to-Draft templates
-v5.0  Sovereign Enterprise RAG Factory
+v5.0  Sovereign Enterprise RAG Factory ✅
 ```
 
 ---
@@ -366,6 +366,46 @@ Canonical rule:
 
 ```text
 External agents access approved evidence, not raw private memory.
+```
+
+
+
+---
+
+## 🏛️ v5.0.0 — Sovereign Enterprise RAG Factory
+
+v5.0.0 completes the first sovereign enterprise architecture arc.
+
+The repo now includes:
+
+- sovereign deployment standard
+- permission-aware retrieval
+- Qdrant payload permission filters
+- Context Board
+- Context Board persistence
+- Evidence-to-Draft templates
+- External Service Gateway
+- Operator Evidence Console
+- production bridge
+- governance audit
+
+v5 formula:
+
+```text
+Data stays inside.
+Permissions shape retrieval.
+Evidence becomes context.
+Context becomes draft.
+Draft remains cited.
+Agents carry proof.
+Humans approve external use.
+```
+
+Public message:
+
+```text
+This is not a chatbot.
+This is a sovereign evidence-governed knowledge factory.
 ```
 
 
