@@ -1,0 +1,10 @@
+{
+  "product": "AndyAI Knowledge Factory",
+  "site": "knowledgefactory.andyai.ai",
+  "version": "v16.4.0",
+  "total_visuals": 14,
+  "base_visuals": 8,
+  "extended_visuals": 6,
+  "canonical_rule": "Before production deploy, the factory must be explainable at a glance.",
+  "proverb": "Slike se ne kupe metlom — slike se biraju pincetom."
+}

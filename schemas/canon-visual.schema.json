@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CanonVisual",
+  "type": "object",
+  "required": ["id", "title", "category", "file", "description", "canon_status"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "category": {
+      "type": "string",
+      "enum": ["core", "governance", "runtime", "deployment", "super_poster"]
+    },
+    "file": { "type": "string" },
+    "description": { "type": "string" },
+    "canon_status": {
+      "type": "string",
+      "enum": ["locked", "candidate", "deprecated"]
+    }
+  }
+}

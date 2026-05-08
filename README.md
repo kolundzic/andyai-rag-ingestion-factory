@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v16.3.1-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v16.4.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -1061,6 +1061,51 @@ Next:
 
 ```text
 v16.4.0 — Local Retrieval Adapter Prototype
+```
+
+
+
+
+---
+
+## 🖼️ v16.4.0 — Canon Visual Master Atlas
+
+v16.4.0 turns the existing 14 curated diagrams into a formally indexed, allowlisted, product-facing visual atlas.
+
+```text
+8 base canon visuals
+6 extended canon visuals
+14 total official diagrams
+```
+
+The atlas is available in the product shell at:
+
+```text
+/visuals/atlas
+```
+
+Canonical rule:
+
+```text
+Before production deploy, the factory must be explainable at a glance.
+```
+
+Permanent visual discipline:
+
+```text
+Slike se ne kupe metlom — slike se biraju pincetom.
+```
+
+English:
+
+```text
+Images are not swept in with a broom — they are selected with tweezers.
+```
+
+Next:
+
+```text
+v16.5.0 — Visual Atlas Product Demo Layer
 ```
 
 

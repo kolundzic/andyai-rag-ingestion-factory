@@ -3,6 +3,7 @@ const links = [
   ["Vector Adapters", "/vector-adapters"],
   ["Canon", "/canon"],
   ["Visuals", "/visuals"],
+  ["Visual Atlas", "/visuals/atlas"],
   ["Extended Visuals", "/visuals/extended"],
   ["Control Tower", "/control-tower"],
   ["Deploy Readiness", "/deploy-readiness"],
