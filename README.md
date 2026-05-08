@@ -1727,3 +1727,10 @@ A Knowledge Factory is real when the pipeline can repeat the same discipline eve
 ## 🧠 v25.0.0 — Sovereign KnowledgeBlock Factory
 
 RAG finds fragments. KnowledgeBlock distillation creates trusted knowledge. Knowledge Factory turns that knowledge into wiki, graph, evidence, and action.
+
+
+---
+
+## 🖼️ v25.1.0 — Canon Strategic Visual Integration Layer
+
+Adds 10 strategic canon visuals with legends, repo mapping, Vercel page, and API route.

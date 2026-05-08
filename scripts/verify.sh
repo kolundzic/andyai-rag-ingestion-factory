@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-./scripts/verify_knowledgeblock_factory_v25.sh
+./scripts/verify_strategic_visuals.sh
 echo "🟢 VERIFY PASSED"
