@@ -409,6 +409,18 @@ This is a sovereign evidence-governed knowledge factory.
 ```
 
 
+
+---
+
+## 🔐 v5.1.0 — Live Qdrant Permission Demo
+
+v5.1.0 adds a safe bridge toward live Qdrant permission filtering.
+
+```text
+PermissionContext → Qdrant filter payload → vector boundary → evidence pack
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
