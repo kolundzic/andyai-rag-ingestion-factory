@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v16.5.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v16.6.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -1159,6 +1159,53 @@ Next:
 
 ```text
 v16.6.0 — Visual Atlas Interactive Story Mode
+```
+
+
+
+
+---
+
+## 🖼️ v16.6.0 — Visual Atlas Interactive Story Mode
+
+v16.6.0 turns the Visual Atlas Product Demo Layer into a step-by-step guided product story.
+
+```text
+10 story steps
+14 protected diagrams
+14 textual legends
+1 interactive story route
+1 story-mode API payload
+```
+
+Story route:
+
+```text
+/visuals/story
+```
+
+API route:
+
+```text
+/api/canon-visuals/story-mode
+```
+
+Canonical rule:
+
+```text
+A serious product should not only show its architecture — it should guide the user through it.
+```
+
+Serbian:
+
+```text
+Ozbiljan proizvod ne treba samo da pokaže arhitekturu — treba da provede čoveka kroz nju.
+```
+
+Next:
+
+```text
+v16.7.0 — Visual Atlas Client Pitch Mode
 ```
 
 

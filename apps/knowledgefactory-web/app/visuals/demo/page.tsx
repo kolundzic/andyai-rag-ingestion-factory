@@ -5,6 +5,7 @@ export default function VisualAtlasDemoPage() {
   return (
     <PageShell title="Visual Atlas Product Demo" eyebrow="v16.5 guided explanation layer">
       <p>{visualAtlasDemoSummary.canonicalRule}</p>
+      <div className="card"><strong>Want the guided step-by-step walkthrough?</strong><p>Open Interactive Story Mode at /visuals/story.</p></div>
 
       <div className="card">
         <strong>{visualAtlasDemoSummary.product}</strong>

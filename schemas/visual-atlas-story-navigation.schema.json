@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VisualAtlasStoryNavigation",
+  "type": "object",
+  "required": ["current_step", "previous_step", "next_step"],
+  "properties": {
+    "current_step": { "type": "string" },
+    "previous_step": { "type": ["string", "null"] },
+    "next_step": { "type": ["string", "null"] },
+    "progress_percent": { "type": "number" }
+  }
+}

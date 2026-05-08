@@ -1,0 +1,16 @@
+{
+  "current_step": {
+    "id": "origin-problem",
+    "order": 1,
+    "title": "Origin Problem",
+    "diagram_id": "super-poster"
+  },
+  "previous_step": null,
+  "next_step": {
+    "id": "ingestion-discipline",
+    "order": 2,
+    "title": "Ingestion Discipline",
+    "diagram_id": "massive-ingestion"
+  },
+  "progress_percent": 10
+}

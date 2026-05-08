@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VisualAtlasStoryMode",
+  "type": "object",
+  "required": ["product", "site", "version", "steps"],
+  "properties": {
+    "product": { "type": "string" },
+    "site": { "type": "string" },
+    "version": { "type": "string" },
+    "steps": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/storyStep" }
+    }
+  },
+  "$defs": {
+    "storyStep": {
+      "type": "object",
+      "required": ["id", "order", "title", "diagram_id", "image", "narrative", "takeaway", "next_prompt"],
+      "properties": {
+        "id": { "type": "string" },
+        "order": { "type": "integer" },
+        "title": { "type": "string" },
+        "diagram_id": { "type": "string" },
+        "image": { "type": "string" },
+        "narrative": { "type": "string" },
+        "takeaway": { "type": "string" },
+        "next_prompt": { "type": "string" }
+      }
+    }
+  }
+}

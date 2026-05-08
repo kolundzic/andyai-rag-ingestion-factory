@@ -1,0 +1,67 @@
+{
+  "product": "AndyAI Knowledge Factory",
+  "site": "knowledgefactory.andyai.ai",
+  "version": "v16.6.0",
+  "steps": [
+    {
+      "id": "origin-problem",
+      "order": 1,
+      "title": "Origin Problem",
+      "diagram_id": "super-poster"
+    },
+    {
+      "id": "ingestion-discipline",
+      "order": 2,
+      "title": "Ingestion Discipline",
+      "diagram_id": "massive-ingestion"
+    },
+    {
+      "id": "rag-positioning",
+      "order": 3,
+      "title": "New RAG Positioning",
+      "diagram_id": "new-rag-paradigm"
+    },
+    {
+      "id": "evidence-foundation",
+      "order": 4,
+      "title": "Evidence Foundation",
+      "diagram_id": "evidence-lifecycle"
+    },
+    {
+      "id": "human-governance",
+      "order": 5,
+      "title": "Human Governance",
+      "diagram_id": "human-approval-loop"
+    },
+    {
+      "id": "architecture",
+      "order": 6,
+      "title": "System Architecture",
+      "diagram_id": "kf-architecture"
+    },
+    {
+      "id": "system-stack",
+      "order": 7,
+      "title": "System Stack",
+      "diagram_id": "system-stack"
+    },
+    {
+      "id": "runtime-isolation",
+      "order": 8,
+      "title": "Runtime Isolation",
+      "diagram_id": "supabase-runtime"
+    },
+    {
+      "id": "deploy-path",
+      "order": 9,
+      "title": "Deployment Path",
+      "diagram_id": "vercel-release"
+    },
+    {
+      "id": "product-surface",
+      "order": 10,
+      "title": "Product Surface",
+      "diagram_id": "product-surface-map"
+    }
+  ]
+}

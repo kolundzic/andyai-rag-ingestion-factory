@@ -4,6 +4,7 @@ const links = [
   ["Canon", "/canon"],
   ["Visuals", "/visuals"],
   ["Visual Atlas", "/visuals/atlas"],\n  ["Visual Demo", "/visuals/demo"],
+  ["Story Mode", "/visuals/story"],
   ["Extended Visuals", "/visuals/extended"],
   ["Control Tower", "/control-tower"],
   ["Deploy Readiness", "/deploy-readiness"],

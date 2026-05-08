@@ -2,9 +2,9 @@
 set -euo pipefail
 
 echo "━━━━━━━━━━━━━━━━━━━━"
-echo "🧪 VERIFY v16.5.0 — Visual Atlas Product Demo Layer"
+echo "🧪 VERIFY v16.6.0 — Visual Atlas Interactive Story Mode"
 echo "━━━━━━━━━━━━━━━━━━━━"
 
-./scripts/verify_visual_atlas_demo_layer.sh
+./scripts/verify_visual_atlas_story_mode.sh
 
 echo "🟢 VERIFY PASSED"
