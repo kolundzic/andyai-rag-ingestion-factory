@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v16.0.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v16.1.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -928,6 +928,38 @@ Next:
 
 ```text
 v16.1.0 — Vercel Build Verification
+```
+
+
+
+
+---
+
+## 🖼️ v16.1.0 — Canon Visual Pack Integration
+
+v16.1.0 integrates the first canon.andyai.ai visual set directly into the repo and product shell.
+
+```text
+Knowledge Factory Architecture
+Massive Document Ingestion Pipeline
+The New RAG Paradigm
+Knowledge Workflows & Production Control Tower
+Knowledge Governance Workflow
+Knowledge Factory System Stack
+Knowledge Factory System Map
+Product Surface & System Map
+```
+
+Canonical rule:
+
+```text
+Before production deploy, the factory must be explainable at a glance.
+```
+
+Next:
+
+```text
+v16.2.0 — Extended Canon Visual Series
 ```
 
 
