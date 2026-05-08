@@ -319,6 +319,20 @@ Permissions must shape retrieval before context reaches the model.
 ```
 
 
+
+---
+
+## 🧠 v4.3.0 — Context Board Persistence
+
+v4.3.0 saves Context Boards as reusable evidence workspaces.
+
+Canonical rule:
+
+```text
+If evidence shaped a decision, the board must be saved.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
