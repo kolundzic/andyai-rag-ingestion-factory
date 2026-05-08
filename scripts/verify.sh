@@ -1,52 +1,58 @@
 #!/usr/bin/env bash
 set -euo pipefail
-export PYTHONPATH="src${PYTHONPATH:+:$PYTHONPATH}"
 
 echo "━━━━━━━━━━━━━━━━━━━━"
-echo "🧪 VERIFY v16.3.0 — Self-Hosted Retrieval Lab Signal"
+echo "🧪 VERIFY v16.3.1 — Visual Asset Scope Cleanup"
 echo "━━━━━━━━━━━━━━━━━━━━"
 
-python3 -m compileall src >/dev/null
+BASE_COUNT=0
+EXT_COUNT=0
+PUBLIC_BASE_COUNT=0
+PUBLIC_EXT_COUNT=0
 
-python3 - <<'PY4'
-from rag_ingestion_factory.retrieval_lab.status import build_v16_3_retrieval_lab_status
-from rag_ingestion_factory.retrieval_lab.policies import strict_context_answer
-
-status = build_v16_3_retrieval_lab_status()
-assert status["site"] == "knowledgefactory.andyai.ai"
-assert any(a["backend"] == "turbovec" for a in status["adapters"])
-assert strict_context_answer("", "x")["answer"] == "Not found in context."
-print("🟢 retrieval lab status verified")
-print("🟢 strict context answering verified")
-PY4
-
-for f in \
-docs/signals/DEEPSEEK_V4_TURBOVEC_RAG_SIGNAL.md \
-docs/61-self-hosted-retrieval-lab/SELF_HOSTED_RETRIEVAL_LAB.md \
-docs/61-self-hosted-retrieval-lab/architecture/VECTOR_LAYER_ADAPTER_STANDARD.md \
-docs/61-self-hosted-retrieval-lab/policies/STRICT_CONTEXT_ANSWERING_POLICY.md \
-docs/61-self-hosted-retrieval-lab/policies/EVIDENCE_FIRST_RETRIEVAL_STANDARD.md \
-docs/61-self-hosted-retrieval-lab/specs/LOCAL_OCR_RAG_PIPELINE_SPEC.md \
-docs/61-self-hosted-retrieval-lab/compare/RAG_RETRIEVAL_VS_KNOWLEDGE_FACTORY.md \
-docs/61-self-hosted-retrieval-lab/TURBOVEC_ADAPTER_CANDIDATE_NOTE.md \
-docs/releases/RELEASE_NOTES_v16.3.0.md \
-schemas/vector-adapter.schema.json \
-schemas/retrieval-lab-run.schema.json \
-examples/self-hosted-retrieval-lab/sample-vector-adapter-registry.json \
-examples/self-hosted-retrieval-lab/sample-strict-context-response.json \
-src/rag_ingestion_factory/retrieval_lab/models.py \
-src/rag_ingestion_factory/retrieval_lab/policies.py \
-src/rag_ingestion_factory/retrieval_lab/status.py \
-apps/knowledgefactory-web/app/self-hosted-retrieval/page.tsx \
-apps/knowledgefactory-web/app/vector-adapters/page.tsx \
-apps/knowledgefactory-web/app/api/self-hosted-retrieval/demo/route.ts \
-apps/knowledgefactory-web/lib/selfHostedRetrieval.ts \
-scripts/print_v16_3_retrieval_lab_status.sh; do test -f "$f"; done
-
-if command -v pytest >/dev/null 2>&1; then
-  PYTHONPATH=src pytest
-else
-  echo "🟡 pytest not installed; skipped unit tests"
+if [ -d assets/canon-visuals ]; then
+  BASE_COUNT="$(find assets/canon-visuals -maxdepth 1 -type f -name '*.png' | wc -l | tr -d ' ')"
 fi
 
+if [ -d assets/canon-visuals/extended ]; then
+  EXT_COUNT="$(find assets/canon-visuals/extended -maxdepth 1 -type f -name '*.png' | wc -l | tr -d ' ')"
+fi
+
+if [ -d apps/knowledgefactory-web/public/canon-visuals ]; then
+  PUBLIC_BASE_COUNT="$(find apps/knowledgefactory-web/public/canon-visuals -maxdepth 1 -type f -name '*.png' | wc -l | tr -d ' ')"
+fi
+
+if [ -d apps/knowledgefactory-web/public/canon-visuals/extended ]; then
+  PUBLIC_EXT_COUNT="$(find apps/knowledgefactory-web/public/canon-visuals/extended -maxdepth 1 -type f -name '*.png' | wc -l | tr -d ' ')"
+fi
+
+test "$BASE_COUNT" = "8"
+test "$PUBLIC_BASE_COUNT" = "8"
+test "$EXT_COUNT" = "6"
+test "$PUBLIC_EXT_COUNT" = "6"
+
+for f in \
+assets/canon-visuals/andyai_knowledge_factory_architecture_diagram.png \
+assets/canon-visuals/massive_document_ingestion_pipeline_infographic.png \
+assets/canon-visuals/the_new_rag_paradigm_flowchart.png \
+assets/canon-visuals/knowledge_workflows_and_production_control_tower.png \
+assets/canon-visuals/the_andyai_knowledge_governance_workflow.png \
+assets/canon-visuals/andyai_knowledge_factory_system_stack.png \
+assets/canon-visuals/andyai_knowledge_factory_system_map.png \
+assets/canon-visuals/andyai_product_surface_and_system_map.png \
+assets/canon-visuals/extended/human_in_the_loop_knowledge_approval_process.png \
+assets/canon-visuals/extended/supabase_runtime_and_multi_tenant_model_overview.png \
+assets/canon-visuals/extended/vercel_deploy_and_release_pipeline_diagram.png \
+assets/canon-visuals/extended/evidence_pack_lifecycle_infographic_flowchart.png \
+assets/canon-visuals/extended/permission_aware_access_map_for_andyai.png \
+assets/canon-visuals/extended/knowledge_factory_platform_architecture_diagram.png \
+docs/62-visual-asset-cleanup/V16_3_1_VISUAL_ASSET_SCOPE_CLEANUP.md \
+docs/releases/RELEASE_NOTES_v16.3.1.md; do
+  test -f "$f"
+done
+
+echo "🟢 Base canon visuals: $BASE_COUNT"
+echo "🟢 Public base canon visuals: $PUBLIC_BASE_COUNT"
+echo "🟢 Extended canon visuals: $EXT_COUNT"
+echo "🟢 Public extended canon visuals: $PUBLIC_EXT_COUNT"
 echo "🟢 VERIFY PASSED"

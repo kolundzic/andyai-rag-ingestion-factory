@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v16.3.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v16.3.1-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -1027,6 +1027,34 @@ Serbian:
 ```text
 RAG pronalazi fragmente.
 Knowledge Factory ih pretvara u dokazano, povezano i odobreno znanje.
+```
+
+Next:
+
+```text
+v16.4.0 — Local Retrieval Adapter Prototype
+```
+
+
+
+
+---
+
+## 🧹 v16.3.1 — Visual Asset Scope Cleanup
+
+v16.3.1 cleans the accidental extra PNG copy from v16.2.0.
+
+Canonical rule:
+
+```text
+Visual assets must be curated, not swept.
+```
+
+Permanent lesson:
+
+```text
+Never copy *.png from Downloads.
+Always copy an explicit allowlist.
 ```
 
 Next:

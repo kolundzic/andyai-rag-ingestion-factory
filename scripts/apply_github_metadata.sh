@@ -2,7 +2,7 @@
 set -euo pipefail
 OWNER="${GITHUB_OWNER:-kolundzic}"
 REPO_NAME="${REPO_NAME:-andyai-rag-ingestion-factory}"
-DESCRIPTION="AndyAI Knowledge Factory: self-hosted retrieval lab signal for TurboVec, Qdrant, pgvector, FAISS, LanceDB, strict context answering, and evidence-first RAG."
+DESCRIPTION="AndyAI Knowledge Factory: curated canon visuals, self-hosted retrieval lab, evidence-governed RAG, LLM Wiki, Knowledge Graph, Visual Atlas, and deploy control."
 
 if command -v gh >/dev/null 2>&1; then
   gh repo edit "$OWNER/$REPO_NAME" \
@@ -17,7 +17,6 @@ if command -v gh >/dev/null 2>&1; then
     -f names[]=rag \
     -f names[]=self-hosted-rag \
     -f names[]=vector-search \
-    -f names[]=turbovec \
     -f names[]=qdrant \
     -f names[]=pgvector \
     -f names[]=faiss \
@@ -25,8 +24,9 @@ if command -v gh >/dev/null 2>&1; then
     -f names[]=strict-context \
     -f names[]=knowledge-graph \
     -f names[]=llm-wiki \
+    -f names[]=visual-atlas \
+    -f names[]=canon-visuals \
     -f names[]=knowledge-factory \
-    -f names[]=enterprise-ai \
     -f names[]=andyai || true
 fi
 
