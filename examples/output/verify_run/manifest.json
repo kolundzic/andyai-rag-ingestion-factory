@@ -1,0 +1,22 @@
+{
+  "chunker_name": "page_aware_chunker_v1",
+  "chunks_count": 4,
+  "document_id": "doc_de7201a41e2296ee",
+  "errors": [],
+  "file_hash": "de7201a41e2296eec9b11b07c264613c01811c92437180301066e2abfbaf474d",
+  "file_name": "demo_document.txt",
+  "finished_at": "2026-05-08T10:54:01.797968+00:00",
+  "outputs": {
+    "chunks": "/Users/andrijakolundzic/Documents/Projects/andyai-rag-ingestion-factory/examples/output/verify_run/chunks.jsonl",
+    "keyword_index": "/Users/andrijakolundzic/Documents/Projects/andyai-rag-ingestion-factory/examples/output/verify_run/keyword_index.json",
+    "manifest": "/Users/andrijakolundzic/Documents/Projects/andyai-rag-ingestion-factory/examples/output/verify_run/manifest.json",
+    "output_dir": "/Users/andrijakolundzic/Documents/Projects/andyai-rag-ingestion-factory/examples/output/verify_run"
+  },
+  "pages_count": 4,
+  "parser_name": "text_parser_v1",
+  "pipeline_version": "1.1.1",
+  "run_id": "run_doc_de7201a41e2296ee_1_1_1",
+  "source_path": "/Users/andrijakolundzic/Documents/Projects/andyai-rag-ingestion-factory/examples/sample_documents/demo_document.txt",
+  "started_at": "2026-05-08T10:54:01.797968+00:00",
+  "status": "completed"
+}

@@ -1,9 +1,12 @@
 [project]
 name = "andyai-rag-ingestion-factory"
-version = "0.1.0"
+version = "1.1.1"
 description = "Canonical AndyAI RAG ingestion factory for large PDF libraries"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.scripts]
+andyai-rag = "rag_ingestion_factory.cli.main:main"
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]

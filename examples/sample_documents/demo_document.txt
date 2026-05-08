@@ -1,0 +1,13 @@
+# AndyAI RAG Ingestion Factory Demo
+
+Page 1
+This is a demonstration document for the AndyAI RAG Ingestion Factory.
+The purpose of the factory is to convert raw documents into structured chunks.
+
+Page 2
+A serious RAG system needs document identity, page identity, chunk identity, and citation identity.
+Without these controls, answers become difficult to verify.
+
+Page 3
+The ingestion pipeline registers the file, extracts text, normalizes structure, creates chunks, stores metadata, and prepares indexes.
+The retrieval layer later uses these chunks to build evidence-backed answers.

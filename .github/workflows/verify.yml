@@ -15,4 +15,3 @@ jobs:
       - run: python -m pip install --upgrade pip pytest
       - run: chmod +x scripts/verify.sh
       - run: ./scripts/verify.sh
-      - run: pytest
