@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PilotAuditEvent",
+  "type": "object",
+  "required": ["pilot_request_id", "actor", "action", "to_status", "reason"],
+  "properties": {
+    "pilot_request_id": {"type": "string"},
+    "actor": {"type": "string"},
+    "action": {"type": "string"},
+    "from_status": {"type": "string"},
+    "to_status": {"type": "string"},
+    "reason": {"type": "string"}
+  }
+}

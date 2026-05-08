@@ -1529,3 +1529,14 @@ Adds review status action model and `PATCH /api/pilot-request/review` scaffold.
 ```text
 A review panel is not operational until decisions can be recorded.
 ```
+
+
+---
+
+## 🧾 v17.4.0 — Pilot Review Audit Trail
+
+Adds traceability for review status changes.
+
+```text
+If a business decision changes state, the trace must survive the moment.
+```
