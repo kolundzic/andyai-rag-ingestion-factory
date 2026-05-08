@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v10.1.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v10.2.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -594,6 +594,52 @@ v10.3.0 — Supabase Runtime Schema
 v10.4.0 — Auth + RLS Permission Model
 v10.5.0 — Public RAG Playground MVP
 v11.0.0 — Runtime API + Web Demo Release
+```
+
+
+
+---
+
+## 🌐 v10.2.0 — Vercel Product Shell
+
+v10.2.0 adds the first public web product shell for:
+
+```text
+AndyAI Knowledge Factory
+knowledgefactory.andyai.ai
+```
+
+App path:
+
+```text
+apps/knowledgefactory-web
+```
+
+Pages:
+
+```text
+/
+ /how-it-works
+ /architecture
+ /playground
+ /operator-console
+ /context-board
+ /pricing
+ /waitlist
+ /docs
+```
+
+Product line:
+
+```text
+Evidence-governed RAG for serious document intelligence.
+```
+
+Deployment rule:
+
+```text
+Deploy the shell first.
+Connect runtime second.
 ```
 
 

@@ -3,7 +3,7 @@ set -euo pipefail
 
 OWNER="${GITHUB_OWNER:-kolundzic}"
 REPO_NAME="${REPO_NAME:-andyai-rag-ingestion-factory}"
-DESCRIPTION="AndyAI Knowledge Factory: sovereign evidence-governed RAG for serious document intelligence. Product site: knowledgefactory.andyai.ai"
+DESCRIPTION="AndyAI Knowledge Factory: Vercel-ready sovereign evidence-governed RAG product shell for serious document intelligence."
 
 echo "━━━━━━━━━━━━━━━━━━━━"
 echo "🌍 Applying GitHub metadata"
@@ -35,9 +35,9 @@ gh api -X PUT "repos/$OWNER/$REPO_NAME/topics" \
   -f names[]=evidence-pack \
   -f names[]=hybrid-search \
   -f names[]=fastapi \
-  -f names[]=knowledge-os \
+  -f names[]=nextjs \
+  -f names[]=vercel \
   -f names[]=knowledge-factory \
-  -f names[]=ai-engineering \
   -f names[]=andyai || true
 
 echo "🟢 GitHub metadata pass completed."

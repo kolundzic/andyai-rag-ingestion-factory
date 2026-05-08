@@ -3,33 +3,36 @@ set -euo pipefail
 export PYTHONPATH="src${PYTHONPATH:+:$PYTHONPATH}"
 
 echo "━━━━━━━━━━━━━━━━━━━━"
-echo "🧪 VERIFY v10.1.0 — Canon Recap & Public Product Bridge"
+echo "🧪 VERIFY v10.2.0 — Vercel Product Shell"
 echo "━━━━━━━━━━━━━━━━━━━━"
 
 python3 -m compileall src >/dev/null
 
 python3 - <<'PY'
-from rag_ingestion_factory.product.status import build_product_status
+from rag_ingestion_factory.product.vercel_shell import build_vercel_shell_status
 
-status = build_product_status()
-assert status["product_name"] == "AndyAI Knowledge Factory"
-assert status["product_site"] == "knowledgefactory.andyai.ai"
-assert "200 PDFs" in status["origin"] or "100-200 PDFs" in status["origin"]
-print("🟢 Product status verified")
-print(f"🟢 Site: {status['product_site']}")
+status = build_vercel_shell_status()
+assert status["site"] == "knowledgefactory.andyai.ai"
+assert status["app_path"] == "apps/knowledgefactory-web"
+assert "/playground" in status["pages"]
+print("🟢 Vercel shell status verified")
+print(f"🟢 Pages: {len(status['pages'])}")
 PY
 
-test -f docs/43-recap/01_ORIGIN_STORY_FROM_200_PDFS.md
-test -f docs/44-vercel-product/00_PRODUCT_DOMAIN_LOCK.md
-test -f docs/45-supabase-runtime/00_SUPABASE_RUNTIME_STANDARD.md
-test -f docs/46-subscriptions/00_SUBSCRIPTION_MODEL.md
-test -f docs/47-public-launch/00_PUBLIC_LAUNCH_CANON.md
-test -f docs/48-v10-to-v20-roadmap/00_ROADMAP_INDEX.md
-test -f schemas/subscription_plan.schema.json
-test -f schemas/workspace.schema.json
-test -f schemas/public_demo_session.schema.json
-test -f scripts/print_v10_1_recap.sh
-test -f scripts/generate_public_positioning_preview.sh
+test -f apps/knowledgefactory-web/package.json
+test -f apps/knowledgefactory-web/app/page.tsx
+test -f apps/knowledgefactory-web/app/layout.tsx
+test -f apps/knowledgefactory-web/app/globals.css
+test -f apps/knowledgefactory-web/components/SiteNav.tsx
+test -f apps/knowledgefactory-web/components/PageShell.tsx
+test -f apps/knowledgefactory-web/lib/product.ts
+test -f apps/knowledgefactory-web/app/playground/page.tsx
+test -f apps/knowledgefactory-web/app/operator-console/page.tsx
+test -f apps/knowledgefactory-web/app/context-board/page.tsx
+test -f docs/49-vercel-shell/00_VERCEL_PRODUCT_SHELL_v10_2.md
+test -f docs/49-vercel-shell/02_DEPLOYMENT_GUIDE_v10_2.md
+test -f docs/releases/RELEASE_NOTES_v10.2.0.md
+test -f scripts/print_v10_2_vercel_shell.sh
 
 if command -v pytest >/dev/null 2>&1; then
   PYTHONPATH=src pytest
