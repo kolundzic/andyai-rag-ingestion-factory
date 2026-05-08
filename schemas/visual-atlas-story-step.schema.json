@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VisualAtlasStoryStep",
+  "type": "object",
+  "required": ["step_id", "order", "title", "diagram_id", "story_role", "user_question_answered"],
+  "properties": {
+    "step_id": { "type": "string" },
+    "order": { "type": "integer" },
+    "title": { "type": "string" },
+    "diagram_id": { "type": "string" },
+    "story_role": { "type": "string" },
+    "user_question_answered": { "type": "string" }
+  }
+}

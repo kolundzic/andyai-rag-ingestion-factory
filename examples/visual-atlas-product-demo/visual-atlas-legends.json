@@ -1,0 +1,75 @@
+{
+  "legends": [
+    {
+      "id": "kf-architecture",
+      "title": "Knowledge Factory Architecture",
+      "diagram_role": "Master architecture overview"
+    },
+    {
+      "id": "massive-ingestion",
+      "title": "Massive Document Ingestion Pipeline",
+      "diagram_role": "Large-scale PDF ingestion"
+    },
+    {
+      "id": "new-rag-paradigm",
+      "title": "The New RAG Paradigm",
+      "diagram_role": "RAG-to-Knowledge-Factory bridge"
+    },
+    {
+      "id": "workflows-control-tower",
+      "title": "Knowledge Workflows & Production Control Tower",
+      "diagram_role": "Production governance"
+    },
+    {
+      "id": "knowledge-governance",
+      "title": "Knowledge Governance Workflow",
+      "diagram_role": "Claim and approval governance"
+    },
+    {
+      "id": "system-stack",
+      "title": "Knowledge Factory System Stack",
+      "diagram_role": "Layered system model"
+    },
+    {
+      "id": "system-map",
+      "title": "Knowledge Factory System Map",
+      "diagram_role": "Whole-system map"
+    },
+    {
+      "id": "product-surface-map",
+      "title": "Product Surface & System Map",
+      "diagram_role": "Product-to-runtime map"
+    },
+    {
+      "id": "human-approval-loop",
+      "title": "Operator Review & Approval Loop",
+      "diagram_role": "Human-in-the-loop"
+    },
+    {
+      "id": "supabase-runtime",
+      "title": "Supabase Runtime & Multi-Tenant Model",
+      "diagram_role": "Runtime and tenant isolation"
+    },
+    {
+      "id": "vercel-release",
+      "title": "Vercel Deploy & Release Pipeline",
+      "diagram_role": "Deployment flow"
+    },
+    {
+      "id": "evidence-lifecycle",
+      "title": "Evidence Pack Lifecycle",
+      "diagram_role": "Evidence traceability"
+    },
+    {
+      "id": "permission-access",
+      "title": "Permission-Aware Access Map",
+      "diagram_role": "Access governance"
+    },
+    {
+      "id": "super-poster",
+      "title": "100–200 PDFs × 1,000 Pages → Knowledge Factory",
+      "diagram_role": "End-to-end super-poster"
+    }
+  ],
+  "total": 14
+}

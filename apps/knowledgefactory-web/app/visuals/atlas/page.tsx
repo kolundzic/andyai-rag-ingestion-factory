@@ -6,7 +6,7 @@ export default function VisualAtlasPage() {
 
   return (
     <PageShell title="Canon Visual Master Atlas" eyebrow="v16.4 official 14-diagram atlas">
-      <p>{visualAtlasSummary.canonicalRule}</p>
+      <p>{visualAtlasSummary.canonicalRule}</p>\n      <div className="card"><strong>Want the guided explanation?</strong><p>Open the Product Demo Layer at /visuals/demo.</p></div>
       <div className="card">
         <strong>{visualAtlasSummary.product}</strong>
         <p>Site: {visualAtlasSummary.site}</p>

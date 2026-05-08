@@ -1,0 +1,124 @@
+{
+  "product": "AndyAI Knowledge Factory",
+  "site": "knowledgefactory.andyai.ai",
+  "version": "v16.5.0",
+  "total_diagrams": 14,
+  "total_legends": 14,
+  "canonical_rule": "The visual atlas is not a gallery. It is the product explanation engine.",
+  "story_flow": [
+    {
+      "step_id": "step-01",
+      "order": 1,
+      "title": "Massive document chaos",
+      "diagram_id": "super-poster"
+    },
+    {
+      "step_id": "step-02",
+      "order": 2,
+      "title": "Disciplined ingestion",
+      "diagram_id": "massive-ingestion"
+    },
+    {
+      "step_id": "step-03",
+      "order": 3,
+      "title": "New RAG paradigm",
+      "diagram_id": "new-rag-paradigm"
+    },
+    {
+      "step_id": "step-04",
+      "order": 4,
+      "title": "Evidence lifecycle",
+      "diagram_id": "evidence-lifecycle"
+    },
+    {
+      "step_id": "step-05",
+      "order": 5,
+      "title": "Human approval",
+      "diagram_id": "human-approval-loop"
+    },
+    {
+      "step_id": "step-06",
+      "order": 6,
+      "title": "System architecture",
+      "diagram_id": "kf-architecture"
+    },
+    {
+      "step_id": "step-07",
+      "order": 7,
+      "title": "Runtime and deployment",
+      "diagram_id": "vercel-release"
+    }
+  ],
+  "legend_index": [
+    {
+      "id": "kf-architecture",
+      "title": "Knowledge Factory Architecture",
+      "diagram_role": "Master architecture overview"
+    },
+    {
+      "id": "massive-ingestion",
+      "title": "Massive Document Ingestion Pipeline",
+      "diagram_role": "Large-scale PDF ingestion"
+    },
+    {
+      "id": "new-rag-paradigm",
+      "title": "The New RAG Paradigm",
+      "diagram_role": "RAG-to-Knowledge-Factory bridge"
+    },
+    {
+      "id": "workflows-control-tower",
+      "title": "Knowledge Workflows & Production Control Tower",
+      "diagram_role": "Production governance"
+    },
+    {
+      "id": "knowledge-governance",
+      "title": "Knowledge Governance Workflow",
+      "diagram_role": "Claim and approval governance"
+    },
+    {
+      "id": "system-stack",
+      "title": "Knowledge Factory System Stack",
+      "diagram_role": "Layered system model"
+    },
+    {
+      "id": "system-map",
+      "title": "Knowledge Factory System Map",
+      "diagram_role": "Whole-system map"
+    },
+    {
+      "id": "product-surface-map",
+      "title": "Product Surface & System Map",
+      "diagram_role": "Product-to-runtime map"
+    },
+    {
+      "id": "human-approval-loop",
+      "title": "Operator Review & Approval Loop",
+      "diagram_role": "Human-in-the-loop"
+    },
+    {
+      "id": "supabase-runtime",
+      "title": "Supabase Runtime & Multi-Tenant Model",
+      "diagram_role": "Runtime and tenant isolation"
+    },
+    {
+      "id": "vercel-release",
+      "title": "Vercel Deploy & Release Pipeline",
+      "diagram_role": "Deployment flow"
+    },
+    {
+      "id": "evidence-lifecycle",
+      "title": "Evidence Pack Lifecycle",
+      "diagram_role": "Evidence traceability"
+    },
+    {
+      "id": "permission-access",
+      "title": "Permission-Aware Access Map",
+      "diagram_role": "Access governance"
+    },
+    {
+      "id": "super-poster",
+      "title": "100–200 PDFs × 1,000 Pages → Knowledge Factory",
+      "diagram_role": "End-to-end super-poster"
+    }
+  ]
+}

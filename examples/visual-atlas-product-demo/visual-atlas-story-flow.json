@@ -1,0 +1,46 @@
+{
+  "story_flow": [
+    {
+      "step_id": "step-01",
+      "order": 1,
+      "title": "Massive document chaos",
+      "diagram_id": "super-poster"
+    },
+    {
+      "step_id": "step-02",
+      "order": 2,
+      "title": "Disciplined ingestion",
+      "diagram_id": "massive-ingestion"
+    },
+    {
+      "step_id": "step-03",
+      "order": 3,
+      "title": "New RAG paradigm",
+      "diagram_id": "new-rag-paradigm"
+    },
+    {
+      "step_id": "step-04",
+      "order": 4,
+      "title": "Evidence lifecycle",
+      "diagram_id": "evidence-lifecycle"
+    },
+    {
+      "step_id": "step-05",
+      "order": 5,
+      "title": "Human approval",
+      "diagram_id": "human-approval-loop"
+    },
+    {
+      "step_id": "step-06",
+      "order": 6,
+      "title": "System architecture",
+      "diagram_id": "kf-architecture"
+    },
+    {
+      "step_id": "step-07",
+      "order": 7,
+      "title": "Runtime and deployment",
+      "diagram_id": "vercel-release"
+    }
+  ]
+}

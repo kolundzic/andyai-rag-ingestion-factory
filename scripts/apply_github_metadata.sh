@@ -2,7 +2,7 @@
 set -euo pipefail
 OWNER="${GITHUB_OWNER:-kolundzic}"
 REPO_NAME="${REPO_NAME:-andyai-rag-ingestion-factory}"
-DESCRIPTION="AndyAI Knowledge Factory: Canon Visual Master Atlas with 14 curated diagrams for evidence-governed RAG, LLM Wiki, Knowledge Graph, Visual Atlas, and deploy control."
+DESCRIPTION="AndyAI Knowledge Factory: Visual Atlas Product Demo Layer with 14 textual legends explaining evidence-governed RAG, LLM Wiki, Knowledge Graph, and human-approved knowledge."
 
 if command -v gh >/dev/null 2>&1; then
   gh repo edit "$OWNER/$REPO_NAME" \
@@ -14,6 +14,7 @@ if command -v gh >/dev/null 2>&1; then
 
   gh api -X PUT "repos/$OWNER/$REPO_NAME/topics" \
     -H "Accept: application/vnd.github+json" \
+    -f names[]=andyai \
     -f names[]=rag \
     -f names[]=knowledge-factory \
     -f names[]=knowledge-graph \
@@ -21,13 +22,12 @@ if command -v gh >/dev/null 2>&1; then
     -f names[]=visual-atlas \
     -f names[]=canon-visuals \
     -f names[]=diagramming \
+    -f names[]=product-demo \
     -f names[]=evidence-pack \
     -f names[]=human-in-the-loop \
     -f names[]=permission-aware \
     -f names[]=self-hosted-rag \
-    -f names[]=vector-search \
-    -f names[]=enterprise-ai \
-    -f names[]=andyai || true
+    -f names[]=enterprise-ai || true
 fi
 
 echo "🟢 GitHub metadata pass completed."

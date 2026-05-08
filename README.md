@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v16.4.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v16.5.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -1106,6 +1106,59 @@ Next:
 
 ```text
 v16.5.0 — Visual Atlas Product Demo Layer
+```
+
+
+
+
+---
+
+## 🖼️ v16.5.0 — Visual Atlas Product Demo Layer
+
+v16.5.0 turns the Visual Atlas from a static gallery into a guided product explanation layer.
+
+```text
+14 official diagrams
+14 textual legends
+1 guided story flow
+1 product demo page
+1 demo API payload
+```
+
+Product demo route:
+
+```text
+/visuals/demo
+```
+
+API route:
+
+```text
+/api/canon-visuals/demo-layer
+```
+
+Canonical rule:
+
+```text
+The visual atlas is not a gallery. It is the product explanation engine.
+```
+
+Serbian:
+
+```text
+Vizuelni atlas nije galerija. On je motor za objašnjavanje proizvoda.
+```
+
+Permanent visual discipline:
+
+```text
+Slike se ne kupe metlom — slike se biraju pincetom.
+```
+
+Next:
+
+```text
+v16.6.0 — Visual Atlas Interactive Story Mode
 ```
 
 
