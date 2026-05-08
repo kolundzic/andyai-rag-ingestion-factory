@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KnowledgeNode",
+  "type": "object",
+  "required": ["node_id", "node_type", "title", "approval_status"],
+  "properties": {
+    "node_id": { "type": "string" },
+    "node_type": {
+      "type": "string",
+      "enum": ["domain", "topic", "subtopic", "entity", "claim", "source", "evidence", "wiki_page", "contradiction", "approval"]
+    },
+    "title": { "type": "string" },
+    "summary": { "type": "string" },
+    "source_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "approval_status": {
+      "type": "string",
+      "enum": ["draft", "under_review", "approved", "rejected", "locked"]
+    },
+    "created_at": { "type": "string" }
+  }
+}

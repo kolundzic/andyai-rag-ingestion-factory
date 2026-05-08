@@ -1,0 +1,15 @@
+{
+  "claim_id": "claim_permissions_before_context",
+  "claim_text": "Permissions must shape retrieval before context reaches the model.",
+  "evidence_pack_id": "evpack_demo_001",
+  "citations": [
+    {
+      "file_name": "LIVE_QDRANT_PIPELINE_v12_0.md",
+      "page_start": 1,
+      "page_end": 1,
+      "section_title": "Canonical Rule",
+      "chunk_id": "demo_chunk_qdrant_rule"
+    }
+  ],
+  "approval_status": "under_review"
+}

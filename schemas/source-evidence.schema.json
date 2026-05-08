@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SourceEvidence",
+  "type": "object",
+  "required": ["source_id", "document_id", "page_start", "page_end"],
+  "properties": {
+    "source_id": { "type": "string" },
+    "document_id": { "type": "string" },
+    "file_name": { "type": "string" },
+    "page_start": { "type": "integer" },
+    "page_end": { "type": "integer" },
+    "quote_anchor": { "type": "string" },
+    "confidence": { "type": "number" }
+  }
+}

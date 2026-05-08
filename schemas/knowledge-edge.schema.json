@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KnowledgeEdge",
+  "type": "object",
+  "required": ["edge_id", "from_node_id", "to_node_id", "edge_type"],
+  "properties": {
+    "edge_id": { "type": "string" },
+    "from_node_id": { "type": "string" },
+    "to_node_id": { "type": "string" },
+    "edge_type": {
+      "type": "string",
+      "enum": ["contains", "mentions", "supports", "contradicts", "derived_from", "approved_by", "related_to", "summarizes", "cites"]
+    },
+    "confidence": { "type": "number" },
+    "evidence_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "created_at": { "type": "string" }
+  }
+}

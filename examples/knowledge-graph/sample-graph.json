@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    {
+      "node_id": "domain_ai_knowledge",
+      "node_type": "domain",
+      "title": "AI Knowledge Systems",
+      "summary": "Systems for turning documents into structured, evidence-backed knowledge.",
+      "approval_status": "draft"
+    },
+    {
+      "node_id": "topic_permission_aware_retrieval",
+      "node_type": "topic",
+      "title": "Permission-Aware Retrieval",
+      "summary": "Retrieval that respects tenant, role, user, and clearance boundaries.",
+      "approval_status": "draft"
+    },
+    {
+      "node_id": "claim_permissions_before_context",
+      "node_type": "claim",
+      "title": "Permissions must shape retrieval before context reaches the model.",
+      "summary": "Permission filtering after generation is too late.",
+      "approval_status": "under_review"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "edge_001",
+      "from_node_id": "domain_ai_knowledge",
+      "to_node_id": "topic_permission_aware_retrieval",
+      "edge_type": "contains",
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "edge_002",
+      "from_node_id": "topic_permission_aware_retrieval",
+      "to_node_id": "claim_permissions_before_context",
+      "edge_type": "supports",
+      "confidence": 0.92
+    }
+  ]
+}

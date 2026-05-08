@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Claim",
+  "type": "object",
+  "required": ["claim_id", "text", "approval_status"],
+  "properties": {
+    "claim_id": { "type": "string" },
+    "text": { "type": "string" },
+    "claim_type": { "type": "string" },
+    "confidence": { "type": "number" },
+    "source_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "evidence_pack_id": { "type": "string" },
+    "approval_status": {
+      "type": "string",
+      "enum": ["extracted", "supported", "challenged", "approved", "rejected", "locked"]
+    }
+  }
+}

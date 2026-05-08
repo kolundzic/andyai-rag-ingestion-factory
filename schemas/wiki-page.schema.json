@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WikiPage",
+  "type": "object",
+  "required": ["wiki_page_id", "title", "page_type", "approval_status"],
+  "properties": {
+    "wiki_page_id": { "type": "string" },
+    "title": { "type": "string" },
+    "page_type": {
+      "type": "string",
+      "enum": ["topic_page", "entity_page", "claim_page", "source_page", "contradiction_page", "summary_page"]
+    },
+    "summary": { "type": "string" },
+    "claim_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related_pages": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "approval_status": {
+      "type": "string",
+      "enum": ["draft", "under_review", "approved", "rejected", "locked"]
+    }
+  }
+}
