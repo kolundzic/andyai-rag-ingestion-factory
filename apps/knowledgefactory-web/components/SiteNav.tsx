@@ -1,4 +1,6 @@
 const links = [
+  ["Atlas", "/atlas"],
+  ["Graph Explorer", "/graph-explorer"],
   ["How it works", "/how-it-works"],
   ["Architecture", "/architecture"],
   ["Playground", "/playground"],

@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v13.0.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v14.0.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -811,6 +811,41 @@ Next:
 
 ```text
 v14.0.0 — Visual Atlas & Graph Explorer
+```
+
+
+
+---
+
+## 🗺️ v14.0.0 — Visual Atlas & Graph Explorer
+
+v14.0.0 turns structured knowledge into a visible human interface.
+
+```text
+Knowledge Graph = structure
+Visual Atlas = understanding
+Graph Explorer = interaction
+Evidence Overlay = trust visibility
+Approval Overlay = governance visibility
+Contradiction Map = uncertainty visibility
+```
+
+Canonical rule:
+
+```text
+Structured knowledge should be visible, not only searchable.
+```
+
+Public product meaning:
+
+```text
+AndyAI Knowledge Factory now helps humans see domains, topics, entities, claims, evidence, and approval states as an atlas and explorer layer.
+```
+
+Next:
+
+```text
+v15.0.0 — Knowledge Workflows & Agentic Compilation
 ```
 
 

@@ -1,0 +1,30 @@
+{
+  "atlas_id": "atlas_demo_001",
+  "title": "Permission-Aware Retrieval Atlas",
+  "view_type": "topic_map",
+  "root_node_id": "topic_permission_aware_retrieval",
+  "visible_node_ids": [
+    "domain_ai_knowledge",
+    "topic_permission_aware_retrieval",
+    "claim_permissions_before_context",
+    "source_live_qdrant_pipeline"
+  ],
+  "visible_edge_ids": [
+    "edge_001",
+    "edge_002",
+    "edge_003"
+  ],
+  "filters": {
+    "approval_status": ["under_review", "approved"],
+    "node_type": ["topic", "claim", "source"]
+  },
+  "legend": [
+    "topic",
+    "claim",
+    "source",
+    "supports",
+    "cites",
+    "approval"
+  ],
+  "created_at": "2026-05-08T00:00:00Z"
+}

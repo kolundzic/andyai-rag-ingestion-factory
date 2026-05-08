@@ -1,0 +1,9 @@
+export async function GET() {
+  return Response.json({
+    session_id: "graph_session_demo_001",
+    selected_node_id: "claim_permissions_before_context",
+    opened_panels: ["node_detail", "evidence_panel", "approval_panel"],
+    highlighted_edge_ids: ["edge_002", "edge_003"],
+    view_type: "claim_network"
+  });
+}

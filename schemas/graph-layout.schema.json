@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GraphLayout",
+  "type": "object",
+  "required": ["layout_id", "nodes", "edges"],
+  "properties": {
+    "layout_id": { "type": "string" },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["node_id", "x", "y"],
+        "properties": {
+          "node_id": { "type": "string" },
+          "x": { "type": "number" },
+          "y": { "type": "number" },
+          "group": { "type": "string" }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["edge_id", "from_node_id", "to_node_id"],
+        "properties": {
+          "edge_id": { "type": "string" },
+          "from_node_id": { "type": "string" },
+          "to_node_id": { "type": "string" }
+        }
+      }
+    }
+  }
+}

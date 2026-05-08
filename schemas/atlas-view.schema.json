@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AtlasView",
+  "type": "object",
+  "required": ["atlas_id", "title", "view_type", "root_node_id"],
+  "properties": {
+    "atlas_id": { "type": "string" },
+    "title": { "type": "string" },
+    "view_type": {
+      "type": "string",
+      "enum": ["domain_map", "topic_map", "entity_network", "claim_network", "evidence_path", "approval_overlay", "contradiction_map"]
+    },
+    "root_node_id": { "type": "string" },
+    "visible_node_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "visible_edge_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "filters": {
+      "type": "object"
+    },
+    "legend": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "created_at": { "type": "string" }
+  }
+}
