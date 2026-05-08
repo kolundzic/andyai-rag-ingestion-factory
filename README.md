@@ -1671,3 +1671,10 @@ AI can propose knowledge. Humans approve canon.
 ## 📤 v20.9.0 — KnowledgeBlock Export Adapter
 
 A KnowledgeBlock is useful only when it can travel safely across systems.
+
+
+---
+
+## 🧼 v21.0.0 — Vector Store Clean Surface Model
+
+The vector store should index governed knowledge, not uncontrolled noise.
