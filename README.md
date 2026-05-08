@@ -688,6 +688,27 @@ v10.4.0 — Auth + RLS Permission Model
 ```
 
 
+
+---
+
+## 🔐 v10.4.0 — Auth + RLS Permission Model
+
+v10.4.0 hardens the Supabase permission model.
+
+```text
+auth.uid()
+→ workspace_members
+→ workspace_id
+→ table access
+```
+
+Canonical rule:
+
+```text
+No RLS, no multi-tenant production.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
