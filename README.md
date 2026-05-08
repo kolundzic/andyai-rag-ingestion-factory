@@ -1615,3 +1615,10 @@ A chunk is a fragment. A KnowledgeBlock is a governed unit of knowledge.
 ## 📐 v20.1.0 — KnowledgeBlock Schema + Examples
 
 A KnowledgeBlock must be readable by humans and enforceable by machines.
+
+
+---
+
+## 🧯 v20.2.0 — Chunk Failure & RAG Noise Map
+
+Most RAG failures are not retrieval failures. They are knowledge-unit failures.

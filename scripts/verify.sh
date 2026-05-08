@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-./scripts/verify_knowledgeblock_schema_examples.sh
+./scripts/verify_rag_noise_map.sh
 echo "🟢 VERIFY PASSED"

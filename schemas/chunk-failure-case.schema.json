@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ChunkFailureCase","type":"object","required":["case_id","failure_type"],"properties":{"case_id":{"type":"string"},"failure_type":{"type":"string"}}}
