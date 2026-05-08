@@ -1,4 +1,5 @@
 const links = [
+  ["Persistence", "/pilot-admin/persistence"],
   ["Pilot Admin", "/pilot-admin"],
   ["Pilot Request", "/pilot-request"],
   ["Client Pitch", "/client-pitch"],

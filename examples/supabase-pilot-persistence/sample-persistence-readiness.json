@@ -1,0 +1,7 @@
+{
+  "table": "public.pilot_requests",
+  "migration": "db/supabase/migrations/017_pilot_request_persistence.sql",
+  "seed": "db/supabase/seeds/017_pilot_request_seed.sql",
+  "rls_state": "demo policies enabled; production tenant policies required",
+  "status": "ready_for_supabase_lab_apply"
+}

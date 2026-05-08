@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PilotRequestPersistenceRecord",
+  "type": "object",
+  "required": [
+    "id",
+    "tenant_id",
+    "workspace_id",
+    "name",
+    "email",
+    "organization",
+    "document_count_range",
+    "primary_domain",
+    "main_problem",
+    "success_criteria",
+    "privacy_level",
+    "qualification_score",
+    "qualification_status",
+    "review_status",
+    "priority",
+    "next_action"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "tenant_id": { "type": "string" },
+    "workspace_id": { "type": "string" },
+    "name": { "type": "string" },
+    "email": { "type": "string" },
+    "organization": { "type": "string" },
+    "document_count_range": { "type": "string" },
+    "primary_domain": { "type": "string" },
+    "main_problem": { "type": "string" },
+    "success_criteria": { "type": "string" },
+    "privacy_level": { "type": "string" },
+    "qualification_score": { "type": "integer" },
+    "qualification_status": { "type": "string" },
+    "review_status": { "type": "string" },
+    "priority": { "type": "string" },
+    "next_action": { "type": "string" }
+  }
+}

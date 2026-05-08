@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 echo "━━━━━━━━━━━━━━━━━━━━"
-echo "🧪 VERIFY v16.9.0 — Pilot Intake Admin Review Layer"
+echo "🧪 VERIFY v17.0.1 — Supabase Persistence Verify Rescue"
 echo "━━━━━━━━━━━━━━━━━━━━"
-./scripts/verify_pilot_intake_admin_review.sh
+./scripts/verify_supabase_pilot_persistence.sh
 echo "🟢 VERIFY PASSED"

@@ -1,0 +1,18 @@
+{
+  "id": "demo-persisted-pilot-001",
+  "tenant_id": "demo-tenant",
+  "workspace_id": "demo-workspace",
+  "name": "Demo Client",
+  "email": "client@example.com",
+  "organization": "Example Organization",
+  "document_count_range": "50–200 documents",
+  "primary_domain": "technical documentation",
+  "main_problem": "We need evidence-backed search across technical PDFs and internal reports.",
+  "success_criteria": "Users should find answers faster and verify source documents.",
+  "privacy_level": "internal business documents",
+  "qualification_score": 100,
+  "qualification_status": "green",
+  "review_status": "approved_for_pilot",
+  "priority": "high",
+  "next_action": "Schedule pilot review call"
+}

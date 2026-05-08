@@ -7,6 +7,7 @@ export default function PilotAdminPage() {
   return (
     <PageShell title="Pilot Intake Admin Review" eyebrow="v16.9 operator console">
       <p>{pilotAdminReview.canonicalRule}</p>
+      <div className="card"><strong>Persistence layer</strong><p>Review Supabase persistence readiness at /pilot-admin/persistence.</p></div>
 
       <div className="card">
         <strong>{pilotAdminReview.product}</strong>

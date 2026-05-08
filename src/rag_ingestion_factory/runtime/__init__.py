@@ -1,1 +1,1 @@
-"""Runtime service package."""
+"""Runtime adapters for AndyAI Knowledge Factory."""

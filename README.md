@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v16.9.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v17.0.1-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -1359,6 +1359,87 @@ Next:
 
 ```text
 v17.0.0 — Supabase Pilot Request Persistence
+```
+
+
+
+
+---
+
+## 🗄️ v17.0.0 — Supabase Pilot Request Persistence
+
+v17.0.0 moves pilot requests from demo objects toward real Supabase persistence.
+
+```text
+public.pilot_requests
+Supabase migration
+seed data
+demo RLS policies
+runtime adapter
+/pilot-admin/persistence
+/api/pilot-request/persistence-demo
+```
+
+Canonical rule:
+
+```text
+A pilot request becomes operational only when it can be stored, reviewed, protected, and followed up.
+```
+
+Serbian:
+
+```text
+Pilot zahtev postaje operativan tek kada može da se sačuva, pregleda, zaštiti i prati dalje.
+```
+
+Production warning:
+
+```text
+Demo RLS policies are for lab testing only. Production requires tenant-bound policies.
+```
+
+Next:
+
+```text
+v17.1.0 — Supabase Client Runtime Wiring
+```
+
+
+
+
+---
+
+## 🧯 v17.0.1 — Supabase Persistence Verify Rescue
+
+v17.0.1 rescues the Supabase Pilot Request Persistence release by fixing the Python smoke-test import path.
+
+```text
+Root cause: Python smoke test lacked PYTHONPATH=src
+Fix: PYTHONPATH=src python3 ...
+```
+
+Persistence scope:
+
+```text
+public.pilot_requests
+Supabase migration
+seed data
+demo RLS policies
+runtime adapter
+/pilot-admin/persistence
+/api/pilot-request/persistence-demo
+```
+
+Canonical rule:
+
+```text
+A pilot request becomes operational only when it can be stored, reviewed, protected, and followed up.
+```
+
+Next:
+
+```text
+v17.1.0 — Supabase Client Runtime Wiring
 ```
 
 

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SupabasePilotRequestTable",
+  "type": "object",
+  "required": ["table", "rls_enabled", "indexes", "policies"],
+  "properties": {
+    "table": { "type": "string" },
+    "rls_enabled": { "type": "boolean" },
+    "indexes": { "type": "array", "items": { "type": "string" } },
+    "policies": { "type": "array", "items": { "type": "string" } }
+  }
+}
