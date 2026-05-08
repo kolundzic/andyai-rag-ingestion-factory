@@ -3,7 +3,7 @@ set -euo pipefail
 
 OWNER="${GITHUB_OWNER:-kolundzic}"
 REPO_NAME="${REPO_NAME:-andyai-rag-ingestion-factory}"
-DESCRIPTION="Sovereign evidence-governed RAG factory for large PDF libraries with permissions, Context Board, Qdrant, PostgreSQL metadata, and enterprise AI architecture."
+DESCRIPTION="Sovereign evidence-governed knowledge factory for large document libraries: ingestion, permissions, retrieval, evidence, context boards, drafting, approval, observability, and release governance."
 
 echo "━━━━━━━━━━━━━━━━━━━━"
 echo "🌍 Applying GitHub metadata"
@@ -21,24 +21,22 @@ gh repo edit "$OWNER/$REPO_NAME" \
   --enable-wiki=false \
   --enable-projects=false || true
 
-gh repo edit "$OWNER/$REPO_NAME" \
-  --add-topic rag \
-  --add-topic sovereign-ai \
-  --add-topic enterprise-ai \
-  --add-topic retrieval-augmented-generation \
-  --add-topic pdf-processing \
-  --add-topic document-ai \
-  --add-topic ingestion-pipeline \
-  --add-topic vector-search \
-  --add-topic qdrant \
-  --add-topic postgresql \
-  --add-topic permission-aware \
-  --add-topic context-board \
-  --add-topic evidence-pack \
-  --add-topic external-gateway \
-  --add-topic hybrid-search \
-  --add-topic fastapi \
-  --add-topic ai-engineering \
-  --add-topic andyai || true
+# Use controlled topic list under GitHub 20-topic limit.
+gh api -X PUT "repos/$OWNER/$REPO_NAME/topics" \
+  -H "Accept: application/vnd.github+json" \
+  -f names[]=rag \
+  -f names[]=sovereign-ai \
+  -f names[]=enterprise-ai \
+  -f names[]=document-ai \
+  -f names[]=qdrant \
+  -f names[]=postgresql \
+  -f names[]=permission-aware \
+  -f names[]=context-board \
+  -f names[]=evidence-pack \
+  -f names[]=hybrid-search \
+  -f names[]=fastapi \
+  -f names[]=knowledge-os \
+  -f names[]=ai-engineering \
+  -f names[]=andyai || true
 
 echo "🟢 GitHub metadata pass completed."

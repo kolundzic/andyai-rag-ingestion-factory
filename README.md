@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v5.0.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v10.0.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -519,6 +519,36 @@ v9.0.0 defines release manifest discipline.
 ```text
 Release is not a tag.
 Release is proof plus version plus rollback path.
+```
+
+
+
+---
+
+## 🧠 v10.0.0 — Sovereign Knowledge OS Canon Lock
+
+v10.0.0 locks the first complete canon.
+
+```text
+Ingest.
+Structure.
+Permission.
+Retrieve.
+Evidence.
+Context.
+Draft.
+Approve.
+Externalize.
+Observe.
+Release.
+Govern.
+```
+
+Public message:
+
+```text
+This is not a chatbot.
+This is a sovereign knowledge factory with evidence, permissions, and governance.
 ```
 
 
