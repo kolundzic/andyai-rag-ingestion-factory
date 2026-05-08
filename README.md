@@ -1562,3 +1562,14 @@ Turns qualified pilot requests into structured proposals.
 ```text
 A qualified pilot request should become a proposal, not another loose conversation.
 ```
+
+
+---
+
+## ✉️ v18.2.0 — Client Follow-Up Draft Layer
+
+Generates follow-up drafts from review decisions.
+
+```text
+The review is internal. The follow-up turns it into client movement.
+```

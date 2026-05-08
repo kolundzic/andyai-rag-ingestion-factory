@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PilotFollowUpDraft",
+  "type": "object",
+  "required": ["status", "subject", "body"],
+  "properties": {
+    "status": {"type": "string"},
+    "subject": {"type": "string"},
+    "body": {"type": "string"}
+  }
+}
