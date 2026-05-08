@@ -4,7 +4,7 @@
 > Turn raw PDFs into **structured chunks, searchable indexes, retrieval evidence, and citable answers**.
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v1.3.1-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v2.0.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="focus" src="https://img.shields.io/badge/focus-evidence--first-purple">
@@ -454,6 +454,44 @@ Canonical rule:
 ```text
 Candidate is not evidence.
 Evidence is candidate + source + page + chunk + score + reason.
+```
+
+
+
+---
+
+## 🛡️ v2.0.0 — Governed RAG Ingestion Factory
+
+v2.0.0 is the first complete architecture release.
+
+The repo now includes:
+
+- real PDF parser adapter
+- page-aware chunking
+- PostgreSQL metadata schema
+- vector index layer
+- hybrid retrieval engine
+- reranker
+- evidence pack
+- governance audit log
+- public repo polish
+
+Final v2 formula:
+
+```text
+Parse carefully.
+Chunk intelligently.
+Index traceably.
+Retrieve hybridly.
+Rerank evidence.
+Cite always.
+Audit everything.
+```
+
+Production rule:
+
+```text
+No audit trail, no production answer.
 ```
 
 
