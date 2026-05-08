@@ -304,6 +304,21 @@ docker-compose.yml
 
 ---
 
+
+---
+
+## 🔐 v4.2.0 — Qdrant Payload Permission Filters
+
+v4.2.0 prepares permission-aware retrieval at the vector payload level.
+
+Canonical rule:
+
+```text
+Permission filtering after generation is too late.
+Permissions must shape retrieval before context reaches the model.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
