@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SupabaseRuntimeStatus",
+  "type": "object",
+  "required": ["runtime_mode", "database_connected", "writes_enabled", "safe_message"],
+  "properties": {
+    "runtime_mode": {
+      "type": "string",
+      "enum": ["mock", "supabase-client-ready", "supabase-server-ready", "disabled"]
+    },
+    "database_connected": { "type": "boolean" },
+    "writes_enabled": { "type": "boolean" },
+    "safe_message": { "type": "string" },
+    "required_env": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

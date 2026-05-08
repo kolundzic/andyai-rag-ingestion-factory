@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SupabaseAdapterMode",
+  "type": "object",
+  "required": ["mode", "description", "allowed_in_production"],
+  "properties": {
+    "mode": { "type": "string" },
+    "description": { "type": "string" },
+    "allowed_in_production": { "type": "boolean" }
+  }
+}

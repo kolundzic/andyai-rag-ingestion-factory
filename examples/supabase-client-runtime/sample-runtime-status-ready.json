@@ -1,0 +1,10 @@
+{
+  "runtime_mode": "supabase-client-ready",
+  "database_connected": true,
+  "writes_enabled": false,
+  "safe_message": "Supabase environment is configured. Writes remain guarded until create/list API routes are hardened.",
+  "required_env": [
+    "NEXT_PUBLIC_SUPABASE_URL",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY"
+  ]
+}

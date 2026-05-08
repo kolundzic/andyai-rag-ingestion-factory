@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v17.0.1-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v17.1.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -1440,6 +1440,49 @@ Next:
 
 ```text
 v17.1.0 — Supabase Client Runtime Wiring
+```
+
+
+
+
+---
+
+## 🔌 v17.1.0 — Supabase Client Runtime Wiring
+
+v17.1.0 adds the runtime bridge between the Vercel product surface and the Supabase persistence layer.
+
+```text
+/pilot-admin/runtime
+/api/pilot-request/runtime-demo
+safe mock fallback
+Supabase env standard
+runtime adapter contract
+Vercel env checklist
+```
+
+Canonical rule:
+
+```text
+Persistence is the table. Runtime wiring is the bridge between product and database.
+```
+
+Serbian:
+
+```text
+Persistence je tabela. Runtime wiring je most između proizvoda i baze.
+```
+
+Required env:
+
+```text
+NEXT_PUBLIC_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY
+```
+
+Next:
+
+```text
+v17.2.0 — Pilot Create/List API Route Scaffolding
 ```
 
 

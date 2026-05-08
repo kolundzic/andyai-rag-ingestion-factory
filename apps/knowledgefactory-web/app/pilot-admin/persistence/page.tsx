@@ -7,6 +7,7 @@ export default function PilotPersistencePage() {
   return (
     <PageShell title="Supabase Pilot Request Persistence" eyebrow="v17.0 persistence layer">
       <p>{pilotRequestPersistence.canonicalRule}</p>
+      <div className="card"><strong>Runtime bridge</strong><p>Check Supabase client runtime status at /pilot-admin/runtime.</p></div>
 
       <div className="card">
         <strong>{pilotRequestPersistence.product}</strong>

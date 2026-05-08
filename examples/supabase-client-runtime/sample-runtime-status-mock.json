@@ -1,0 +1,10 @@
+{
+  "runtime_mode": "mock",
+  "database_connected": false,
+  "writes_enabled": false,
+  "safe_message": "Supabase environment is not configured yet. Product pages use safe mock mode.",
+  "required_env": [
+    "NEXT_PUBLIC_SUPABASE_URL",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY"
+  ]
+}
