@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-./scripts/verify_supabase_production_hardening.sh
+./scripts/verify_pilot_proposal_generator.sh
 echo "🟢 VERIFY PASSED"

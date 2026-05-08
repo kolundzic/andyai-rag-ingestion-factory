@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PilotProposal",
+  "type": "object",
+  "required": ["title", "scope", "success_metrics", "next_step"],
+  "properties": {
+    "title": {"type": "string"},
+    "scope": {"type": "array", "items": {"type": "string"}},
+    "success_metrics": {"type": "array", "items": {"type": "string"}},
+    "next_step": {"type": "string"}
+  }
+}

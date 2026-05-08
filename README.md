@@ -1551,3 +1551,14 @@ Adds production-aware RLS/security standards.
 ```text
 Demo RLS lets the lab breathe. Production RLS lets the business survive.
 ```
+
+
+---
+
+## 📄 v18.1.0 — Pilot Proposal Generator
+
+Turns qualified pilot requests into structured proposals.
+
+```text
+A qualified pilot request should become a proposal, not another loose conversation.
+```
