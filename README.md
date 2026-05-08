@@ -473,6 +473,18 @@ A RAG factory must measure retrieval, not only celebrate answers.
 ```
 
 
+
+---
+
+## ⚙️ v6.0.0 — Runtime Service
+
+v6.0.0 defines the runtime service boundary.
+
+```text
+Library becomes service only when runtime boundaries are explicit.
+```
+
+
 ## 👨‍💻 Founder
 
 # 🧠 AndyAI
