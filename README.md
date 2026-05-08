@@ -3,7 +3,7 @@
 > **Evidence-governed RAG ingestion factory for large PDF libraries, sovereign enterprise knowledge systems, and permission-aware retrieval.**
 
 <p align="left">
-  <img alt="version" src="https://img.shields.io/badge/version-v10.2.0-black">
+  <img alt="version" src="https://img.shields.io/badge/version-v10.3.0-black">
   <img alt="status" src="https://img.shields.io/badge/status-active-success">
   <img alt="type" src="https://img.shields.io/badge/type-RAG%20Ingestion%20Factory-blue">
   <img alt="sovereign" src="https://img.shields.io/badge/sovereign-ready-purple">
@@ -640,6 +640,51 @@ Deployment rule:
 ```text
 Deploy the shell first.
 Connect runtime second.
+```
+
+
+
+---
+
+## 🗄️ v10.3.0 — Supabase Runtime Schema
+
+v10.3.0 adds the first Supabase runtime schema for:
+
+```text
+AndyAI Knowledge Factory
+knowledgefactory.andyai.ai
+```
+
+Runtime tables:
+
+```text
+profiles
+workspaces
+workspace_members
+documents
+ingestion_runs
+chunks_metadata
+evidence_packs
+context_boards
+drafts
+approval_decisions
+subscription_plans
+subscriptions
+usage_events
+quota_counters
+```
+
+Canonical rule:
+
+```text
+Supabase stores product runtime truth.
+The repository stores engineering canon.
+```
+
+Next:
+
+```text
+v10.4.0 — Auth + RLS Permission Model
 ```
 
 
