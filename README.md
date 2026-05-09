@@ -2077,3 +2077,10 @@ Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no lo
 ## v42.1.0 — CI Preflight and Portable Shell Check
 
 Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no longer only executes releases; it proves them.
+
+
+---
+
+## v43.0.0 — Release Operator Console v2
+
+Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no longer only executes releases; it proves them.
