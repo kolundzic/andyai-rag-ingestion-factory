@@ -1986,3 +1986,10 @@ Part of the Portable Shell + Curator Production Hardening Arc. This turns the re
 ## v36.1.0 — Repo Context Confirmation Gate
 
 Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
+
+
+---
+
+## v37.0.0 — Forward-Only Incident Handling Standard
+
+Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
