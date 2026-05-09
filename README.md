@@ -2462,3 +2462,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v70.0.0 — Knowledge Factory Public Alpha Launch Kernel
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v70.1.0 — Public Alpha Home Polish
+
+Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
