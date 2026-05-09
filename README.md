@@ -1951,3 +1951,10 @@ Part of the Curator Persistence + Operator Command System arc. This moves Knowle
 ## v35.0.1 — Metadata and Shell Compatibility Note
 
 Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
+
+
+---
+
+## v35.1.0 — Portable MASTER-UDARAC Script Standard
+
+Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
