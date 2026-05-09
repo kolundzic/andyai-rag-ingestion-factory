@@ -2378,3 +2378,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v63.1.0 — Release Proof Public Trust Page Linkage
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v64.0.0 — Pilot Request CTA Integration
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
