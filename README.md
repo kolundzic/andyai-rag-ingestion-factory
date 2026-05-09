@@ -2553,3 +2553,10 @@ Part of the Public Alpha Polish + Vercel Production Surface arc. The public alph
 ## v80.0.0 — Public Alpha Surface Kernel
 
 Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
+
+
+---
+
+## v80.1.0 — Vercel Environment Variable Contract
+
+Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Public Beta Glow arc. Public Alpha opened the door; Public Beta turns on the lights.
