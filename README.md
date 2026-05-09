@@ -265,3 +265,10 @@ v101.0.0 — README & Documentation Polish Kernel
 ## v101.1.0 — Beyond RAG MCP Native Knowledge Graph Signal
 
 Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
+
+
+---
+
+## v101.2.0 — AndyAI Structural Awareness Layer Standard
+
+Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
