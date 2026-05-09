@@ -2336,3 +2336,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v60.2.0 — Public Landing Page Copy Bank
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v61.0.0 — Vercel Public Demo Route Map
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
