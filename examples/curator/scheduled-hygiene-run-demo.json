@@ -1,0 +1,1 @@
+{"run_type":"daily_freshness_scan","scope":"project","status":"scheduled","steps":["scan","score","report","queue_review"]}

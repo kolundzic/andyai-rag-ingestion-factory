@@ -1874,3 +1874,10 @@ Connects Hermes and Claude signals to the wider AndyAI Guided Action ecosystem.
 ## 🧠🧹 v32.0.0 — Knowledge Curator + Guided Action Launch Layer
 
 Locks the Hermes + Claude signal bridge as Knowledge Curator, Graph Hygiene, Evidence Quality, Guided Action, and Verified Knowledge Outcome.
+
+
+---
+
+## v32.1.0 — Supabase Curator Persistence Schema
+
+Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
