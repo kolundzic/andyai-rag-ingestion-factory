@@ -1860,3 +1860,10 @@ Translates Claude 25 Ways signal into AndyAI Guided Action Intelligence.
 ## 🤜 v31.2.0 — Guided Action Bridge for Knowledge Factory
 
 Connects curator tasks with evidence scans, knowledge fixes, human approval, and verified outcomes.
+
+
+---
+
+## 🌐 v31.3.0 — AndyAI Ecosystem Signal Integration
+
+Connects Hermes and Claude signals to the wider AndyAI Guided Action ecosystem.
