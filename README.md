@@ -370,3 +370,10 @@ Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text
 ## v108.1.0 — Release Impact Graph
 
 Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
+
+
+---
+
+## v109.0.0 — Structural Awareness Dashboard
+
+Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
