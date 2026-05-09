@@ -1825,3 +1825,10 @@ Detects near duplicates and routes merge candidates to human review.
 ## 🕸️ v30.6.0 — Graph Hygiene Layer
 
 Detects orphan nodes, broken edges, uncited claims, weak relations, contradiction clusters, and stale graph branches.
+
+
+---
+
+## ⚖️ v30.7.0 — Evidence Quality Score
+
+Scores evidence using source trace, quote anchor, confidence, recency, authority, approval, and contradiction risk.
