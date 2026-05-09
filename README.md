@@ -2413,3 +2413,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v66.0.0 — Public Roadmap Page
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v66.1.0 — Public Architecture Overview Page
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
