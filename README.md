@@ -2070,3 +2070,10 @@ Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no lo
 ## v42.0.0 — GitHub Actions Release Guard Workflow
 
 Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no longer only executes releases; it proves them.
+
+
+---
+
+## v42.1.0 — CI Preflight and Portable Shell Check
+
+Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no longer only executes releases; it proves them.
