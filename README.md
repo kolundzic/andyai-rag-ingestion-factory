@@ -2469,3 +2469,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v70.1.0 — Public Alpha Home Polish
 
 Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
+
+
+---
+
+## v70.2.0 — Public Navigation System
+
+Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
