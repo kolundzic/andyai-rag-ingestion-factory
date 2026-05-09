@@ -2679,3 +2679,10 @@ Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Pu
 ## v90.0.0 — Knowledge Factory Public Beta Live Wiring Kernel
 
 Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Public Beta Glow arc. Public Alpha opened the door; Public Beta turns on the lights.
+
+
+---
+
+## v90.1.0 — Real Public Feedback POST Route
+
+Part of the Public Beta / v1.0 Candidate Arc. Public beta is not a broom; it turns on the lights in the dark.

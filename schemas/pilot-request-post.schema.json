@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"PilotRequestPost","type":"object","required":["company","use_case"],"additionalProperties":true}
