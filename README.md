@@ -1839,3 +1839,10 @@ Scores evidence using source trace, quote anchor, confidence, recency, authority
 ## 🧯 v30.8.0 — Stale Knowledge Report
 
 Adds stale knowledge reporting with appearances, dependencies, recommended action, and human review priority.
+
+
+---
+
+## 📊 v31.0.0 — Knowledge Curator Dashboard Layer
+
+Adds Vercel pages and API routes for knowledge curator and knowledge hygiene dashboard.
