@@ -2714,3 +2714,10 @@ Part of the Public Beta / v1.0 Candidate Arc. Public beta is not a broom; it tur
 ## v92.0.0 — Production RLS Audit Checklist
 
 Part of the Public Beta / v1.0 Candidate Arc. Public beta is not a broom; it turns on the lights in the dark.
+
+
+---
+
+## v92.1.0 — Vercel Build Smoke Standard
+
+Part of the Public Beta / v1.0 Candidate Arc. Public beta is not a broom; it turns on the lights in the dark.
