@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ChunkNoiseReport","type":"object","required":["chunk_id","noise_types"],"properties":{"chunk_id":{"type":"string"},"noise_types":{"type":"array","items":{"type":"string"}},"recommended_action":{"type":"string"}}}

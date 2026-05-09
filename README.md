@@ -1783,3 +1783,10 @@ Adds plan model, usage limits, billing abstraction, upgrade trigger model, and s
 ## 🧠 v30.0.0 — KnowledgeFactory / WikiPress Launch Kernel
 
 Locks the repeatable product launch system connecting KnowledgeBlock Factory, LLM Wiki, AdAstraNova showcase, WikiPress offer, workspaces, publishing pipeline, and billing readiness.
+
+
+---
+
+## 🧹 v30.1.0 — Hermes Signal for Knowledge Factory
+
+Maps Hermes Curator signal into Knowledge Factory: stale chunks, duplicate detection, freshness, graph hygiene, and evidence quality.

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"DuplicateDetectorReport","type":"object","required":["candidate_a","candidate_b","score","recommended_action"],"properties":{"candidate_a":{"type":"string"},"candidate_b":{"type":"string"},"score":{"type":"number"},"recommended_action":{"type":"string"}}}

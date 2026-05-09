@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"StaleKnowledgeReport","type":"object","required":["item_id","reason","recommended_action"],"properties":{"item_id":{"type":"string"},"reason":{"type":"string"},"appearances":{"type":"array"},"dependencies":{"type":"array"},"recommended_action":{"type":"string"},"human_review_priority":{"type":"string"}}}

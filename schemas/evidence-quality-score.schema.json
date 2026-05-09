@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"EvidenceQualityScore","type":"object","required":["score","status"],"properties":{"score":{"type":"number"},"status":{"type":"string"},"factors":{"type":"object"}}}

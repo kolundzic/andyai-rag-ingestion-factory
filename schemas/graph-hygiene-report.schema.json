@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"GraphHygieneReport","type":"object","required":["orphan_nodes","broken_edges","uncited_claims"],"properties":{"orphan_nodes":{"type":"array"},"broken_edges":{"type":"array"},"uncited_claims":{"type":"array"},"recommended_actions":{"type":"array"}}}

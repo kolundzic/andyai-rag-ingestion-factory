@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-./scripts/verify_launch_kernel.sh
+./scripts/verify_curator_arc.sh
 echo "🟢 VERIFY PASSED"

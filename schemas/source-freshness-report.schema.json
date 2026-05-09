@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"SourceFreshnessReport","type":"object","required":["source_id","freshness_score","status"],"properties":{"source_id":{"type":"string"},"freshness_score":{"type":"number"},"status":{"type":"string"},"review_priority":{"type":"string"}}}
