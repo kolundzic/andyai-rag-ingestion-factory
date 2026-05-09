@@ -1,0 +1,6 @@
+{
+  "version": "v110.0.0",
+  "changed": ["src/rag_ingestion_factory/asal"],
+  "affects": ["docs/asal", "apps/knowledgefactory-web/app/asal"],
+  "verifies": ["tests/test_asal_kernel.py"]
+}

@@ -1,0 +1,6 @@
+{
+  "start": "api_handler",
+  "target": "database_write",
+  "path": ["api_handler", "service_layer", "database_write"],
+  "status": "traversal_ready"
+}

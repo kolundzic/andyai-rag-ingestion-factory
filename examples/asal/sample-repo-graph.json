@@ -1,0 +1,9 @@
+{
+  "nodes": [
+    {"id": "fn:parse_docs", "type": "function", "name": "parse_docs"},
+    {"id": "fn:build_graph", "type": "function", "name": "build_graph"}
+  ],
+  "edges": [
+    {"source": "fn:parse_docs", "target": "fn:build_graph", "relation": "calls"}
+  ]
+}

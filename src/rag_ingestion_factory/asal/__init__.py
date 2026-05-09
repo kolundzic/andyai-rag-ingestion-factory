@@ -1,0 +1,1 @@
+# AndyAI Structural Awareness Layer
