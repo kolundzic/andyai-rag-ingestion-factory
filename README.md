@@ -2098,3 +2098,10 @@ Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no lo
 ## v45.0.0 — Evidence-Backed TAP-TAP Release Intelligence Kernel
 
 Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no longer only executes releases; it proves them.
+
+
+---
+
+## v45.1.0 — Supabase Release Evidence Persistence
+
+Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc. TAP-TAP now remembers releases as queryable operational memory.
