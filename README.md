@@ -1811,3 +1811,10 @@ Detects noisy chunks before they poison retrieval, wiki compilation, and graph b
 ## 🕰️ v30.4.0 — Source Freshness Checker
 
 Adds freshness scoring for old, superseded, conflicting, or review-critical sources.
+
+
+---
+
+## 🧬 v30.5.0 — Duplicate Detector + Canonical Merge Review
+
+Detects near duplicates and routes merge candidates to human review.
