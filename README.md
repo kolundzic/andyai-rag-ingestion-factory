@@ -2266,3 +2266,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v56.0.0 — Worker Execution Contract Standard
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v56.1.0 — Worker Result Envelope Schema
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
