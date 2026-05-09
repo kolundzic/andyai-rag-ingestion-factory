@@ -2504,3 +2504,10 @@ Part of the Public Alpha Polish + Vercel Production Surface arc. The public alph
 ## v72.1.0 — SEO Metadata Standard
 
 Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
+
+
+---
+
+## v73.0.0 — Social Preview Metadata Standard
+
+Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
