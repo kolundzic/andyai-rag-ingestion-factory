@@ -2455,3 +2455,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v69.0.0 — Vercel Launch Readiness Checklist
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v70.0.0 — Knowledge Factory Public Alpha Launch Kernel
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
