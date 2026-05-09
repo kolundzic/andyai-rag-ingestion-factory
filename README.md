@@ -2084,3 +2084,10 @@ Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no lo
 ## v43.0.0 — Release Operator Console v2
 
 Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no longer only executes releases; it proves them.
+
+
+---
+
+## v44.0.0 — Public Release Proof Page
+
+Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no longer only executes releases; it proves them.
