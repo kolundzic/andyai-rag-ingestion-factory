@@ -2196,3 +2196,10 @@ Part of the Sakana RL Conductor Signal + Guided Knowledge Orchestration Kernel a
 ## v50.3.0 — Dynamic Retrieval Strategy Planner
 
 Part of the Sakana RL Conductor Signal + Guided Knowledge Orchestration Kernel arc. Conductor chooses the path; Knowledge Factory verifies and canonizes.
+
+
+---
+
+## v51.0.0 — Agent Role Assignment for Knowledge Factory
+
+Part of the Sakana RL Conductor Signal + Guided Knowledge Orchestration Kernel arc. Conductor chooses the path; Knowledge Factory verifies and canonizes.
