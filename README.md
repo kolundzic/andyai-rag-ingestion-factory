@@ -2112,3 +2112,10 @@ Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc.
 ## v45.2.0 — Release History Table Model
 
 Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc. TAP-TAP now remembers releases as queryable operational memory.
+
+
+---
+
+## v45.3.0 — Release Evidence Record Schema
+
+Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc. TAP-TAP now remembers releases as queryable operational memory.
