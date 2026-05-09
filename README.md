@@ -1979,3 +1979,10 @@ Part of the Portable Shell + Curator Production Hardening Arc. This turns the re
 ## v36.0.0 — Release Guard and Preflight Layer
 
 Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
+
+
+---
+
+## v36.1.0 — Repo Context Confirmation Gate
+
+Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
