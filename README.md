@@ -2315,3 +2315,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v59.1.0 — Retry Strategy Console
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v60.0.0 — Conductor Production Readiness Kernel
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
