@@ -1790,3 +1790,10 @@ Locks the repeatable product launch system connecting KnowledgeBlock Factory, LL
 ## 🧹 v30.1.0 — Hermes Signal for Knowledge Factory
 
 Maps Hermes Curator signal into Knowledge Factory: stale chunks, duplicate detection, freshness, graph hygiene, and evidence quality.
+
+
+---
+
+## 🧼 v30.2.0 — Knowledge Curator Standard
+
+Defines the maintenance layer that prevents RAG from becoming a landfill of chunks.
