@@ -2490,3 +2490,10 @@ Part of the Public Alpha Polish + Vercel Production Surface arc. The public alph
 ## v71.1.0 — CTA Flow Map
 
 Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
+
+
+---
+
+## v72.0.0 — Route Health Check Layer
+
+Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
