@@ -2007,3 +2007,10 @@ Part of the Portable Shell + Curator Production Hardening Arc. This turns the re
 ## v39.0.0 — Release Operator Console Page
 
 Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
+
+
+---
+
+## v40.0.0 — Portable TAP-TAP Runtime Kernel
+
+Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
