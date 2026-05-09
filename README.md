@@ -2525,3 +2525,10 @@ Part of the Public Alpha Polish + Vercel Production Surface arc. The public alph
 ## v74.0.0 — Vercel Deploy Checks
 
 Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
+
+
+---
+
+## v74.1.0 — Public Alpha Proof Panel
+
+Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
