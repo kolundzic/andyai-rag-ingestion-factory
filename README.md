@@ -1944,3 +1944,10 @@ Part of the Curator Persistence + Operator Command System arc. This moves Knowle
 ## v35.0.0 — Knowledge Curator Production Demo Kernel
 
 Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
+
+
+---
+
+## v35.0.1 — Metadata and Shell Compatibility Note
+
+Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
