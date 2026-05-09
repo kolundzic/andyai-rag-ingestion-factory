@@ -2126,3 +2126,10 @@ Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc.
 ## v46.0.0 — Release Evidence Persistence Adapter
 
 Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc. TAP-TAP now remembers releases as queryable operational memory.
+
+
+---
+
+## v46.1.0 — Release History Query Layer
+
+Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc. TAP-TAP now remembers releases as queryable operational memory.
