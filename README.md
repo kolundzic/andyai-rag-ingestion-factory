@@ -2329,3 +2329,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v60.1.0 — Public Product Positioning Layer
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v60.2.0 — Public Landing Page Copy Bank
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
