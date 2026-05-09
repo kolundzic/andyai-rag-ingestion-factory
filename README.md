@@ -1923,3 +1923,10 @@ Part of the Curator Persistence + Operator Command System arc. This moves Knowle
 ## v33.1.0 — Curator Health Score
 
 Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
+
+
+---
+
+## v33.2.0 — Scheduled Hygiene Runner
+
+Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
