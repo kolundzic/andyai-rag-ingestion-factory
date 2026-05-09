@@ -2707,3 +2707,10 @@ Part of the Public Beta / v1.0 Candidate Arc. Public beta is not a broom; it tur
 ## v91.1.0 — Protected Admin Review Model
 
 Part of the Public Beta / v1.0 Candidate Arc. Public beta is not a broom; it turns on the lights in the dark.
+
+
+---
+
+## v92.0.0 — Production RLS Audit Checklist
+
+Part of the Public Beta / v1.0 Candidate Arc. Public beta is not a broom; it turns on the lights in the dark.
