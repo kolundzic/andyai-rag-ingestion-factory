@@ -342,3 +342,10 @@ Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text
 ## v106.1.0 — Graph Traversal Tool Registry
 
 Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
+
+
+---
+
+## v107.0.0 — Hybrid RAG Graph Routing Policy
+
+Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
