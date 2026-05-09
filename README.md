@@ -1846,3 +1846,10 @@ Adds stale knowledge reporting with appearances, dependencies, recommended actio
 ## 📊 v31.0.0 — Knowledge Curator Dashboard Layer
 
 Adds Vercel pages and API routes for knowledge curator and knowledge hygiene dashboard.
+
+
+---
+
+## 🧠 v31.1.0 — Claude Signal: AI Work OS Interpretation
+
+Translates Claude 25 Ways signal into AndyAI Guided Action Intelligence.
