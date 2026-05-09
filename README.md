@@ -2483,3 +2483,10 @@ Part of the Public Alpha Polish + Vercel Production Surface arc. The public alph
 ## v71.0.0 — Real Demo Route Registry
 
 Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
+
+
+---
+
+## v71.1.0 — CTA Flow Map
+
+Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
