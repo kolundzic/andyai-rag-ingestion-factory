@@ -377,3 +377,10 @@ Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text
 ## v109.0.0 — Structural Awareness Dashboard
 
 Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
+
+
+---
+
+## v110.0.0 — AndyAI ASAL Kernel
+
+Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
