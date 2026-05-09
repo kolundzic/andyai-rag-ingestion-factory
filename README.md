@@ -2161,3 +2161,10 @@ Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc.
 ## v48.1.0 — Release Incident Memory Panel
 
 Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc. TAP-TAP now remembers releases as queryable operational memory.
+
+
+---
+
+## v49.0.0 — Persisted Public Release Proof
+
+Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc. TAP-TAP now remembers releases as queryable operational memory.
