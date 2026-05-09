@@ -2532,3 +2532,10 @@ Part of the Public Alpha Polish + Vercel Production Surface arc. The public alph
 ## v74.1.0 — Public Alpha Proof Panel
 
 Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
+
+
+---
+
+## v75.0.0 — Launch Announcement Pack
+
+Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
