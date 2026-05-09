@@ -2560,3 +2560,10 @@ Part of the Public Alpha Polish + Vercel Production Surface arc. The public alph
 ## v80.1.0 — Vercel Environment Variable Contract
 
 Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Public Beta Glow arc. Public Alpha opened the door; Public Beta turns on the lights.
+
+
+---
+
+## v80.2.0 — Supabase Client Wiring Standard
+
+Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Public Beta Glow arc. Public Alpha opened the door; Public Beta turns on the lights.
