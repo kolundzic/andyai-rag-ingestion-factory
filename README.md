@@ -335,3 +335,10 @@ Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text
 ## v106.0.0 — MCP Graph Tool Contract
 
 Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
+
+
+---
+
+## v106.1.0 — Graph Traversal Tool Registry
+
+Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
