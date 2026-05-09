@@ -1818,3 +1818,10 @@ Adds freshness scoring for old, superseded, conflicting, or review-critical sour
 ## 🧬 v30.5.0 — Duplicate Detector + Canonical Merge Review
 
 Detects near duplicates and routes merge candidates to human review.
+
+
+---
+
+## 🕸️ v30.6.0 — Graph Hygiene Layer
+
+Detects orphan nodes, broken edges, uncited claims, weak relations, contradiction clusters, and stale graph branches.
