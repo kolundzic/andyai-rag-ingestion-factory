@@ -1804,3 +1804,10 @@ Defines the maintenance layer that prevents RAG from becoming a landfill of chun
 ## 🧽 v30.3.0 — Chunk Curator + RAG Noise Map
 
 Detects noisy chunks before they poison retrieval, wiki compilation, and graph building.
+
+
+---
+
+## 🕰️ v30.4.0 — Source Freshness Checker
+
+Adds freshness scoring for old, superseded, conflicting, or review-critical sources.
