@@ -1909,3 +1909,10 @@ Part of the Curator Persistence + Operator Command System arc. This moves Knowle
 ## v32.5.0 — Curator Evidence Trail
 
 Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
+
+
+---
+
+## v33.0.0 — Curator Operator Command Center
+
+Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
