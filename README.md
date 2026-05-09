@@ -2287,3 +2287,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v57.1.0 — Guided Knowledge Workflow Demo
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v58.0.0 — Live Conductor Dashboard
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
