@@ -1,0 +1,1 @@
+{"question":"What is the trusted answer?","strategy":"graph_plus_source_freshness","worker":"verifier","context_policy":"evidence_plus_answer","approval":"required","outcome":"trusted_knowledge_pending_human_approval"}

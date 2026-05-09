@@ -1,34 +1,36 @@
 #!/usr/bin/env bash
 set -euo pipefail
 echo "━━━━━━━━━━━━━━━━━━━━"
-echo "🧪 VERIFY — Supabase Release Evidence Persistence + Live Operator Dashboard"
+echo "🧪 VERIFY — Guided Knowledge Orchestration Kernel"
 echo "━━━━━━━━━━━━━━━━━━━━"
-for f in   supabase/migrations/20260509_451_release_evidence_persistence.sql   supabase/seeds/release_evidence_seed.sql   docs/release-persistence/SUPABASE_RELEASE_EVIDENCE_PERSISTENCE.md   docs/release-persistence/RELEASE_HISTORY_TABLE_MODEL.md   docs/release-persistence/RELEASE_EVIDENCE_RECORD_SCHEMA.md   docs/release-persistence/RELEASE_EVIDENCE_PERSISTENCE_ADAPTER.md   docs/release-persistence/RELEASE_HISTORY_QUERY_LAYER.md   docs/live-operator/LIVE_RELEASE_OPERATOR_DASHBOARD.md   docs/live-operator/RELEASE_TIMELINE_VIEW.md   docs/live-operator/RELEASE_HEALTH_ROLLUP.md   docs/live-operator/RELEASE_INCIDENT_MEMORY_PANEL.md   docs/release-proof/PERSISTED_PUBLIC_RELEASE_PROOF.md   docs/release-persistence/V50_RELEASE_MEMORY_KERNEL.md   docs/release-persistence/V50_CANON_LOCK.md   docs/release-persistence/V50_NEXT_MASTER_PLAN.md   schemas/release-evidence-record.schema.json   schemas/release-history-query.schema.json   schemas/release-health-rollup.schema.json   examples/release-persistence/release-evidence-record-demo.json   examples/release-persistence/release-history-demo.json   scripts/capture_persisted_release_evidence.sh   scripts/print_release_history.sh   scripts/print_v50_release_memory_kernel.sh   apps/knowledgefactory-web/app/release-history/page.tsx   apps/knowledgefactory-web/app/api/release-history/status/route.ts   apps/knowledgefactory-web/app/release-live-dashboard/page.tsx   apps/knowledgefactory-web/app/api/release-live-dashboard/status/route.ts   apps/knowledgefactory-web/app/release-evidence-store/page.tsx   apps/knowledgefactory-web/app/api/release-evidence-store/status/route.ts
+for f in   docs/signals/SAKANA_RL_CONDUCTOR_SIGNAL.md   docs/conductor/ANDYAI_CONDUCTOR_LAYER_STANDARD.md   docs/conductor/DYNAMIC_RETRIEVAL_STRATEGY_PLANNER.md   docs/conductor/AGENT_ROLE_ASSIGNMENT_FOR_KNOWLEDGE_FACTORY.md   docs/conductor/policies/CONTEXT_ACCESS_POLICY_FOR_RETRIEVAL_WORKERS.md   docs/conductor/VERIFIER_CRITIC_LAYER_FOR_KNOWLEDGE_ANSWERS.md   docs/conductor/policies/HUMAN_APPROVAL_GATE_FOR_CONDUCTOR_DECISIONS.md   docs/conductor/RETRY_STRATEGY_ENGINE_FOR_FAILED_KNOWLEDGE_WORKFLOWS.md   docs/conductor/CONDUCTOR_EVIDENCE_LOG.md   docs/conductor/GUIDED_KNOWLEDGE_ORCHESTRATION_KERNEL.md   docs/conductor/V55_CANON_LOCK.md   docs/conductor/V55_NEXT_MASTER_PLAN.md   schemas/conductor-plan.schema.json   schemas/retrieval-strategy.schema.json   schemas/worker-assignment.schema.json   schemas/context-access-policy.schema.json   schemas/conductor-evidence-log.schema.json   examples/conductor/conductor-plan-demo.json   examples/conductor/guided-knowledge-orchestration-demo.json   scripts/print_conductor_status.sh   scripts/print_v55_guided_orchestration_kernel.sh   apps/knowledgefactory-web/app/conductor/page.tsx   apps/knowledgefactory-web/app/api/conductor/status/route.ts   apps/knowledgefactory-web/app/conductor-demo/page.tsx   apps/knowledgefactory-web/app/api/conductor-demo/status/route.ts
 do
   test -f "$f"
 done
 
 PYTHONPATH=src python3 - <<'PY'
-from rag_ingestion_factory.release.persistence import release_evidence_record, release_history_query
-from rag_ingestion_factory.release.health_rollup import release_health_rollup
-from rag_ingestion_factory.release.timeline import release_timeline
-from rag_ingestion_factory.release.incident_memory import release_incident_memory
-from rag_ingestion_factory.release.evidence_store import evidence_store_status
-from rag_ingestion_factory.release.live_dashboard import live_release_dashboard_status
-from rag_ingestion_factory.release.public_proof import persisted_public_release_proof
-from rag_ingestion_factory.release.release_memory_kernel import release_memory_kernel_status
+from rag_ingestion_factory.conductor.signal import sakana_signal_status
+from rag_ingestion_factory.conductor.planner import conductor_plan
+from rag_ingestion_factory.conductor.retrieval_strategy import choose_retrieval_strategy
+from rag_ingestion_factory.conductor.worker_assignment import assign_worker_role
+from rag_ingestion_factory.conductor.context_policy import context_access_policy
+from rag_ingestion_factory.conductor.verifier import verify_knowledge_answer
+from rag_ingestion_factory.conductor.approval_gate import conductor_human_approval_gate
+from rag_ingestion_factory.conductor.retry_strategy import retry_strategy
+from rag_ingestion_factory.conductor.evidence_log import conductor_evidence_log
+from rag_ingestion_factory.conductor.kernel import guided_knowledge_orchestration_status
 
-record = release_evidence_record("v50.0.0", "v45.0.0", "green")
-assert record["version"] == "v50.0.0"
-assert release_history_query(limit=5)["status"] == "query_ready"
-assert release_health_rollup(["green", "green"])["status"] == "green"
-assert release_timeline(["v45.0.0", "v50.0.0"])["count"] == 2
-assert release_incident_memory([])["incident_count"] == 0
-assert evidence_store_status()["status"] == "store_ready"
-assert live_release_dashboard_status()["status"] == "live_dashboard_ready"
-assert persisted_public_release_proof("v50.0.0")["visibility"] == "public-demo"
-assert release_memory_kernel_status()["version"] == "v50.0.0"
-print("🟢 Release persistence Python smoke tests passed")
+assert sakana_signal_status()["relevance"] == "highest"
+assert conductor_plan("explain source freshness")["status"] == "planned"
+assert choose_retrieval_strategy("graph and source freshness")["strategy"] == "graph_plus_source_freshness"
+assert assign_worker_role("verify")["role"] == "verifier"
+assert context_access_policy("retrieval_worker")["access"] == "limited"
+assert verify_knowledge_answer("answer", ["source"])["status"] == "verified"
+assert conductor_human_approval_gate(True)["approval_required"] is True
+assert retry_strategy("missing_evidence")["retry"] is True
+assert conductor_evidence_log("plan_created")["event_type"] == "plan_created"
+assert guided_knowledge_orchestration_status()["version"] == "v55.0.0"
+print("🟢 Conductor Python smoke tests passed")
 PY
 
 echo "🟢 VERIFY PASSED"

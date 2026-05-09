@@ -2175,3 +2175,10 @@ Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc.
 ## v50.0.0 — Supabase Release Memory Kernel
 
 Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc. TAP-TAP now remembers releases as queryable operational memory.
+
+
+---
+
+## v50.1.0 — Sakana RL Conductor Signal Note
+
+Part of the Sakana RL Conductor Signal + Guided Knowledge Orchestration Kernel arc. Conductor chooses the path; Knowledge Factory verifies and canonizes.
