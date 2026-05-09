@@ -1853,3 +1853,10 @@ Adds Vercel pages and API routes for knowledge curator and knowledge hygiene das
 ## 🧠 v31.1.0 — Claude Signal: AI Work OS Interpretation
 
 Translates Claude 25 Ways signal into AndyAI Guided Action Intelligence.
+
+
+---
+
+## 🤜 v31.2.0 — Guided Action Bridge for Knowledge Factory
+
+Connects curator tasks with evidence scans, knowledge fixes, human approval, and verified outcomes.
