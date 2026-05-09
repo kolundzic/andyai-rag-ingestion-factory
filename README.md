@@ -1881,3 +1881,10 @@ Locks the Hermes + Claude signal bridge as Knowledge Curator, Graph Hygiene, Evi
 ## v32.1.0 — Supabase Curator Persistence Schema
 
 Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
+
+
+---
+
+## v32.2.0 — Curator Queue Runtime Model
+
+Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
