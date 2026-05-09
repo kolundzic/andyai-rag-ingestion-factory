@@ -2595,3 +2595,10 @@ Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Pu
 ## v82.1.0 — Supabase Pilot Intake Table
 
 Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Public Beta Glow arc. Public Alpha opened the door; Public Beta turns on the lights.
+
+
+---
+
+## v83.0.0 — Tailwind Public Beta Design System
+
+Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Public Beta Glow arc. Public Alpha opened the door; Public Beta turns on the lights.
