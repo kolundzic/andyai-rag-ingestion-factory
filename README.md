@@ -2371,3 +2371,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v63.0.0 — Visual Atlas Public Gallery Linkage
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v63.1.0 — Release Proof Public Trust Page Linkage
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
