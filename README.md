@@ -300,3 +300,10 @@ Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text
 ## v103.1.0 — Tree-sitter Candidate Integration Note
 
 Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
+
+
+---
+
+## v104.0.0 — Repo Graph Build Pipeline
+
+Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
