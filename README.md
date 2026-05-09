@@ -1888,3 +1888,10 @@ Part of the Curator Persistence + Operator Command System arc. This moves Knowle
 ## v32.2.0 — Curator Queue Runtime Model
 
 Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
+
+
+---
+
+## v32.3.0 — Curator Action API Scaffold
+
+Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
