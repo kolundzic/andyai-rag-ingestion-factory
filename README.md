@@ -2021,3 +2021,10 @@ Part of the Portable Shell + Curator Production Hardening Arc. This turns the re
 ## v40.1.0 — Real Release Evidence Generator
 
 Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no longer only executes releases; it proves them.
+
+
+---
+
+## v40.2.0 — Git Commit and Tag Capture Adapter
+
+Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no longer only executes releases; it proves them.
