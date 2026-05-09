@@ -2441,3 +2441,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v68.0.0 — Public Demo Safety and Disclaimer Layer
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v68.1.0 — Public Feedback Intake Model
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
