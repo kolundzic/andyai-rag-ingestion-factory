@@ -2420,3 +2420,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v66.1.0 — Public Architecture Overview Page
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v67.0.0 — Public Research Signal Library
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
