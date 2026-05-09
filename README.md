@@ -2350,3 +2350,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v61.1.0 — Public Demo Navigation Shell
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v62.0.0 — Knowledge Factory Public Showcase Page
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
