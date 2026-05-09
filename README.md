@@ -2182,3 +2182,10 @@ Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc.
 ## v50.1.0 — Sakana RL Conductor Signal Note
 
 Part of the Sakana RL Conductor Signal + Guided Knowledge Orchestration Kernel arc. Conductor chooses the path; Knowledge Factory verifies and canonizes.
+
+
+---
+
+## v50.2.0 — AndyAI Conductor Layer Standard
+
+Part of the Sakana RL Conductor Signal + Guided Knowledge Orchestration Kernel arc. Conductor chooses the path; Knowledge Factory verifies and canonizes.
