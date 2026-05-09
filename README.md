@@ -2497,3 +2497,10 @@ Part of the Public Alpha Polish + Vercel Production Surface arc. The public alph
 ## v72.0.0 — Route Health Check Layer
 
 Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
+
+
+---
+
+## v72.1.0 — SEO Metadata Standard
+
+Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
