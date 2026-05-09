@@ -1,0 +1,11 @@
+Repo: andyai-rag-ingestion-factory
+Owner: kolundzic
+Product: AndyAI Knowledge Factory / WikiPress
+Site: knowledgefactory.andyai.ai
+Version: v110.1.0
+Captured at UTC: 2026-05-09T15:20:52Z
+Local path: /Users/andrijakolundzic/Documents/Projects/andyai-rag-ingestion-factory
+Branch: main
+Origin: https://github.com/kolundzic/andyai-rag-ingestion-factory.git
+HEAD: 0728c67df842e4b95ed0d4a7bdb1ecd118b80fb8
+Latest tag before proof: v110.0.0

@@ -1,0 +1,5 @@
+━━━━━━━━━━━━━━━━━━━━
+🧪 VERIFY — ASAL / AndyAI Structural Awareness Layer
+━━━━━━━━━━━━━━━━━━━━
+🟢 ASAL Python smoke tests passed
+🟢 VERIFY PASSED

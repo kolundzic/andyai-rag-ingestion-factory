@@ -1,0 +1,40 @@
+0728c67 (HEAD -> main, tag: v110.0.0, origin/main, origin/HEAD) feat: v110.0.0 — AndyAI ASAL Kernel v110.0.0
+2c5a792 (tag: v109.0.0) feat: v109.0.0 — Structural Awareness Dashboard v109.0.0
+cb458a3 (tag: v108.1.0) feat: v108.1.0 — Release Impact Graph v108.1.0
+fec7cac (tag: v108.0.0) feat: v108.0.0 — Codebase Risk Map v108.0.0
+d1a937b (tag: v107.1.0) feat: v107.1.0 — Structural Evidence Log v107.1.0
+2bbd566 (tag: v107.0.0) feat: v107.0.0 — Hybrid RAG Graph Routing Policy v107.0.0
+7cf8fa3 (tag: v106.1.0) feat: v106.1.0 — Graph Traversal Tool Registry v106.1.0
+dfe12b2 (tag: v106.0.0) feat: v106.0.0 — MCP Graph Tool Contract v106.0.0
+3575acc (tag: v105.1.0) feat: v105.1.0 — Test Impact Map Model v105.1.0
+9fa6cb4 (tag: v105.0.0) feat: v105.0.0 — Execution Path Traversal Model v105.0.0
+0b93e35 (tag: v104.1.0) feat: v104.1.0 — Module Dependency Graph Model v104.1.0
+70897f7 (tag: v104.0.0) feat: v104.0.0 — Repo Graph Build Pipeline v104.0.0
+058fdbb (tag: v103.1.0) feat: v103.1.0 — Tree-sitter Candidate Integration Note v103.1.0
+cc9faf3 (tag: v103.0.0) feat: v103.0.0 — AST Parser Pipeline Contract v103.0.0
+89f0883 (tag: v102.1.0) feat: v102.1.0 — Structural Relation Edge Schema v102.1.0
+380e68e (tag: v102.0.0) feat: v102.0.0 — Codebase Structural Entity Model v102.0.0
+ff10018 (tag: v101.2.0) feat: v101.2.0 — AndyAI Structural Awareness Layer Standard v101.2.0
+ee120e8 (tag: v101.1.0) feat: v101.1.0 — Beyond RAG MCP Native Knowledge Graph Signal v101.1.0
+08149d8 (tag: v101.0.0) docs: README and Documentation Polish Kernel v101.0.0
+63d8eab (tag: v100.4.0) docs: Mermaid Architecture Diagram Suite v100.4.0
+a76ffc6 (tag: v100.3.0) docs: Canon Visual Gallery Integration v100.3.0
+39186ac (tag: v100.2.0) docs: Documentation Map and Start Here Index v100.2.0
+80e9589 (tag: v100.1.0) docs: README Hero and Public Beta Narrative Polish v100.1.0
+c3d9087 (tag: v100.0.0) feat: v100.0.0 — Public Beta v1 Candidate Kernel v100.0.0
+bc72963 (tag: v99.0.0) feat: v99.0.0 — v1 Candidate Launch Narrative v99.0.0
+4eb74be (tag: v95.0.0) feat: v95.0.0 — Final Public Beta Proof Pack v95.0.0
+f10dae9 (tag: v94.0.0) feat: v94.0.0 — README Public Launch Polish v94.0.0
+38fe88d (tag: v93.1.0) feat: v93.1.0 — Tailwind Public Beta Polish Pass v93.1.0
+cf6ac3d (tag: v93.0.0) feat: v93.0.0 — Public Beta Deploy Smoke Runbook v93.0.0
+873c367 (tag: v92.1.0) feat: v92.1.0 — Vercel Build Smoke Standard v92.1.0
+338100c (tag: v92.0.0) feat: v92.0.0 — Production RLS Audit Checklist v92.0.0
+b4c56f5 (tag: v91.1.0) feat: v91.1.0 — Protected Admin Review Model v91.1.0
+8ef1b16 (tag: v91.0.0) feat: v91.0.0 — Supabase Insert Adapter Standard v91.0.0
+721bf4a (tag: v90.2.0) feat: v90.2.0 — Real Pilot Request POST Route v90.2.0
+5a14b60 (tag: v90.1.0) feat: v90.1.0 — Real Public Feedback POST Route v90.1.0
+47ef392 (tag: v90.0.0) feat: v90.0.0 — Knowledge Factory Public Beta Live Wiring Kernel v90.0.0
+cf32f4e (tag: v89.0.0) feat: v89.0.0 — Public Beta Launch Copy Pack v89.0.0
+c103581 (tag: v88.0.0) feat: v88.0.0 — Public Beta Trust Proof Wall v88.0.0
+66c611c (tag: v87.0.0) feat: v87.0.0 — Public Beta Route Health API v87.0.0
+ec413a5 (tag: v86.1.0) feat: v86.1.0 — Supabase RLS Public Beta Policy v86.1.0

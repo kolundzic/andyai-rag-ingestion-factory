@@ -1,0 +1,17 @@
+Required ASAL files
+
+OK docs/asal/ANDYAI_ASAL_KERNEL.md
+OK docs/asal/ANDYAI_STRUCTURAL_AWARENESS_LAYER_STANDARD.md
+OK docs/asal/mcp/MCP_GRAPH_TOOL_CONTRACT.md
+OK docs/asal/models/CODEBASE_STRUCTURAL_ENTITY_MODEL.md
+OK docs/asal/models/STRUCTURAL_RELATION_EDGE_SCHEMA.md
+OK docs/asal/pipeline/AST_PARSER_PIPELINE_CONTRACT.md
+OK docs/asal/pipeline/REPO_GRAPH_BUILD_PIPELINE.md
+OK docs/asal/policies/HYBRID_RAG_GRAPH_ROUTING_POLICY.md
+OK schemas/asal-node.schema.json
+OK schemas/asal-edge.schema.json
+OK schemas/asal-traversal.schema.json
+OK src/rag_ingestion_factory/asal/kernel.py
+OK src/rag_ingestion_factory/asal/repo_graph.py
+OK src/rag_ingestion_factory/asal/traversal.py
+OK scripts/verify_asal.sh
