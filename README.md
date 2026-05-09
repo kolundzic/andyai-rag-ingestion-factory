@@ -1930,3 +1930,10 @@ Part of the Curator Persistence + Operator Command System arc. This moves Knowle
 ## v33.2.0 — Scheduled Hygiene Runner
 
 Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
+
+
+---
+
+## v34.0.0 — Curator Report Export Pack
+
+Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
