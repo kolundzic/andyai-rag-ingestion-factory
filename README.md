@@ -2245,3 +2245,10 @@ Part of the Sakana RL Conductor Signal + Guided Knowledge Orchestration Kernel a
 ## v55.0.0 — Guided Knowledge Orchestration Kernel
 
 Part of the Sakana RL Conductor Signal + Guided Knowledge Orchestration Kernel arc. Conductor chooses the path; Knowledge Factory verifies and canonizes.
+
+
+---
+
+## v55.1.0 — Conductor Event Store Model
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
