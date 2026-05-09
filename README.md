@@ -2000,3 +2000,10 @@ Part of the Portable Shell + Curator Production Hardening Arc. This turns the re
 ## v38.0.0 — TAP-TAP Release Evidence Pack
 
 Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
+
+
+---
+
+## v39.0.0 — Release Operator Console Page
+
+Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
