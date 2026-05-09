@@ -2189,3 +2189,10 @@ Part of the Sakana RL Conductor Signal + Guided Knowledge Orchestration Kernel a
 ## v50.2.0 — AndyAI Conductor Layer Standard
 
 Part of the Sakana RL Conductor Signal + Guided Knowledge Orchestration Kernel arc. Conductor chooses the path; Knowledge Factory verifies and canonizes.
+
+
+---
+
+## v50.3.0 — Dynamic Retrieval Strategy Planner
+
+Part of the Sakana RL Conductor Signal + Guided Knowledge Orchestration Kernel arc. Conductor chooses the path; Knowledge Factory verifies and canonizes.
