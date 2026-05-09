@@ -2658,3 +2658,10 @@ Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Pu
 ## v87.0.0 — Public Beta Route Health API
 
 Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Public Beta Glow arc. Public Alpha opened the door; Public Beta turns on the lights.
+
+
+---
+
+## v88.0.0 — Public Beta Trust Proof Wall
+
+Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Public Beta Glow arc. Public Alpha opened the door; Public Beta turns on the lights.
