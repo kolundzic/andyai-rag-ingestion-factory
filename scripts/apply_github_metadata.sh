@@ -5,7 +5,7 @@ REPO_NAME="${REPO_NAME:-andyai-rag-ingestion-factory}"
 
 if command -v gh >/dev/null 2>&1; then
   gh repo edit "$OWNER/$REPO_NAME" \
-    --description "AndyAI Knowledge Factory v1 candidate: public beta with Supabase POST wiring, protected admin model, RLS audit, Vercel smoke, Tailwind polish and launch proof." \
+    --description "AndyAI Knowledge Factory: polished public beta v1 candidate docs, visual atlas, Mermaid architecture, Supabase/Vercel/Tailwind proof and enterprise-ready README." \
     --homepage "https://knowledgefactory.andyai.ai" \
     --enable-issues=true --enable-wiki=false --enable-projects=false || true
 
@@ -15,15 +15,15 @@ if command -v gh >/dev/null 2>&1; then
     -f names[]=wikipress \
     -f names[]=public-beta \
     -f names[]=v1-candidate \
+    -f names[]=readme-polish \
+    -f names[]=documentation \
+    -f names[]=visual-atlas \
+    -f names[]=mermaid \
     -f names[]=vercel \
     -f names[]=supabase \
     -f names[]=tailwind \
-    -f names[]=rls-audit \
-    -f names[]=protected-admin \
-    -f names[]=post-routes \
-    -f names[]=launch-proof \
-    -f names[]=enterprise-ai \
-    -f names[]=evidence-backed || true
+    -f names[]=evidence-first \
+    -f names[]=human-in-the-loop || true
 fi
 
 echo "🟢 GitHub metadata pass completed."
