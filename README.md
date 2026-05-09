@@ -2693,3 +2693,10 @@ Part of the Public Beta / v1.0 Candidate Arc. Public beta is not a broom; it tur
 ## v90.2.0 — Real Pilot Request POST Route
 
 Part of the Public Beta / v1.0 Candidate Arc. Public beta is not a broom; it turns on the lights in the dark.
+
+
+---
+
+## v91.0.0 — Supabase Insert Adapter Standard
+
+Part of the Public Beta / v1.0 Candidate Arc. Public beta is not a broom; it turns on the lights in the dark.
