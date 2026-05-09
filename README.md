@@ -1937,3 +1937,10 @@ Part of the Curator Persistence + Operator Command System arc. This moves Knowle
 ## v34.0.0 — Curator Report Export Pack
 
 Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
+
+
+---
+
+## v35.0.0 — Knowledge Curator Production Demo Kernel
+
+Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
