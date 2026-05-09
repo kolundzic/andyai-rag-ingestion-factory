@@ -328,3 +328,10 @@ Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text
 ## v105.1.0 — Test Impact Map Model
 
 Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
+
+
+---
+
+## v106.0.0 — MCP Graph Tool Contract
+
+Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
