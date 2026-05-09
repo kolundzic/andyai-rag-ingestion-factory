@@ -2147,3 +2147,10 @@ Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc.
 ## v47.1.0 — Release Timeline View
 
 Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc. TAP-TAP now remembers releases as queryable operational memory.
+
+
+---
+
+## v48.0.0 — Release Health Rollup
+
+Part of the Supabase Release Evidence Persistence + Live Operator Dashboard arc. TAP-TAP now remembers releases as queryable operational memory.
