@@ -2259,3 +2259,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v55.2.0 — Supabase Conductor Event Persistence
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v56.0.0 — Worker Execution Contract Standard
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
