@@ -272,3 +272,10 @@ Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text
 ## v101.2.0 — AndyAI Structural Awareness Layer Standard
 
 Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
+
+
+---
+
+## v102.0.0 — Codebase Structural Entity Model
+
+Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
