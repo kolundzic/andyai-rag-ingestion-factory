@@ -1972,3 +1972,10 @@ Part of the Portable Shell + Curator Production Hardening Arc. This turns the re
 ## v35.3.0 — MASTER-UDARAC Dry Run Mode
 
 Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
+
+
+---
+
+## v36.0.0 — Release Guard and Preflight Layer
+
+Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
