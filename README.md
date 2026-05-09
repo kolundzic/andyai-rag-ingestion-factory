@@ -1895,3 +1895,10 @@ Part of the Curator Persistence + Operator Command System arc. This moves Knowle
 ## v32.3.0 — Curator Action API Scaffold
 
 Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
+
+
+---
+
+## v32.4.0 — Human Review Gate for Curator Actions
+
+Part of the Curator Persistence + Operator Command System arc. This moves Knowledge Factory from building knowledge toward maintaining knowledge.
