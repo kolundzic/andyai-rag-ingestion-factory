@@ -2546,3 +2546,10 @@ Part of the Public Alpha Polish + Vercel Production Surface arc. The public alph
 ## v75.1.0 — Public Alpha Operator Script
 
 Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
+
+
+---
+
+## v80.0.0 — Public Alpha Surface Kernel
+
+Part of the Public Alpha Polish + Vercel Production Surface arc. The public alpha now becomes easier to understand, navigate, verify and share.
