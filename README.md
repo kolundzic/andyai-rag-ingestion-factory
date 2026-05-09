@@ -2056,3 +2056,10 @@ Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no lo
 ## v41.1.0 — Release Comparison Model
 
 Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no longer only executes releases; it proves them.
+
+
+---
+
+## v41.2.0 — Previous vs Current Version Diff Summary
+
+Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no longer only executes releases; it proves them.
