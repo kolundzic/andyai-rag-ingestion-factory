@@ -286,3 +286,10 @@ Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text
 ## v102.1.0 — Structural Relation Edge Schema
 
 Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
+
+
+---
+
+## v103.0.0 — AST Parser Pipeline Contract
+
+Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
