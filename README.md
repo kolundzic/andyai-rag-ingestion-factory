@@ -2574,3 +2574,10 @@ Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Pu
 ## v81.0.0 — Public Feedback Form Live Wiring
 
 Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Public Beta Glow arc. Public Alpha opened the door; Public Beta turns on the lights.
+
+
+---
+
+## v81.1.0 — Pilot Request Form Live Wiring
+
+Part of the Productized Pilot System + Vercel/Supabase Live Wiring + Tailwind Public Beta Glow arc. Public Alpha opened the door; Public Beta turns on the lights.
