@@ -2252,3 +2252,10 @@ Part of the Sakana RL Conductor Signal + Guided Knowledge Orchestration Kernel a
 ## v55.1.0 — Conductor Event Store Model
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v55.2.0 — Supabase Conductor Event Persistence
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
