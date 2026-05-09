@@ -1993,3 +1993,10 @@ Part of the Portable Shell + Curator Production Hardening Arc. This turns the re
 ## v37.0.0 — Forward-Only Incident Handling Standard
 
 Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
+
+
+---
+
+## v38.0.0 — TAP-TAP Release Evidence Pack
+
+Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
