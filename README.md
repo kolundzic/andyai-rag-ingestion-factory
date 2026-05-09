@@ -1832,3 +1832,10 @@ Detects orphan nodes, broken edges, uncited claims, weak relations, contradictio
 ## ⚖️ v30.7.0 — Evidence Quality Score
 
 Scores evidence using source trace, quote anchor, confidence, recency, authority, approval, and contradiction risk.
+
+
+---
+
+## 🧯 v30.8.0 — Stale Knowledge Report
+
+Adds stale knowledge reporting with appearances, dependencies, recommended action, and human review priority.
