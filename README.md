@@ -2364,3 +2364,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v62.1.0 — Conductor Public Explainer Page
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v63.0.0 — Visual Atlas Public Gallery Linkage
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
