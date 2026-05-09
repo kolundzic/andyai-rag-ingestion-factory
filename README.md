@@ -2427,3 +2427,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v67.0.0 — Public Research Signal Library
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v67.1.0 — Sakana Hermes Claude Signal Public Summary Layer
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
