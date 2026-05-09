@@ -1797,3 +1797,10 @@ Maps Hermes Curator signal into Knowledge Factory: stale chunks, duplicate detec
 ## 🧼 v30.2.0 — Knowledge Curator Standard
 
 Defines the maintenance layer that prevents RAG from becoming a landfill of chunks.
+
+
+---
+
+## 🧽 v30.3.0 — Chunk Curator + RAG Noise Map
+
+Detects noisy chunks before they poison retrieval, wiki compilation, and graph building.
