@@ -2749,3 +2749,10 @@ Part of the Public Beta / v1.0 Candidate Arc. Public beta is not a broom; it tur
 ## v95.0.0 — Final Public Beta Proof Pack
 
 Part of the Public Beta / v1.0 Candidate Arc. Public beta is not a broom; it turns on the lights in the dark.
+
+
+---
+
+## v99.0.0 — v1 Candidate Launch Narrative
+
+Part of the Public Beta / v1.0 Candidate Arc. Public beta is not a broom; it turns on the lights in the dark.
