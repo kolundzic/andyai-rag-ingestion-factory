@@ -279,3 +279,10 @@ Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text
 ## v102.0.0 — Codebase Structural Entity Model
 
 Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
+
+
+---
+
+## v102.1.0 — Structural Relation Edge Schema
+
+Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
