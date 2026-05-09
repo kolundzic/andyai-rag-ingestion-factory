@@ -2399,3 +2399,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v65.0.0 — GitHub README Public Product Rewrite
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v65.1.0 — GitHub Repo Topics and Social Preview Metadata
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
