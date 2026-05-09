@@ -2014,3 +2014,10 @@ Part of the Portable Shell + Curator Production Hardening Arc. This turns the re
 ## v40.0.0 — Portable TAP-TAP Runtime Kernel
 
 Part of the Portable Shell + Curator Production Hardening Arc. This turns the release incident into a safer TAP-TAP standard.
+
+
+---
+
+## v40.1.0 — Real Release Evidence Generator
+
+Part of the Real Evidence Automation + Release Intelligence Layer. TAP-TAP no longer only executes releases; it proves them.

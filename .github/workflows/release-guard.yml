@@ -1,0 +1,20 @@
+name: Release Guard
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check portable shell scripts
+        run: |
+          grep -R "\${.*,,}" scripts .github || true
+          if grep -R "\${.*,,}" scripts .github; then exit 1; fi
+      - name: Run release verify if present
+        run: |
+          if [ -f scripts/verify.sh ]; then bash scripts/verify.sh; fi
