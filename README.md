@@ -314,3 +314,10 @@ Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text
 ## v104.1.0 — Module Dependency Graph Model
 
 Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
+
+
+---
+
+## v105.0.0 — Execution Path Traversal Model
+
+Part of ASAL — AndyAI Structural Awareness Layer. AI must not only search text; AI must understand structure, flow, evidence and consequence.
