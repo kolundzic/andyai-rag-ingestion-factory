@@ -2392,3 +2392,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v64.1.0 — Public Interest Capture Layer
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v65.0.0 — GitHub README Public Product Rewrite
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
