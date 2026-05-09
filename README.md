@@ -2308,3 +2308,10 @@ Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens 
 ## v59.0.0 — Human Approval Console for Knowledge Workflows
 
 Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
+
+
+---
+
+## v59.1.0 — Retry Strategy Console
+
+Part of the Public Product Opening + Vercel Launch Layer arc. The factory opens its doors to the public.
